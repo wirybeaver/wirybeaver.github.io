@@ -1,7 +1,7 @@
 # Site settings
 title: Shane Blog
 SEOTitle: Xuanyi Li | Shane
-header-img: img/post-bg-desk.jpg
+header-img: img/SFO.jpg
 email: qiubaiying@gmail.com
 description: "Fake it till make it"
 keyword: "Shane, Xuanyi, Xuanyi Li, Java, Spring Boot, Distributed System, NLP, 李宣毅, 宣毅"
@@ -12,14 +12,14 @@ github_repo: "https://github.com/shanebacklight/shanebacklight.github.io.git" # 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Fake it till make it"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/SFO.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
 github_username:    shanebacklight
-facebook_username:  baiying.qiu.7
+facebook_username:  li.xuanyi.9
 
 
 # Build settings
