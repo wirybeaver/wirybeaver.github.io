@@ -2,17 +2,17 @@
 title: Shane Blog
 SEOTitle: Xuanyi Li | Shane
 header-img: img/bg-mac.jpg
-email: qiubaiying@gmail.com
+email: shane.lxy@outlook.com
 description: "Fake it till make it"
 keyword: "Shane, Xuanyi, Xuanyi Li, Java, Spring Boot, Distributed System, NLP, 李宣毅, 宣毅"
-url: "http://shanebacklight.github.io"          # your host, for absolute URL
+url: "https://shanebacklight.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/shanebacklight/shanebacklight.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Fake it till make it"
-sidebar-avatar: /img/SFO.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -55,13 +55,13 @@ disqus_username: shanebacklight
 
 # Gitalk
 # gitalk:
-#   enable: true    #是否开启Gitalk评论
-#   clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-#   clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-#   repo: qiubaiying.github.io    #仓库名称
-#   owner: qiubaiying    #github用户名
-#   admin: qiubaiying
-#   distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  # enable: true    #是否开启Gitalk评论
+  # clientID: f2c84e7629bb1446c1a4                            #生成的clientID
+  # clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  # repo: shanebacklight.github.io    #仓库名称
+  # owner: shanebacklight    #github用户名
+  # admin: shanebacklight
+  # distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
