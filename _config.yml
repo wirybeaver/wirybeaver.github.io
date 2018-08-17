@@ -12,7 +12,7 @@ github_repo: "https://github.com/shanebacklight/shanebacklight.github.io.git" # 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Curve Wrecker"
+sidebar-about-description: "forever youthful, forever weeping"
 sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
