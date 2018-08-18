@@ -20,14 +20,14 @@ Lamport Clock: not
 **What's the problem if FIFO is not satisfied?**<br>
 Some thread could enter into critical section at the same time.
 
-![](https://i.imgur.com/IAViyC8.jpg)
+<img src="https://i.imgur.com/IAViyC8.jpg" width="60%" border="5">
 
 # Ricart-Agrawala Algo.
 
 FIFO: not required<br>
 Lamport Clock: required
 
-![](https://i.imgur.com/wuRqGVz.jpg)
+<img src="https://i.imgur.com/wuRqGVz.jpg" width="60%" border="5">
 
 **What happens if the system violates the rule of Lamport Clock?**<br>
 The critical section could be accessed by different threads simultaneously.
