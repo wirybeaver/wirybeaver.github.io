@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Distributed Mutual Exclusion
-excerpt:    Some assignment problems helping understand principles of some mutual exclusion algorithms.
+excerpt:    Assignment problems helping understand principles of mutual exclusion algorithms.
 date:       2018-02-08 20:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
