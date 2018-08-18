@@ -10,7 +10,7 @@ tags:
     - Distributed System
 ---
 
-> Prove the consistency of checkpoint algorithm by contradiction.
+Prove the consistency of checkpoint algorithm by contradiction.
 
 <!-- more -->
 
