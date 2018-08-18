@@ -1,6 +1,7 @@
 ---
 layout:     post
 title:      Distributed Mutual Exclusion
+excerpt:    Some assignment problems helping understand principles of some mutual exclusion algorithms.
 date:       2018-02-08 20:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
@@ -10,8 +11,6 @@ tags:
     - Distributed System
 ---
 
-<!--more-->
-Some assignment problems helping understand principles of some mutual exclusion algorithms.
 Details about two algorithms below can be refered from [slides](http://web.cse.ohio-state.edu/~agrawal.28/760/Slides/feb7.pdf) by Prof. Gagan.
 # Lamport Algo.
 
