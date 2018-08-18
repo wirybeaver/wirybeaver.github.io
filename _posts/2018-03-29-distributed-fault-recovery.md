@@ -12,6 +12,8 @@ tags:
 
 > Prove the consistency of checkpoint algorithm by contradiction.
 
+<!-- more -->
+
 Please read slides on fault recovery alogrithm prepare by Prof. Gagan first.
 
 ![](https://i.imgur.com/SkYA9dr.jpg)
