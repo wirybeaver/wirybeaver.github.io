@@ -9,10 +9,8 @@ tags:
     - Note
     - Distributed System
 ---
-
-> Some assignment problems helping understand principles of some mutual exclusion algorithms.
-
-
+Some assignment problems helping understand principles of some mutual exclusion algorithms.
+<!--more-->
 Details about two algorithms below can be refered from [slides](http://web.cse.ohio-state.edu/~agrawal.28/760/Slides/feb7.pdf) by Prof. Gagan.
 
 # Lamport Algo.
