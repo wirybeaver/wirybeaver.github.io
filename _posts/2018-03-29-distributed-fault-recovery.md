@@ -11,7 +11,7 @@ tags:
     - Distributed System
 ---
 
-Please read [slides](http://web.cse.ohio-state.edu/~agrawal.28/760/Slides/mar28.pdf) on fault recovery alogrithm prepare by Prof. Gagan first.
+Please read [slides](http://web.cse.ohio-state.edu/~agrawal.28/760/Slides/mar28.pdf) on fault recovery alogrithm prepared by Prof. Gagan first.
 
 **Claim:** Orphan messages are not acceptable by this algorihm.<br>
 **Proof:** <br>
