@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Distributed Mutual Exclusion
-date:       2017-02-08 20:00:00
+date:       2018-02-08 20:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
@@ -12,7 +12,8 @@ tags:
 
 > Some assignment problems helping understand principles of some mutual exclusion algorithms.
 
-Details about two algo. below can be refered from [slides](http://web.cse.ohio-state.edu/~agrawal.28/760/Slides/feb7.pdf) by Prof. Gagan.
+
+Details about two algorithms below can be refered from [slides](http://web.cse.ohio-state.edu/~agrawal.28/760/Slides/feb7.pdf) by Prof. Gagan.
 
 # Lamport Algo.
 
@@ -26,10 +27,10 @@ Some thread could enter into critical section at the same time.
 
 # Ricart-Agrawala Algo.
 
-FIFO: not required
+FIFO: not required<br>
 Lamport Clock: required
 
 ![](https://i.imgur.com/wuRqGVz.jpg)
 
-**What's the problem if the system obey the rule of Lamport Clock?**<br>
+**What happens if the system violates the rule of Lamport Clock?**<br>
 The critical section could be accessed by different threads simultaneously.
