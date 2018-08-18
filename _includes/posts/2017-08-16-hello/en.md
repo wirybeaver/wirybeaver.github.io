@@ -1,0 +1,1 @@
+> Enjoy the journey on shane blog!
