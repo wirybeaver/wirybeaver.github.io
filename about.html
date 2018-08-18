@@ -12,13 +12,13 @@ multilingual: true
     <option value="1" > Chinse </option>
 </select>
 
-<!-- Chinese Version -->
+<!-- English Version -->
 <div class="zh post-container">
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
 
-<!-- English Version -->
+<!-- Chinese Version -->
 <div class="en post-container">
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
