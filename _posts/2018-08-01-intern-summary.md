@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Distributed Mutual Exclusion
+title:      Intern Summary
 excerpt:    Partial details about my intern project
-date:       2018-02-08 20:00:00
+date:       2018-08-01 20:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
