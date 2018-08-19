@@ -9,9 +9,11 @@ I took a backend engineer intern at Alibaba in 2018 summer and concentrated on d
 
 If there is any fit position, please feel free to contact with me via <a href="mailto:shane.lxy@outlook.com">email</a>.
 
-<!-- replace & to &amp and add space before </iframe> -->
-<!-- <iframe src="https://shanelxy.top/assets/ResumeXuanyi.pdf&amp;embedded=true" width="100%" frameborder="0" scrolling="no"> </iframe> -->
-
-<center><embed src="https://shanelxy.top/assets/ResumeXuanyi.pdf" width="100%"></center>
-
 Here is my [resume]({{site.url}}/assets/ResumeXuanyi.pdf).
+
+<!-- replace & to &amp and add space before </iframe> -->
+<iframe src="{{site.url}}/assets/ResumeXuanyi.pdf&amp;embedded=true" width="100%" frameborder="0" scrolling="no"> </iframe>
+
+<!-- <center><embed src="https://shanelxy.top/assets/ResumeXuanyi.pdf" width="100%"></center> -->
+
+
