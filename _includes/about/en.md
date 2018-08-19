@@ -12,7 +12,7 @@ If there is any fit position, please feel free to contact with me via <a href="m
 Here is my [resume]({{site.url}}/assets/ResumeXuanyi.pdf).
 
 <!-- replace & to &amp; and add space before </iframe> -->
-<iframe src="https://shanelxy.top/assets/ResumeXuanyi.pdf" width="80%" height="600" frameborder="0"> </iframe>
+<iframe src="https://shanelxy.top/assets/ResumeXuanyi.pdf" width="90%" height="600" frameborder="0"> </iframe>
 
 <!-- <center><embed src="https://shanelxy.top/assets/ResumeXuanyi.pdf" width="100%"></center> -->
 
