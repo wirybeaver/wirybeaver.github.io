@@ -7,8 +7,11 @@ author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
-    - Note
-    - Distributed System
+    - AI
+    - OOD
+    - Java
+    - Spring Boot
+    - System Design
 ---
 
 **Mlab** is a platform served for business developers who are not familiar with machine learning algorithms. This platfrom tries to abstract a general machine learning development process and automate all steps, including sample aggregation, feature preprocessing, offline training, online deployment, real-time computing, etc. I am responsible for offline training while assisting in dynmaic sql generation and online deployment. 
