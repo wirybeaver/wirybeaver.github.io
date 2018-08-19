@@ -51,7 +51,7 @@ netease_comment: false
 # Baidu Analytics 
 # ba_track_id: [your track id]
 
-Google Analytics
+#Google Analytics
 ga_track_id: 'UA-124249182-1'            # Format: UA-xxxxxx-xx
 ga_domain: shanelxy.top
 
