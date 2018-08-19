@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Intern Summary
-excerpt:    Partial details about my intern project
+excerpt:    Details about my intern project
 date:       2018-08-01 20:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
