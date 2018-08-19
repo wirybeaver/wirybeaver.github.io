@@ -11,8 +11,8 @@ If there is any fit position, please feel free to contact with me via <a href="m
 
 Here is my [resume]({{site.url}}/assets/ResumeXuanyi.pdf).
 
-<!-- replace & to &amp and add space before </iframe> -->
-<iframe src="{{site.url}}/assets/ResumeXuanyi.pdf&amp;embedded=true" width="100%" frameborder="0" scrolling="no"> </iframe>
+<!-- replace & to &amp; and add space before </iframe> -->
+<iframe src="{{site.url}}/assets/ResumeXuanyi.pdf" width="100%" frameborder="0" scrolling="no"> </iframe>
 
 <!-- <center><embed src="https://shanelxy.top/assets/ResumeXuanyi.pdf" width="100%"></center> -->
 
