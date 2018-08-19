@@ -11,4 +11,4 @@ If there is any fit position, please feel free to contact with me via <a href="m
 
 Here is my [resume]({{site.url}}/assets/ResumeXuanyi.pdf).
 
-<iframe src="/assets/ResumeXuanyi.pdf&embedded=true" width="80%" frameborder="0"></iframe>
+<iframe src="https://shanelxy.top/assets/ResumeXuanyi.pdf&embedded=true" width="100%" frameborder="0"></iframe>
