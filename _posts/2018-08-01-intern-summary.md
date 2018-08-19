@@ -24,13 +24,13 @@ tags:
 - Assisted in developing the model transfer module: Mlab server swarm read offline model from PAI, persist it to MySQL, cache customized online model to Tair and push the corresponding version object, containing extra split ratio for A/B testing, to Diamond Server. Client threads asynchronously listen to the version change and poll the latest model from Tair for real time prediction.
 
 *Framework Sketch*
-<img src="https://i.imgur.com/ZDMwwOM.jpg" width="60%">
+<img src="https://i.imgur.com/ZDMwwOM.jpg" width="80%">
 
 *Sketch about Dynamic SQL Generation*
-<img src="https://i.imgur.com/zfIk8hX.jpg" width="60%">
+<img src="https://i.imgur.com/zfIk8hX.jpg" width="80%">
 
 *UML on Offline Training*
-<img src="https://i.imgur.com/BIWfT81.jpg" width="60%">
+<img src="https://i.imgur.com/BIWfT81.jpg" width="80%">
 
 *Sequence Diagram of Online Deployment*
-<img src="https://i.imgur.com/ORue9sO.jpg" width="60%">
+<img src="https://i.imgur.com/ORue9sO.jpg" width="80%">
