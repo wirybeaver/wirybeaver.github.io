@@ -1,0 +1,130 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+\geometry{left=1in,right=1in,top=0.8in,bottom=0.8in}
+\hypersetup{hidelinks}
+\setlength{\parskip}{0pt}
+\setlength\parindent{0pt}
+
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\listparam}{
+    \setlength{\parsep}{\parskip}
+    \setlength{\itemsep}{0ex}
+    \setlength{\labelwidth}{2em}
+    \setlength{\labelsep}{1em}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0ex}
+    \setlength{\leftmargin}{2em}
+}
+
+\pagestyle{empty}
+
+\renewcommand{\section}[1]{\vspace{3pt}{\large\textbf{#1}}\vspace{2pt}\hrule\vspace{2pt}}
+\renewcommand{\subsection}[1]{\vspace{1pt}{#1}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE{Xuanyi Li}}
+
+{\small
+$\diamond$~614-397-8198~~$\diamond$~\href{mailto:shane.lxy@outlook.com}{shane.lxy@outlook.com}~~
+$\diamond$~\href{https://www.linkedin.com/in/xuanyi-li-osu}{linkedin.com/in/xuanyi-li-osu}~~
+$\diamond$~\href{https://shanelxy.top/portfolio}{shanelxy.top}
+}
+\end{center}
+
+\vspace{-6pt}
+\section{EDUCATION}
+
+\subsection{\textbf{Ohio State University\hfill{Columbus, United States}}}
+
+{\small
+Master of Science in Computer Science; GPA (3.96/4.0)\hfill{{08/2017 -- 05/2019}}
+}
+
+\subsection{\textbf{Zhejiang University\hfill{Hangzhou, China}}}
+
+{\small
+Bachelor of Engineering; GPA (3.97/4.0); Ranking (4/144)\hfill{{09/2013 -- 07/2017}}
+}
+
+\section{TECHNICAL SKILLS}
+
+{\small
+\textbf{Proficient: }Java, Spring Boot, MySQL, Mybatis, Git, Keras\hfill{\textbf{Familiar:} Python, C, Redis, Jekyll, \TeX}
+}
+
+{\small
+\textbf{Alibaba Middleware: }RocketMQ, HSF(RPC), Tair(Cache), Diamond(Persistent Config Center)
+}
+
+\section{WORK EXPERIENCE}
+
+\subsection{\textbf{Mlab: Business Intelligence Algorithm Development Platform}\hfill{\textbf{Alibaba}}}
+
+{\small
+\emph{Backend Engineer Intern}\hfill{05/10/2018 -- 07/25/2018
+}
+
+{\small
+\begin{list}{$\bullet$}{\listparam}
+\item Developed a business AI algorithm agile platform by Spring Boot from scratch, responsible for offline training, assisted in sql generation and online model deployment. Our platform is accessed by Taobao seller union activity whose DAU is 10 million, shorterning development cycle to 1 week.
+\item Adopted three design patterns, namely Builder, Abstract Factory (done by Java Enumeration) and Template Method, to work out algorithm template node diversity, mainly due to different parameter SERDER (serialization and deserialization) and frontend form exhibition.
+\item Implemented exclusion strategy in Gson with Java annotation for self-defined SERDER.
+\item Assembled parameters of all nodes belong to a certain algorithm template and generated a http post request by Apache http client to trigger training on PAI (Alibaba offline training Platform).
+\item Cooperated to develop the model transfer module: Mlab server swarm read offline model from PAI, persist it to MySQL, cache customized online model to Tair and push the corresponding version object, containing extra split ratio for A/B testing, to Diamond Server. Client threads asynchronously listen to the version change and poll the latest model from Tair for real time prediction.
+\end{list}
+}
+}
+
+\subsection{\textbf{Deep Learning Internship\hfill{Singapore University of Technology and Design}}}
+
+{\small
+\emph{Research Assistant in NLP Lab (published related paper to DSAA)}\hfill{07/03/2016 -- 08/31/2016}
+}
+
+{\small
+\begin{list}{$\bullet$}{\listparam}
+\item Ameliorated basic multi-task deep learning model with Keras to detect the sentiment polarity, reviewer identification, subjectivity/objectivity of each text simultaneously.
+\item Crawled 75, 000 reviews from rotten tomato with Python. Inserted CNN for each task to capture exclusive features and gated control unit to filter noise, improving accuracy by 0.47\% and 1.10\% respectively.
+\end{list}
+}
+
+\section{SELECTED PROJECTS}
+
+\subsection{\textbf{Micro Seckill System} \hfill{02/2018 -- 03/2018}}
+
+{\small
+\begin{list}{$\bullet$}{\listparam}
+\item Responsible for backend engineering with Spring Boot: countdown before the seckill activity (purchase merchants in a short time); avoid overselling and redundant purchase on the same item.
+\item Used Mybatis to implement the interface at DAO Layer, namely CRUD operation.
+\item Integrated log4j and Spring AOP to intercept each http request at SpringMVC controller Layer.
+\item Combined two cache refreshing strategy on Redis, namely timeout eviction and initiative update, to ensure the eventually consistency between cache and database.
+\item Adopted the transaction compensation pattern with RocketMQ to ensure high concurrency and transaction consistency involving order generation and inventory subtraction.
+\item Tested the concurrency performance with JMeter, achieving 1000 QPS.
+\end{list}
+}
+
+\subsection{\textbf{Infrastructure Related Project}\hfill{01/2016 -- 05/2016}}
+
+{\small
+\begin{list}{$\bullet$}{\listparam}
+\item \textbf{Multi-thread Programming:} Applied Lamport Clock and Java Reentrantlock to simulate restaurant. Regarded eaters and cookers as threads, and tables, machines and various food as shared resources.
+\item \textbf{Lisp Interpreter:} Implemented internal function of Lisp by Java to value arguments, bind them to corresponding formal parameters and recursively evaluate function body.
+\item \textbf{Parallel Computing:} Used tiling strategy, loop unrolling over 2 dimenstion and shared memory in GPU for transposed matrix multiplication acceleration, achieving 26.6 GFLOPS.
+\end{list}
+}
+
+\section{PUBLICATION}
+
+{\small
+Xuanyi Li, Weimin Wu, Hongye Su. Convolutional Neural Networks Based Multi-Task Deep Learning for
+Movie Review Classification. In proceedings of the 4th IEEE DSAA. Tokyo, Japan, 10/2017
+}
+
+\end{document}
