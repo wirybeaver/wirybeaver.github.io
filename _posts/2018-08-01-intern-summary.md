@@ -14,9 +14,7 @@ tags:
     - System Design
 ---
 
-**Mlab** is a platform served for business developers who are not familiar with machine learning algorithms. This platfrom tries to abstract a general machine learning development process and automate all steps, including sample aggregation, feature preprocessing, offline training, online deployment, real-time computing, etc. I am responsible for offline training while assisting in dynmaic sql generation and online deployment. 
-
-- Our platform is accessed by Taobao seller union activity whose DAU is 10 million, shorterning development cycle to 1 week.
+I took an internship at Alibaba and participated in developing a business intelligence platform **Mlab**, helping machine learning engineers to reduce the development cycle of AI product. We tried to constitute a general but flexible machine learning process, including data aggregation, feature preprocessing, offline training, online deployment, real time computing, etc. I implemented offline training module as well as assisting in dynamic sql generation and online model deployment. Finally, our platform is accessed by Taobao seller union activity whose DAU is 10 million, shorterning development cycle to 1 week. This awesome and challengeable intern let me know how to set up an enterprise platform and gives me a sense of fulfillment.
 
 - Adopted three design patterns, namely Builder, Abstract Factory (done by Java Enumeration) and Template Method, to work out algorithm template node diversity, mainly due to different parameter SERDER (serialization and deserialization) and frontend form exhibition.
 
