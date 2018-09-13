@@ -13,21 +13,21 @@
 \renewcommand{\labelitemii}{$\circ$}
 \newcommand{\listparam}{
     \setlength{\parsep}{\parskip}
-    \setlength{\itemsep}{0ex}
+    \setlength{\itemsep}{0.2ex}
     \setlength{\labelwidth}{2em}
     \setlength{\labelsep}{1em}
     \setlength{\topsep}{0pt}
-    \setlength{\partopsep}{0ex}
+    \setlength{\partopsep}{0.5ex}
     \setlength{\leftmargin}{2em}
 }
 
 \newcommand{\sublistparam}{
     \setlength{\parsep}{\parskip}
-    \setlength{\itemsep}{0ex}
+    \setlength{\itemsep}{0.2ex}
     \setlength{\labelwidth}{2em}
     \setlength{\labelsep}{0.5em}
     \setlength{\topsep}{0pt}
-    \setlength{\partopsep}{0ex}
+    \setlength{\partopsep}{0.5ex}
     \setlength{\leftmargin}{1em}
 }
 
@@ -66,11 +66,11 @@ Bachelor of Engineering; GPA (3.97/4.0); Ranking (4/144)\hfill{{09/2013 -- 07/20
 \section{TECHNICAL SKILLS}
 
 {\small
-\textbf{Programming Language: }Java, Python, SQL, C, Lisp, X86 Assembly, Javascript, AJAX, HTML, CSS
+\textbf{Programming Language:} Java, Python, SQL, C, Lisp, Assembly \hfill{\textbf{Tool:} Git, Postman, Jekyll, \TeX}
 
-\textbf{Framework and Tool: }Spring Boot, Spring AOP, Mybatis, Git, Keras, Gson, Redis, Jekyll, \LaTeX
+\textbf{Back End:} Spring Boot, Mybatis, Redis, RocketMQ, Node.js \hfill{\textbf{Front End:} HTML, CSS, JavaScript}
 
-\textbf{Alibaba Middleware:} RocketMQ(JMS), HSF(RPC), Tair(Cache), Diamond(Persistent Config Center)
+\textbf{Microservices:} Remote Procedure Call, Config Manage System, Cache, Message Broker 
 }
 
 \section{WORK EXPERIENCE}
@@ -81,29 +81,16 @@ Bachelor of Engineering; GPA (3.97/4.0); Ranking (4/144)\hfill{{09/2013 -- 07/20
 \emph{Backend Engineer Intern}\hfill{05/10/2018 -- 07/25/2018
 }
 
-{\small
-\begin{list}{$\bullet$}{\listparam}
-\item Developed a business intelligence platform by Spring Boot and Alibaba distributed middlewares.
-    \begin{list}{$\circ$}{\sublistparam}
-        \item Automated almost all development steps for machine learning products.
-        \item Helped the team of coupon recommendation to reduce the development cycle to 1 week.
-    \end{list}
-\item Implemented the offline training module.
-    \begin{list}{$\circ$}{\sublistparam}
-        \item Adopted 3 design patterns, namely Builder, Abstract Factory and Template Method, to work out the diversity of algorithm execution node: serialization, deserialization, dynamic parameter web form.
-        \item Used Java Annotation to implement the exclusion strategy of customized serialization in Gson.
-        \item Utilized Apache http client to trigger training on PAI (Alibaba offline training Platform).
-    \end{list}
-\item Assisted in online model development and dynamic SQL generation.
-   \begin{list}{$\circ$}{\sublistparam}
-        \item Servers cache customized model at Tair and push the corresponding version object to Diamond Server.
-        \item Clients asynchronously listen to the version change and poll the latest model from Tair.
-        \item Implemented automatic A/B test for real-time prediction.
-    \end{list}
 
+\begin{list}{$\bullet$}{\listparam}
+\item Built an intelligence platform to accelerate machine learning product development with \textbf{Spring Boot} and Alibaba distributed middle wares, reducing 1 week for the coupon team to build AI applications.
+\item Created the complex offline training module with senior techniques such as \textbf{Java} annotaion, reflection and design pattern (used Builder, Abstract Factory and Template Method).
+       \begin{list}{$\circ$}{\sublistparam}
+        \item Utilized Apache \textbf{HttpClient}, state automaton and optimistic lock to monitor training state.
+        \item Generated dynamic algorithm parameter forms to Front end engineers with Google \textbf{Gson}.
+       \end{list}
+\item Implemented server and client programs with \textbf{Diamond} (distributed config manage system) and \textbf{Tair} (distributed cache) to update online model and design automatic A/B test for real-time computation.
 \end{list}
-}
-}
 
 \subsection{\textbf{Deep Learning Internship\hfill{Singapore University of Technology and Design}}}
 
@@ -111,43 +98,42 @@ Bachelor of Engineering; GPA (3.97/4.0); Ranking (4/144)\hfill{{09/2013 -- 07/20
 \emph{Research Assistant in NLP Lab (published a paper in DSAA)}\hfill{07/03/2016 -- 08/31/2016}
 }
 
-{\small
 \begin{list}{$\bullet$}{\listparam}
-\item Ameliorated basic multi-task deep learning model with Keras to detect the sentiment polarity, reviewer identification, subjectivity/objectivity of each text simultaneously.
-\item Crawled 75, 000 reviews from rotten tomato with Python. Inserted CNN for each task to capture exclusive features and gated control unit to filter noise, improving accuracy by 0.47\% and 1.10\% respectively.
+\item Ameliorated basic multi-task deep learning model with \textbf{Keras} to detect the sentiment polarity, reviewer identification, subjectivity/objectivity of each text simultaneously.
+\item Crawled 75,000 reviews from rotten tomato with \textbf{Python}. Inserted CNN for each task to capture exclusive features and gated control unit to filter noise, improving accuracy by 0.47\% and 1.10\% respectively.
 \end{list}
-}
 
 \section{PROJECTS}
 
-\subsection{\textbf{Micro Seckill System} \hfill{02/2018 -- 03/2018}}
+\subsection{\textbf{Mini Seckill System} \hfill{02/2018 -- 03/2018}}
 
-{\small
 \begin{list}{$\bullet$}{\listparam}
-\item Responsible for backend engineering with Spring Boot: countdown before the seckill activity (purchase merchants in a short time); avoid overselling and redundant purchase on the same item.
-\item Used Mybatis to implement the interface at DAO tier, namely CRUD operation.
-\item Integrated log4j and Spring AOP to intercept each http request at SpringMVC controller Layer.
-\item Combined two cache refreshing strategy on Redis, namely timeout eviction and initiative update, to ensure the eventually consistency between cache and database.
-\item Adopted the transaction compensation pattern with RocketMQ to achieve high concurrency and ensure transaction consistency involving order generation and inventory subtraction.
-\item Tested the concurrency performance with JMeter, achieving 1000 QPS.
+\item Developed back-end of the seckill system with \textbf{Spring Boot} to avoid overselling and redundant purchase during the seckill activity, where intensive users purchase merchants in seconds.
+\item Implement the CRUD interface at DAO tier with \textbf{Mybatis}.
+\item Integrated \textbf{log4j} and Spring \textbf{AOP} to intercept each http request at SpringMVC controller tier.
+\item Applied \textbf{Redis} and \textbf{RocketMQ} to ensure transaction consistency involving order generation and inventory subtraction meanwhile promoting the concurrency to 1000 QPS, tested via JMeter.
 \end{list}
-}
+
+\subsection{\textbf{Photo Sharing Website}\hfill{09/2017 -- 10/2017}}
+
+\begin{list}{$\bullet$}{\listparam}
+\item Built back-end with \textbf{Node.js} and front-end with \textbf{JavaScript} \& Bootstrap: show, add, delete and edit photos coupled with comments. Deployed on \textbf{Heroku Cloud}.
+\item Integrated Google Map API \& geocode.js to show filming location.
+\item Utilized \textbf{Ajax} to realize responsive fuzzy search for photos.
+\end{list}
 
 \subsection{\textbf{Selected Infrastructure Projects}\hfill{01/2016 -- 05/2016}}
 
-{\small
 \begin{list}{$\bullet$}{\listparam}
-\item \textbf{Multi-thread Programming:} Applied Lamport Clock and Java ReentrantLock to simulate a restaurant. Regarded diners and cookers as threads, and tables, machines and various food as shared resources.
-\item \textbf{Lisp Interpreter:} Implemented internal function of Lisp by Java to value arguments, bind them to corresponding formal parameters and recursively evaluate function body.
-\item \textbf{Parallel Computing:} Used tiling strategy, loop unrolling over 2 dimensions and shared memory in GPU for transposed matrix multiplication acceleration, achieving 26.6 GFLOPS.
+\item \textbf{Multi-thread Programming:} Used Lamport Clock and Java \textbf{ReentrantLock} to simulate a restaurant. Regarded diners and cookers as threads, and tables, machines and various food as shared resources.
+\item \textbf{Lisp Interpreter:} Implemented internal function of Lisp by \textbf{Java} to value arguments, bind them to corresponding formal parameters and recursively evaluate function body.
+\item \textbf{Parallel Computing:} Applied tiling strategy, loop unrolling over 2 dimensions and shared memory in GPU for transposed matrix multiplication acceleration, achieving 26.6 GFLOPS.
 \end{list}
-}
 
 \section{PUBLICATION}
 
-{\small
 Xuanyi Li, Weimin Wu, Hongye Su. Convolutional Neural Networks Based Multi-Task Deep Learning for
 Movie Review Classification. In proceedings of the 4th IEEE DSAA. Tokyo, Japan, 10/2017
-}
+
 
 \end{document}
