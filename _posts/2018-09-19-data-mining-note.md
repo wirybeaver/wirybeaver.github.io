@@ -47,6 +47,6 @@ cross validation: split original data into k segment. each segment is used once 
 Boostrap: select n instances using sampling with replacement. Unselected data used for validation. On average, the new training set would contain about 63.2% data in the original data. A record may occur more than once.
 $acc_{bootstrap} = \frac{1}{b} \sum_{i=1}^{b} 0.632 acc_{i}+ 0.368acc_{s}$, where $acc_{s}$ is called resubstituion acc testing on all labeled data.
 
-At XX confidence level, the following confidence interval for $d^t$ is obtaining: . If the interval doens't span the zero point, the observed differance is statistically significant. At XX or lower, reject the null hypothosize.
+At XX% confidence level, the following confidence interval for $d^t$ is obtained ... If the interval doens't span the value, the observed differance is statistically significant at confidence level XX%. At XX or lower, reject the null hypothosize.
 
 
