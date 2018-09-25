@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Data Mining Note
+title:      Network Note
 excerpt:    Details about my intern project
 date:       2018-09-19 10:00:00
 author:     "Shane"
