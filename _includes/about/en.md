@@ -3,9 +3,11 @@
 > Love life, the gift of god.
 
 
-Hi, this is Xuanyi(Shane) Li, a computer science master. I am actively seeking for full time backend engineer position (Java) in 2019. My interest mainly focuses on distributed system and machine learning.
+Hi, this is Xuanyi(Shane) Li, a computer science master. My interest mainly focuses on distributed system and machine learning.
 
-I took a backend engineer intern at Alibaba in 2018 summer and was responsible for developing Mlab, a business intelligence plantform aiming to automate all development steps in machine learning. During the intern, I implemented the offline training module as well as assisting in SQL dynamic generation and online deploymemt. I am proficient in Java, Spring Boot and master lots of Alibaba distributed middlewares: HSF(RPC), RocketMQ(Message Queue), Tair(Cache), Dimond(Persistent Config), ConfigServer(Non-persistent Config). Besides, by doing neural based NLP research (related paper already published), I am familiar with Python, Keras and web crawling.
+I am an energetic and skilled individual, with rich hands-on experience in Java and Spring Boot. I took an awesome back-end engineer summer internship at Alibaba, where I built a business intelligence platform with Spring Boot and Alibaba distributed middle wares to accelerate the machine learning development. It reduced one week for the coupon recommendation team to build AI products. More than that, that internship also helped me develop strong teamwork. I worked on the production line to interact with front-end engineers in order to generate dynamic parameter forms they need, and implemented coordinated server end programs of online deployment module. Besides, I am a curious mind eager to learn advanced technical knowledge. By doing research about neural network based natural language processing, I am well aware of Python, Keras and web crawling and published a short paper on IEEE DSAA.
+
+In summary, I am a fast learner, good team player and could contribute to the efforts of the engineering team.
 
 If there is any fit position, please feel free to contact with me via <a href="mailto:{{site.email}}">email</a>.
 
