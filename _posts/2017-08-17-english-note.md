@@ -11,20 +11,21 @@ tags:
 ---
 
 # daily note
--Punctuation: Question mark, Comma, Period, Exclamation mark
--fabricated, agnostic, dictate, roster
--mathematically shorthand, roughly spaeking
--resiliency, scalability, agility, flexability
--answer the questions affirmatively
--consult the formal definition and verify that
--shift left one unit
--examine different ways to see how go through the problem
-
+- Punctuation: Question mark, Comma, Period, Exclamation mark
+- fabricated, agnostic, dictate, roster
+- mathematically shorthand, roughly spaeking
+- resiliency, scalability, agility, flexability
+- Answer the questions affirmatively
+- **Consult** the formal definition and verify that
+- shift left one unit
+- examine different ways to see how **go through** the problem; Let me walk you through the problem
 - A project is not usually regarded as a dispute or a contentious issue. You don't typically resolve a project, but you might resolve a problem within a project, as the project heads toward completion.
-
-- tear down stereotype and barriers.
-
-Incredible how well versed he is on all thing about digits. Not often you heard of a head of state talks about
+- **Tear down** stereotype and barriers.
+- **Incredible how well versed** he is on all thing about digits. Not often you heard of a head of state talks about APIs.
+- 我服你了
+    - 说不过 Fine, you will | I surrender
+    - 无语 I'm speechless | I have nothing to say
+    - 钦佩 You blowed me away | I'm overwhelmed | That's impressive
 
 
 # Databricks
