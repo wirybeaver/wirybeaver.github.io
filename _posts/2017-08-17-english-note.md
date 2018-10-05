@@ -6,9 +6,8 @@ author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
 catalog: true
-multilingual: true
 tags:
-    - note
+    - Note
 ---
 
 # daily note
