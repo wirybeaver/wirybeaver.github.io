@@ -11,50 +11,107 @@ tags:
     - Networking
 ---
 
-Protocol: define format, order of messages sent and received among network entities, and action taken on message transmission, receipt
+Common Port
 
+FTP: command 21, data 20
+SSH: 23
+SMTP: 25
+
+# Chapter 1
+
+Protocol: define format, order of messages sent and received among network entities, and action taken on message transmission, receipt<br>
 ISP: internet service provider
 
-Network Edge: hosts running app
-
-Network Core: packet switches(routers, link-layer switch), links
-
-Access Networks: phycial links that connect an end system to the first router.
+Network Edge: hosts running app<br>
+Network Core: packet switches(routers, link-layer switch), links<br>
+Access Networks: phycial links that connect an end system to the first router.<br>
 - broadband residential access: DSL (digital subscriber line), cabel modem (HFC, hybrid fiber coax)
     - DSL make use of telephone infra
     - HFC make use of cable television infra
 - institutional access: LAN, e.g. Ethernet. PC->copper wire->Ethernet switch->Router->ISP
 - mobile network: wide-area wireless access network, base station
-
-Phycial Media: coax, fiber, radio
-
+Phycial Media: coax, fiber, radio<br>
 Home network: combine wifi and broadband residential access. <br>
-wireless PC ->access pointer -> router -> cable modem -> Internet <br>
-               stationary PC -> <br>
+    wireless PC ->access pointer -> router -> cable modem -> Internet <br>
+                   stationary PC -> <br>
 
 packet: chunks of data<br>
 store-and-forward transmission: the switch must receive the entire packet before transmitting the first bit of the packet onto the link.<br>
-output buffer: stores packets which the switch is about to send into the link associated with that output buffer.<br>
+output buffer: stores packets which the switch is about to send into the link.<br>
 
-circuit switching
+circuit switching<br>
 - reserved resources
 - bandwidth division into pieces
 - Pro: guatranteed constant rate due to the dedicated allocation of bandwidth
 - Con: resource piece idle
 
-packet switching
+packet switching<br>
 - unreserved resources
 - full bandwidth
 - Pro: resources used as need
 - Con: queue delay in congested network
 
-Http: stateless, in-band
+delay<br>
+- processing: examining header, determining where to direct the packet, checking bit-level error
+- queueing: wait at output buffer for transmission
+- transmission: push all of the packet's bits into the link
+- propagation: time required to propage from beginning of the link to router
+- traffic intensity: La/R. a denotes the average packet arrival rate
 
-FTP: state, out-band. Seperate control connection and data connection. Close data connection after transferring one file.
+Message, Segment, Datagram, Frame. Each layer provides its services by (1) taking certain actions within that layer and by (2) using the services of the layer directly below it. A packet contains has two types of fields: a head field and a payload field. The payload is typically a packet from the layer above.
 
-SMTP:
+# Chapter 2
+
+Server: Permanent IP. Always-on. <br>
+Client: Dynamic IP. Intermittently connected. <br>
+P2P: No always-on server. Arbitrary hosts directly communicate. Self-scalability: new peer brings new service capacity as well as new service demands.
+
+Socket:
+
+App-layer Protocol Defines<br>
+- Type of messages exchanged. e.g., Request, reponse
+- Message syntax. What fields in message and how fields delineated.
+- Message semantics. Meaning of fields.
+- Rules. When and how process send and respond to messages.
+
+Web page: consists of base HTML page and serveral referenced objects. Addressed by a URL. <br>
+URL: host name and path name. <br>
+HTTP: HyperText Transfer Protocol<br>
+- stateless. Maintain no past client requests.
+- non persistant: each request/response pair sent over a separate TCP connection. 2RTT+L/R to fetch each object. Each object transfer suffers from slow start. 
+- persistant: all of rquests and responses sent over the same TCP connection. Clients send requests for all referenced objects as soon as it receives base HTML page.
+
+HTTP request format<br>
+- request line: method, url, version
+- header lines
+- blank line
+- entity body
+
+Http response message<br>
+- status line: version, status, phrase
+- header lines
+- blank line
+- entity body
+
+FTP: File Transfer Protocol<br>
+- Out-of-band: Seperate control connection and data connection. Close data connection every time a file is transferred.
+- maintain state: current directory, ealier authorization.
+
+Mail Server: outgoing queue, mailbox
+SMTP: simple mail tranfer protocol, delivery/storage to receiver's server
+- SMTP: push (sending server send pushes the file to receiving server); 7-bit ASCKII format; place all objects into one message.
+- HTTP: pull (pull files from server at their convenience); not impose this restriction; encapsulate each object in its own HTTP response message.
+Mail Access Protocol: retrieval from receiver's server<br>
+- POP3: posf office protocol-version 3. Three phases: authorization, transaction(mark/remove deletion mark), update <br>
+- IMAP: Internet Mail Access Protocol. 
+    - organize message in folders
+    - maintain user state. e.g., folder name, mapping between folders and messages.
+    - obtain message component.
+
+DNS
 
 
+# Chapter 3
 
 Logical communication between app layer processes running on diffrent hosts: From an application's perspective, it is as if hosts running processes were direct connected.
 
