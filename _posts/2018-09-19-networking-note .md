@@ -11,13 +11,13 @@ tags:
     - Networking
 ---
 
-Common Port
+ping, tracerout uses ICMP. Internet control message protocol
 
-ping traceroute 用的什么协议
-
-FTP: command 21, data 20
-SSH: 23
+FTP: contron connection 21, data connection 20
+SSH: 22
+Telnet: 23
 SMTP: 25
+HTTP: 80
 
 # Chapter 1
 
@@ -148,12 +148,14 @@ RR: resource record.
 
 # Chapter 3
 
+MSS: Maximum Segment Size. The maximum amount of application-layer data, excluding header size. 1460.
+MTU: Maximum Transmission Unit. The maxinum size of link-layer frame. 1500.
+
 Logical communication between app layer processes running on diffrent hosts: From an application's perspective, it is as if hosts running processes were direct connected.
 
 Multiplexing: Gathering data from multiple app layer processes, enveloping data with header
 Demultiplexing: Delivering received segments to correct app layer process
 Internal action between layers: in the network, messages from different applications will be in different packets.
-
 
 UDP: user datagram protocol
 - unreliable: segment may be lost or deliverded out of order to app
@@ -168,24 +170,40 @@ UDP Checksum
     -Sender: one's complement of the sum of all 16-bit word, with any overflow being wrappred around.
     -Receiver: one's complement sum. All 1 indicates no error.
 
-TCP: Transimit Control Protocol
+TCP: Transimit Control Protocol, running only in the end system.
+- connection-oriented: handshaking inits sender, receiver state (buffer size, init #seq, etc.) before data transfer.
+- reliable, in-order byte steam
+- full-duplex: bi-direction dataflow in the same connection
+- point-to-point: one sender, one receiver
 
 Reliable Data Transfer Service
 - Goal: Data is delivered without error, loss or duplicate and in the proper order.
+- sequence number: the byte-stream number of first byte in the segment
+- acknowledgement number: the sequence number of next expecting byte
+- cumultative acknowledgement: acknowledge byte up to first missing byte in the stream.
 - How: timer, cumulative acknowledgement, retransmission
+- Fast retransmit: If receive tripple duplicate ACKs for y, retransmit the missing segment y before timeout. Why? the timeout period is relatively long, forcing the sender to dealay resending the loss pocket.
+- Why gaps in the receiver buffer: packet loss, reorder in the network.
+
+TCP ACK Generation (No delayed ACK for this class)
+- In-order segment arrival, with expected #seq. Send single cumulative ACK.
+- Out-of-order segment arrival, with higher-than-expected #seq. Send duplicate ACK, indicating #seq of the lowest end of the gap.
+- arrival of segment filling gap. Send ACK if segment starts at the lower end of gap.
 
 Flow Control
 - Sender won't overwhelm receiver
-
+- rwnd = RcvdBuff - [LastByteRcvd-LastByteRead], spare room in the receiver buffer
+- How: Receiver explicitly infroms the ammount of free buffer via rwnd. Sender keep the amount of transmitted but unACKed data is less than rwnd. i.e., LastByteSent-LastByteACK <= rwnd at the sender side.
+- Corner Case: When rwnd=0, TCP requires sending segment with one data.
 
 Congestion Control
 - Definition: a source throttles its sending rate when the network is congested.
-- How: The amount of unACKs is smaller than cwnd. TCP uses ACKs to clock its increasing in cwnd size. 
-- Principle:
+- How: The amount of unACKs is smaller than cwnd, LastByteSent-LastByteACK <= min{cwnd, rwnd}. Throughput = cwnd\*MSS/R. TCP uses ACKs to clock its increasing in cwnd size. 
 
 Congesition Stage
-- slow start: increase cwnd by 1MSS every time a transmitted segment is first acknowledged. In other words, cwnd grow exponentially every RTT. Throughput = cwnd*MSS/R
+- slow start: increase cwnd by 1MSS every time a transmitted segment is first acknowledged. In other words, cwnd grow exponentially every RTT. 
 - congenstion avoidance: increase cwnd by 1MSS every RTT.
 - fast recovery: increase cwnd by 1MSS for each dup Acks.
 - TCP Taheo: Unconditionally cut down cwnd to 1MSS when eithor timeout or dup ACKs occurs.
 - TCP Reno: incorporate fast recovery. Skip slow start stage while receiving duplicate ACKs.
+
