@@ -13,6 +13,8 @@ tags:
 
 Common Port
 
+ping traceroute 用的什么协议
+
 FTP: command 21, data 20
 SSH: 23
 SMTP: 25
@@ -58,6 +60,12 @@ delay<br>
 - propagation: time required to propage from beginning of the link to router
 - traffic intensity: La/R. a denotes the average packet arrival rate
 
+- Application: supporting network applications
+- Transport: process-process data transfer
+- Network: routing datagrams from one host to another
+- Link: data transfer between neighboring network elements.
+- Physical: bits on the wire, over the air.
+
 Message, Segment, Datagram, Frame. Each layer provides its services by (1) taking certain actions within that layer and by (2) using the services of the layer directly below it. A packet contains has two types of fields: a head field and a payload field. The payload is typically a packet from the layer above.
 
 # Chapter 2
@@ -66,7 +74,10 @@ Server: Permanent IP. Always-on. <br>
 Client: Dynamic IP. Intermittently connected. <br>
 P2P: No always-on server. Arbitrary hosts directly communicate. Self-scalability: new peer brings new service capacity as well as new service demands.
 
-Socket:
+Socket: The process send messages into, and receive messages from a software interface. Socket is the API between the application layer and the transport layer. <br>
+What of socket could controlled by developers on the transport-layer side?
+- transport protocol: TCP or UDP
+- some parameters: maximun buffer and segment.
 
 App-layer Protocol Defines<br>
 - Type of messages exchanged. e.g., Request, reponse
@@ -108,8 +119,32 @@ Mail Access Protocol: retrieval from receiver's server<br>
     - maintain user state. e.g., folder name, mapping between folders and messages.
     - obtain message component.
 
-DNS
+DNS: Domain Name System. (1) a distributed database implemented in a hierarchy of DNS servers. (2) an applicatin protocol that allow hosts to query the distributed database. <br>
+- translate hostname to IP address
+- host aliasing
+- mail server aliasing
+- load distribution. For replicated web servers, a set of IP address is associated with a canonical hostname. The server would reply the whole set but rotate the ordering. 
 
+three classes of DNS servers
+    - root server: contacted by local name server that cannot resolve name
+    - top-level domain (TLD) server: responsible for top-level domains.
+    - authoritative server: provide authoritative hostname to IP address mappings for organizations' named hosts.
+
+local domain name server: Each ISP has a default domain name server. 
+- Cache recent name-to-address translation pair.
+- Cache IP adress of TLD servers, thus bypass the root server in a query chain.
+- Act as proxy, forwards query into DNS server hierarchy.
+
+Why DNS caching: improve delay performance, reduce DNS messages ricocheting around the Internet.
+
+DNS query pattern: The query from the host to local domain name server is recursive, and the remaing queries are iterative. For iterative query, contacted server replies with name of server to contact. Drawback of recursive fashion: heavy load at upper layers. put burden of name resolution on contacted name server.
+
+RR: resource record.
+- (Name, Value, Type, TTL)
+- Type = A, Name is a hostname, Value is the IP adrress for the hostname.
+- Type = NS, Name is a domain, Value is the hostname of an authoritative DNS server that knows how to obtain IP addresses of hosts in that domain.
+- Type = CNAME, Value is the canonical name for alias hostname Name.
+- Type = MX, Value is the canonical name of a mail server having alias hostname Name.
 
 # Chapter 3
 
@@ -144,7 +179,7 @@ Flow Control
 
 
 Congestion Control
-- Definition: TCP throttles a sending process when the network is congested between sender and receiver.
+- Definition: a source throttles its sending rate when the network is congested.
 - How: The amount of unACKs is smaller than cwnd. TCP uses ACKs to clock its increasing in cwnd size. 
 - Principle:
 
