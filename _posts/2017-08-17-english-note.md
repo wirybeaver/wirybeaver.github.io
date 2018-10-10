@@ -23,9 +23,12 @@ tags:
 - **Tear down** stereotype and barriers.
 - **Incredible how well versed** he is on all thing about digits. Not often you heard of a head of state talks about APIs.
 - 我服你了
-    - 说不过 Fine, you will | I surrender
+    - 说不过 Fine, you win | I surrender
     - 无语 I'm speechless | I have nothing to say
     - 钦佩 You blowed me away | I'm overwhelmed | That's impressive
+- savvy, tally
+- Eager learn spend the bulk of computational resources for model building.
+- Compute the proximity value *individually* between the test and training examples.
 
 
 # Databricks
