@@ -11,6 +11,7 @@ tags:
 ---
 
 # daily note
+- nuance, cancel out, annihilate, * distribute over +
 - Punctuation: Question mark, Comma, Period, Exclamation mark
 - fabricated, agnostic, dictate, roster
 - mathematically shorthand, roughly spaeking
