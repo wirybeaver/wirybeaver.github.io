@@ -11,6 +11,7 @@ tags:
 ---
 
 # daily note
+- nuance, cancel out, annihilate, * distribute over +
 - Punctuation: Question mark, Comma, Period, Exclamation mark
 - fabricated, agnostic, dictate, roster
 - mathematically shorthand, roughly spaeking
@@ -29,7 +30,7 @@ tags:
 - savvy, tally
 - Eager learn spend the bulk of computational resources for model building.
 - Compute the proximity value *individually* between the test and training examples.
-
+- supply is way higher than demand.
 
 # Databricks
 ai and big data are driving innovation across all industries. Innovation such as image recogonition, real time fraud detection and genome sequencing are changing the way business operate. I thought we were well positioned to achieve those innovations. Now I have a great team in place. Data engineers... Data scientist ... But It is challenging to tranlate our efforts into product outcome. We have different skill sets... We use diffrent tools making collebration harder. We spent 90% time with complex data pipelines and disjoint tools just to prepare data for analytics. Security became an afterthouhg. Innovation was a distant dream. Then we adopted the databricks, unified analytic platform. These breakthrough empowered my team to accelerate AI and innovation. It's unified management simplifies data engineering by enforcing data integrity and automating performance. Now my platform teams can make data available for analytics in near real time. It unifies people. Data engineers build data pipelines unifying both steaming and historical data. data scientist build model in one place while business users cosuming real-time dashboard. Databrickes is service. We don't have to manually configure and scale clusters. It's cloud based and for we managed. And enterprise security ensures data is protected.
