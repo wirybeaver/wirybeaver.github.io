@@ -192,6 +192,58 @@ Pro<br>
 Con<br>
 ·susceptible to correlated attributes <br>
 
+# Association
+
+## terminology
+- \\(\sigma(X)\\) itemset support account. \# transactions containing itemset X.
+- \\(s(X)\\) itemset support. percentage of transactions containing itemset X.
+
+## Apriori alogrithm
+repeat until no new k-itemsets found
+1. use *minsup* to find all frequent k-itemsets
+2. combine frequent k-itemsets to produce candidate (k+1)-itemsets
+
+construct candidate association rules
+
+apply minconf to pick up assocation rules
+
+## maximal frequent itemsets
+A frequent itemset, none of its immeidate supersets are frequent.
+Pro: provide a compact representation of frequent itemsets. All frequent items can be derived from them.
+Con: lose support information of subsets.
+
+## closed itemsets
+None of its immediate supersets has exactly the same support count as itself.
+Pro: contain support information
+
+## lift
+The ratio of the observed co-occurrence to that expected if X and Y were independent.
+$$\frac{S(X, Y)}{S(X) \times S(Y)}$$
+- lift(X, Y)=1, independent
+- lift(X, Y)>1, positive correlated
+- lift(X, Y)<1, negative correlated
+
+## conviction
+Measure increased co-occurence likelihood over random. Overcome limitations of lift.
+$$Conv(X \rightarrow Y)\frac{1-S(Y)}{1-S(X,Y)}$$
+
+## simpson paradox
+Lesson: Need stratification to avoid spurious pattern.
+
+## min-Apriori
+$$\sigma_{m-a}(x) = \sum\min\limits_{y \in x}(\sigma_{m-a}(y))$$
+
+## sequence
+ordered list of elments. Each element is an itemset, collection of one or more events.
+
+Support of a sequence *s* is the fraction of all sequences containing *s*.
+
+k-sequence is a sequence that contains k events (instead of k elements).
+
+order matters in sequence, bot not in itemset.
+
+$$t(t_1, t_2, \ldots, t_m) \in s(s_1, s_2, s_m)$$
+if there exits integers 1 \le j_1 < j_2 < \ldots < j_m \le n such that t_1 \in s_{j_1}, t_2 \in s_{j_2}, \ldots, t_m \in s_{j_m}
 
 
 
