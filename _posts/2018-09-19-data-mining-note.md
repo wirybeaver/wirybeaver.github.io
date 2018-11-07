@@ -195,8 +195,10 @@ Con<br>
 # Association
 
 ## terminology
-- \\(\sigma(X)\\) itemset support account. \# transactions containing itemset X.
-- \\(s(X)\\) itemset support. percentage of transactions containing itemset X.
+- itemset. A collection of 0 or more co-occurring items.
+- $$\sigma(X)$$ itemset support account. \# transactions containing itemset X.
+- $$s(X)$$ itemset support. percentage of transactions containing itemset X.
+- transaction is an itemset
 
 ## Apriori alogrithm
 repeat until no new k-itemsets found
@@ -240,7 +242,7 @@ Support of a sequence *s* is the fraction of all sequences containing *s*.
 
 k-sequence is a sequence that contains k events (instead of k elements).
 
-order matters in sequence, bot not in itemset.
+order matters in sequence, but not in itemset.
 
 $$t(t_1, t_2, \ldots, t_m) \in s(s_1, s_2, s_m)$$
 if there exits integers 1 \le j_1 < j_2 < \ldots < j_m \le n such that t_1 \in s_{j_1}, t_2 \in s_{j_2}, \ldots, t_m \in s_{j_m}
