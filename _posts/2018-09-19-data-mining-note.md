@@ -221,14 +221,14 @@ Pro: contain support information
 ## lift
 The ratio of the observed co-occurrence to that expected if X and Y were independent.
 
-$$\frac{S(X, Y)}{S(X) \times S(Y)}$$
+$$\dfrac{S(X, Y)}{S(X) \times S(Y)}$$
 - lift(X, Y)=1, independent
 - lift(X, Y)>1, positive correlated
 - lift(X, Y)<1, negative correlated
 
 ## conviction
 Measure increased co-occurence likelihood over random. Overcome limitations of lift.
-$$Conv(X \rightarrow Y)\frac{1-S(Y)}{1-S(X,Y)}$$
+$$Conv(X \rightarrow Y) = \dfrac{1-S(Y)}{1-S(X,Y)}$$
 
 ## simpson paradox
 Lesson: Need stratification to avoid spurious pattern.
@@ -245,8 +245,8 @@ k-sequence is a sequence that contains k events (instead of k elements).
 
 order matters in sequence, but not in itemset.
 
-$$t(t_1, t_2, \ldots, t_m) \in s(s_1, s_2, s_m)$$
-if there exits integers 1 \le j_1 < j_2 < \ldots < j_m \le n such that t_1 \in s_{j_1}, t_2 \in s_{j_2}, \ldots, t_m \in s_{j_m}
+\\(t(t_1, t_2, \ldots, t_m) \in s(s_1, s_2, s_m)\\), if there exits integers<br>
+1 \\(\le j_1 < j_2 < \ldots < j_m \le n such that t_1 \in s_{j_1}, t_2 \in s_{j_2}, \ldots, t_m \in s_{j_m}\\)
 
 
 
