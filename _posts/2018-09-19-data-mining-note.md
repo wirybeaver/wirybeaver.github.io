@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     postMathJax
 title:      Data Mining Note
 excerpt:    Details about my intern project
 date:       2018-09-19 10:00:00
@@ -220,6 +220,7 @@ Pro: contain support information
 
 ## lift
 The ratio of the observed co-occurrence to that expected if X and Y were independent.
+
 $$\frac{S(X, Y)}{S(X) \times S(Y)}$$
 - lift(X, Y)=1, independent
 - lift(X, Y)>1, positive correlated
