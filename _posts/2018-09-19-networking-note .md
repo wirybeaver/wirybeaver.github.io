@@ -11,6 +11,7 @@ tags:
     - Networking
 ---
 
+
 ping, tracerout uses ICMP. Internet control message protocol
 
 FTP: contron connection 21, data connection 20
@@ -207,3 +208,93 @@ Congesition Stage
 - TCP Taheo: Unconditionally cut down cwnd to 1MSS when eithor timeout or dup ACKs occurs.
 - TCP Reno: incorporate fast recovery. Skip slow start stage while receiving duplicate ACKs.
 
+## Chapter 4
+Switch 48 port
+
+Router 不会传播broadcast
+
+switch会
+
+CRC
+
+why linked layer relia: save resource
+
+RJ45, Network layer view, Router 
+Input: 0/1 DL forwarding table
+
+    Output: buffer, DL, 0/1
+
+PIM SPARSE 124
+
+BGP: most complicated
+
+rip: easy to config
+
+ospf: large company.
+
+is ospf not in rip: 95
+
+how ospf orgnazie: go to area zero
+
+Linked state and disvector any is done: 91. routing protocol has priority
+
+stop exchange: 1 parameter is not the saen
+
+
+Global: 
+
+Intranet: who decide what protocol. network ministrater. atonogy
+
+2 Character of routing algorithm Link-State OSPF and Distance-Vector RIP
+
+BGP fallen 在 Internet.
+
+Dual stack
+
+more efficient use for IP space. classful addressing, classless addressing
+
+one to one translation: NAT
+one to one many translation: PAT
+why 4 is better than 6
+
+NAT: RFC 1912, What is the definition
+PAT: 
+
+private IP Addr: 10.0.0.0 A, 172.16.0.0 B, 192.168.0.0 C 
+
+5 Info, DHCP: IP mask gw dns1 dns2
+
+8 wires/4pairs
+
+full duplex: input and output in the same interface.
+
+interface: 3 layers. bit, MAC Addr,IP addr
+
+buffer公式： RTT * C
+
+2 router algo: BGP ERGARP linespeed: bandwidth
+
+3 farctor in net work layer, Call set up, routing, forwarding
+
+forwarding (inside router, look up forwaring table, send to the output interface) vs routing.
+
+virtual channel: guranteed rate, dedicated bandwidth. dis: expensive
+
+## 5
+Transport: Logical end
+
+Network: Router to Router
+
+LinkedLayer : node to node
+
+synchronized: time order
+
+100 meters
+
+fully duplex, parital duplex
+
+CSMA/CD
+
+DHCP 返回5
+
+ARP 20minites

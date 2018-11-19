@@ -11,6 +11,11 @@ tags:
 ---
 
 # daily note
+- monetize users
+- inform and shape their audience stories
+- enable/empower your brand to grow
+- grow business/revenue
+- get accurate breakout of traffics, demographics, brand preference, shopping habitts, customized to fit model
 - nuance, cancel out, annihilate, * distribute over +
 - Punctuation: Question mark, Comma, Period, Exclamation mark
 - fabricated, agnostic, dictate, roster
