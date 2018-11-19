@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      CS Basis
+title:      Tech Question
 date:       2018-10-29 09:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
-    - sde
+    - Interview
 ---
 
 # Core Java
