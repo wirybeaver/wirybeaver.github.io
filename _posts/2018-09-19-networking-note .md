@@ -285,7 +285,7 @@ Transport: Logical end
 
 Network: Router to Router
 
-LinkedLayer : node to node
+LinkedLayer : node (adapter, 网卡) to node, why. Collision.
 
 synchronized: time order
 
@@ -295,6 +295,37 @@ fully duplex, parital duplex
 
 CSMA/CD
 
-DHCP 返回5
+DHCP 返回5 20s
 
 ARP 20minites
+
+48 Mac: 24 manufacture
+
+CRC 算法
+
+Ethernet cheaper, openstandard
+
+When Ethernet's CSMD: half duplicate
+
+Each link is its own collision domain.
+
+Swithcer - Switcher 不阻止 broadcast ，因为有store, 相连的s impact with each other
+Router-Router. 阻止
+
+switch 有点想ARP 可以自我学习
+
+LAN segment
+
+Switch: CPU memory
+
+贵的swittch，4个port 对应 一个CPU. Console port可以连PC -> config IP addr, http. serialially
+
+box 可以you trunk frame
+
+Trunk的字段只有switch有 802.1Q frame。
+
+Token passing不考
+
+CSMD: half duplex involved in hub, wireless AP
+full duplex, switch dont need
+
