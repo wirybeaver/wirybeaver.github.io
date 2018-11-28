@@ -249,6 +249,112 @@ order matters in sequence, but not in itemset.
 1 \\(\le j_1 < j_2 < \ldots < j_m \le n such that t_1 \in s_{j_1}, t_2 \in s_{j_2}, \ldots, t_m \in s_{j_m}\\)
 
 
+# Clustering
+
+## definitoin
+The assignment of examples into groups which have similar key attributes.
+
+## uses
+- classification. Why unsupervised? labels are generated only from data.
+- summarize or compress large datasets.
+- branch-and-cut
+
+## terminology
+prototype: a data object representing the other objects in the cluster.
+
+partitional: a partitioning of elements into distinct and non-overlapping clusters.<br>
+hierarchical: a sequence of partitioning clusterings, resulting nested clusters.
+
+fuzzy: each object belongs to each cluster with a membership weight
+
+well-seperated: each membership example is closer to all other cluster members than any out-of-cluster examples.
+
+prototype-based: each membership example is closer to the cluster prototype than any other prototypes.<br>
+graph-based: clusters are defined by connected component. <br>
+density-based: A cluster is an dense area isolated areas with low density. Not complete. <br>
+
+## K-means
+find K (a user-speicified number) clusters represented by centroids. Prototype-based, partitional.
+
+### pseudo code
+Select K points as the initial centroids<br>
+repeat<br>
+    Form K clusters by assignint points to the closes centroids<br>
+    Recompute the centroids of each cluster<br>
+until<br>
+
+### find initial centroids
+- farthest point method. Advantage: well-seperated. Shortcoming: computationally expensive.
+- density-based: choose k moste dense points. no repetition within esp.
+
+### avoid local minima
+
+alternate splitting and merging phases until no improvement of SSE.<br>
+
+repeat:
+    select the cluster with highest $$SSE_{i}$$.<br>
+        split the cluster i by performing basic 2-means clustering.<br>
+    select the cluster with highest SSE.<br>
+        remove the corresponding centroid.<br>
+    K-means<br>
+until $$SSE_{total}$$ doesn't improve.
+
+### choose k
+start with a low k<br>
+K-means<br>
+avoid local minina<br>
+measure $$SSE_{total}$$<br>
+repeat<br>
+    k+1<br>
+    K-means<br>
+    avoid local minina<br>
+    measure $$SSE_{total}$$<br>
+until $$SSE_{total}$$ doesn't improve<br>
+
+
+### Cons
+- 贵, 高维：无
+- 噪声：susceptible to noise.
+- 超参：senstive to K.
+
+## Agglomerative Hierachical
+MIN: senstive to noise. 
+MAX: less susceptible to noise; break down large clusters, biased towards globular clusters.
+Group Average: less susceptible to noise; biased towards globular clusters.
+Centroids: computationally sufficient; inversions
+
+## Issues
+1. merging decisions are final. How to deal with it? Use K-means to create many small clusters first and then apply hierachical clustering.
+2. Variable cluster sizes. Weighted example points. provides each cluster with equal influence.
+
+### Pros
+- produce quality clusters.
+### Cons
+- 贵, 高维：Expensive. Not good with document data.
+- 噪声：无
+- 超参：无
+
+## DBSCAN
+Core points: Within a given neighhorhood arount the point as determined by *Eps*, the number of points exceeds *Minpts*. <br>
+Border points: Not a core points but falls within the neighborhood around the core point. <br>
+Noise points: Neither. <br>
+
+### Pros
+- resistant to outlying noise
+- handles clusters of arbitrary shape
+
+### Cons
+- 贵, 高维：Expensive. Not good with document data.
+- 噪声：susceptible to imbedded noise.
+- 超参：senstive to minpts.
+
+## Cluster Evaluation
+
+cohesion: how closly objects in a cluster are.<br>
+seperation: how distint a cluster is from other clusters.<br>
+cophenetic distance: the proximity at which the algorithm puts two object in the same cluster for the first time.<br>
+cophenetic correlation: the correlation between the entries of the cophenetic matrix and the original disimilarity matrix.
+
 
 
 
