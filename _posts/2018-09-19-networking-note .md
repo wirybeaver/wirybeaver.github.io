@@ -329,3 +329,37 @@ Token passing不考
 CSMD: half duplex involved in hub, wireless AP
 full duplex, switch dont need
 
+hub: 如果有一个collision， 所有人的都可以感到。 wireless
+one broadcast 和 one collision domain
+
+switch: 48 collision domain
+
+Switch keep track of TIES MAC ADDRESS WITH INTERFACE, keep ARP TABLE
+
+Why switch store and forward: check error
+
+如果switch的摸个port是full dupelx，不需要check error
+
+table 20 minites
+
+hub每个端口的传输速录是一样的
+
+switch: learning, VLAN
+
+ethner cable: 8 wire, 4 pair. half duplex, 占有一个pair， t/r共享 有冲突
+
+43-44 on test
+
+boder router - core router - distribution swithers - access swithches
+
+load balancer: 
+
+TOR: top of rack
+
+redundancy zai tier-2和tor
+
+two options： pipe bigger
+
+77
+iGP：3
+EGP：BGP
