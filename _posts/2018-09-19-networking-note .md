@@ -209,6 +209,111 @@ Congesition Stage
 - TCP Reno: incorporate fast recovery. Skip slow start stage while receiving duplicate ACKs.
 
 ## Chapter 4
+
+## Network Service
+- routing: determine 'good' path through network from source to destination
+- forwarding: transfer a datagram from incoming link to outgoing link
+- Virtual-circuit has the funciton of call setup thus provides connection service.
+- Datagram network provides connectionless service.
+
+### forwarding
+- forwarding table: the entries of pairs of prefix and outgoing link interface
+- prefix: represents a range of IP address
+- longest prefix (most specific) matching: The router finds the longest prefix that matches the destination address and then forwards the packet to the associated outgoinglink interface.
+
+### What inside a router
+- input port: line termination -> data link processing -> lookup/fowarding (store a shadow copy of forwarding table, achieve complete processing at line speed without invoking router processor), queueing(datagrams arrivate from network faster than forwarding rate into switch fabric)
+- switch fabric: memory, bus, crossbar
+- output port: queueing (multiple inputs send to the same output) -> data link processing -> line termination
+
+### IP Protocol
+- forwarding and addressing.
+- TTL: time-to-live, decrease by one each time the datagram is processed by one router. Avoid circulating forever.
+- Identifier, flag, offset: IP fragmentation and reassembly. Identify and order related datagrams.
+- Why IP fragmentation? An router may interconnect different types of links with different MTU.
+
+### IP Addressing
+IP Address: network portion and host portion. Associated with interface instead of hosts or routers. <br>
+Network: device interfaces with same network portion. Physically reach each other without intervening router.
+
+#### CIDR
+Classless Interdomain Routing. 
+- Role: IP address assignment strategy.
+- Characteristics: Network portion can have arbitrary length. Written in the form a.b.c.d/x. The x leftmost bits constitutes the network portion and are referred to as the prefix.
+- An organization is assigned with a range of address with a common prefix. Routers outside the oranization's network consider prefix, since the single entry a.b.c.d/x is sufficient to forward packets into any destination within the organization. Thus, it reduces the fowawarding table size.
+- The remaing 32-x bits can distinguish device interfaces withion the organization. These lower bits can have additional subnet structures.
+- Address aggregation: use a single prefix to advertise multiple networks.
+- What kicks off if the address is outside of the block? Longest prefix matching.
+- Why CIDR? Reduce the fowawarding table size. Avoid address exhausition.
+
+### DHCP
+Dynamic Host Configuration Protocol. Host can obtain 5 configurations: host ip address, subnet mask, gateway router ip address and 2 dns server ip adress.
+
+DHCP has 4 steps in the process. discover, offer, request, ACK. The first 3 messages is broadcast
+
+UDP based. Broadcast: dst = 255.255.255.255, client src = 0.0.0.0. DHCP server port = 67, DHCP client port = 68.
+
+### NAT
+private IP Addr: 10.0.0.0 A, 172.16.0.0 B, 192.168.0.0 C.
+
+Why NAT? All device inside local network uses just one IP address, sufficient IP address use. Security. Reduce IP update traffic.
+
+NAT table: private host IP, port - NAT IP, new port
+
+Why include port? Datagrams arrive from WAN have same dst. Router use port number to identify which host the datagram should be sent to.
+
+### ipv6
+no fragmentation or checksum. flow.
+
+- Dual Stack: some routers can translate between tow formats. Loss flow fields.
+- Tunneling: IPv6 carried as payload in IPv4 datagram among routers.
+
+### ICMP
+Internet Control Message Protocol.
+- error reporting
+- echo request/reply, used by *ping*.
+
+### Routing
+
+#### Link-State
+Find single source shortest path. All routers have complete topology and all link cost.
+- Cons: oscillations possible, e.g. cost = traffic
+
+#### Distance-Vector
+wait for cost change (in links) or vector update (from neighbors)  -> recompute -> notify only if paths to any dst change.
+- distributed and decentralized: Routers only know physically connected neighbors and directly attached link cost. Update its own distance vector only when it sees a cost change in directly attached links or receives a distance vector update from phycially connected neighbors.
+- iterative and self-terminating: continues until no nodes exchange info. No 'signals' to stop.
+- asynchronous: Needn't to exchange info or iterate in lock step.
+- Cons: convergence time varies
+
+### Hiearachical Routing
+- scalable and administrative autonomy.
+- autonomous system: organize routers into regions.
+- IGP: interior gateway protocol, intra-AS routing, RIP, OSPF, EIGRP. Determine routing paths for source-destination pairs that are internal to the AS.
+- BGP: border gateway protocol, inter-AS routing, standard. (1) Obtain subnet reachability from neighboring ASs. (2) propogate subnet reachability to entire AS. (3) determine routing paths based on the reachability and policy.
+- gateway router: responsible for forwarding packets to destinations outside AS
+
+#### RIP
+Routing Information Protocol.
+- DV, UDP.
+- Distance Diameter: 15
+- DV exchange period: 30s
+- Advertisement: route up to 25 dst
+- Used by small organization.
+
+#### OSPF
+- LS, TCP
+- router type: boundary, backbone, area border.
+- two-level hierarchy: backbone and local area.
+- local area: LS advertisements only in area.
+- backbone: exactly one, contains all area border routers. route packets between different areas.
+- relatively complicated, used by giant company.
+
+### BGP
+- DV, TCP.
+- Most complicated.
+
+## 4 scrapy
 Switch 48 port
 
 Router 不会传播broadcast
