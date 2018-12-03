@@ -84,18 +84,6 @@ category is a nominal attribute which references a group of objects which hold a
 
 confusion matrix: classifier performance
 
-## kmeans
-
-Input: k (# clusters),<br>
-       D (the sample set)<br>
-Method:<br>
-Arbritrarily choose k objects as k cluster centroids<br>
-**Repeat:**<br>
-1. for each object, calculate the distance to all centroids. Assign the object to the cluster whose centroid provides shortes distance.
-2. for each cluster, update its centroid by calculating the mean value of objects in that cluster.
-
-**Until:** No changes
-
 ## decision tree
 
 decision tree pseudo code
@@ -109,7 +97,7 @@ decision tree pseudo code
 
 overfitting: test error begins to increase even though training error continue to decrease.<br>
 cause: noise, lack of representative samples.<br>
-pre-pruning: early halt before generating a fully grown tree when some criterias are satified, e.g. information gaim, entroy and number of samples in a node <= threshold or tree depth and number of used attributes >= threshod.
+pre-pruning: early halt before generating a fully grown tree when some criterias are satified, e.g. information gain, entroy and number of samples in a node <= threshold or tree depth and number of used attributes >= threshod.
 Pro: cheap computation Drawback: suffer from premature termination due to the difficulty of choosing a right threshold. Too high, result in the unfitted model; Too low, not sufficient to overcome the overfitting problem.<br>
 post-pruning: generate a fully grown tree then trim it in a bottom-up fashion. The trim can be done by (1) subtree replacement, that is, to replace subtree with a new leaf node using majority vote (2) subtree raise, that is, to replac subtree with most used branches (3) eliminate sub-tree where E < threshold or gain < threshold. Processing penaly compared to pre-pruning Pro: better result Con: expensive computation
 
@@ -281,16 +269,14 @@ Select K points as the initial centroids<br>
 repeat<br>
     Form K clusters by assignint points to the closes centroids<br>
     Recompute the centroids of each cluster<br>
-until<br>
+until the centroids don't change<br>
 
 ### find initial centroids
-- farthest point method. Advantage: well-seperated. Shortcoming: computationally expensive.
-- density-based: choose k moste dense points. no repetition within esp.
+farthest point method. Advantage: well-seperated. Shortcoming: computationally expensive.<br>
+density-based: choose k moste dense points. no repetition within esp.<br>
 
 ### avoid local minima
-
 alternate splitting and merging phases until no improvement of SSE.<br>
-
 repeat:
     select the cluster with highest $$SSE_{i}$$.<br>
         split the cluster i by performing basic 2-means clustering.<br>

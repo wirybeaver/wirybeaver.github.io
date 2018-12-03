@@ -947,7 +947,7 @@ form .row:first-child .floating-label-form-group {
   color: white;
 }
 .pager {
-  margin: 20px 0 0 !important;
+  margin: 10px 0 0 !important;
   padding: 0px !important;
 }
 .pager li > a,
@@ -962,7 +962,7 @@ form .row:first-child .floating-label-form-group {
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: 10px;
+  padding: 0px;
   background-color: white;
   border-radius: 0;
 }
