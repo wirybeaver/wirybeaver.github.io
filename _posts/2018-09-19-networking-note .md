@@ -11,14 +11,13 @@ tags:
     - Networking
 ---
 
-
-ping, tracerout uses ICMP. Internet control message protocol
-
-FTP: contron connection 21, data connection 20
-SSH: 22
-Telnet: 23
-SMTP: 25
-HTTP: 80
+FTP: contron connection 21, data connection 20 <br>
+SSH: 22 <br>
+Telnet: 23 <br>
+SMTP: 25 <br>
+HTTP: 80 <br>
+DNS: 53 <br>
+DHCP: server 67, client 68 <br>
 
 # Chapter 1
 
@@ -148,7 +147,6 @@ RR: resource record.
 - Type = MX, Value is the canonical name of a mail server having alias hostname Name.
 
 # Chapter 3
-
 MSS: Maximum Segment Size. The maximum amount of application-layer data, excluding header size. 1460.
 MTU: Maximum Transmission Unit. The maxinum size of link-layer frame. 1500.
 
@@ -208,7 +206,7 @@ Congesition Stage
 - TCP Taheo: Unconditionally cut down cwnd to 1MSS when eithor timeout or dup ACKs occurs.
 - TCP Reno: incorporate fast recovery. Skip slow start stage while receiving duplicate ACKs.
 
-## Chapter 4
+# Chapter 4
 
 ## Network Service
 - routing: determine 'good' path through network from source to destination
@@ -216,28 +214,26 @@ Congesition Stage
 - Virtual-circuit has the funciton of call setup thus provides connection service.
 - Datagram network provides connectionless service.
 
-### forwarding
+## forwarding
 - forwarding table: the entries of pairs of prefix and outgoing link interface
 - prefix: represents a range of IP address
 - longest prefix (most specific) matching: The router finds the longest prefix that matches the destination address and then forwards the packet to the associated outgoinglink interface.
 
-### What inside a router
+inside router
 - input port: line termination -> data link processing -> lookup/fowarding (store a shadow copy of forwarding table, achieve complete processing at line speed without invoking router processor), queueing(datagrams arrivate from network faster than forwarding rate into switch fabric)
 - switch fabric: memory, bus, crossbar
 - output port: queueing (multiple inputs send to the same output) -> data link processing -> line termination
 
-### IP Protocol
+## IP Protocol
 - forwarding and addressing.
 - TTL: time-to-live, decrease by one each time the datagram is processed by one router. Avoid circulating forever.
 - Identifier, flag, offset: IP fragmentation and reassembly. Identify and order related datagrams.
 - Why IP fragmentation? An router may interconnect different types of links with different MTU.
 
-### IP Addressing
 IP Address: network portion and host portion. Associated with interface instead of hosts or routers. <br>
-Network: device interfaces with same network portion. Physically reach each other without intervening router.
+Subnet: device interfaces within the same network portion. Physically reach each other without intervening router.
 
-#### CIDR
-Classless Interdomain Routing. 
+CIDR: Classless Interdomain Routing. 
 - Role: IP address assignment strategy.
 - Characteristics: Network portion can have arbitrary length. Written in the form a.b.c.d/x. The x leftmost bits constitutes the network portion and are referred to as the prefix.
 - An organization is assigned with a range of address with a common prefix. Routers outside the oranization's network consider prefix, since the single entry a.b.c.d/x is sufficient to forward packets into any destination within the organization. Thus, it reduces the fowawarding table size.
@@ -246,62 +242,54 @@ Classless Interdomain Routing.
 - What kicks off if the address is outside of the block? Longest prefix matching.
 - Why CIDR? Reduce the fowawarding table size. Avoid address exhausition.
 
-### DHCP
-Dynamic Host Configuration Protocol. Host can obtain 5 configurations: host ip address, subnet mask, gateway router ip address and 2 dns server ip adress.
+DHCP
+- Dynamic Host Configuration Protocol. Host can obtain 5 configurations: host ip address, subnet mask, gateway router ip address and 2 dns server ip adress.
+- DHCP has 4 steps in the process. discover, offer, request, ACK. The first 3 messages is broadcast
+- UDP based. Broadcast: dst = 255.255.255.255, client src = 0.0.0.0. DHCP server port = 67, DHCP client port = 68.
 
-DHCP has 4 steps in the process. discover, offer, request, ACK. The first 3 messages is broadcast
+NAT
+- private IP Addr: 10.0.0.0 A, 172.16.0.0 B, 192.168.0.0 C.
+- Why NAT? All device inside local network uses just one IP address, sufficient IP address use. Security. Reduce IP update traffic.
+- NAT table: private host IP, port - NAT IP, new port
+- Why include port? Datagrams arrive from WAN have same dst. Router use port number to identify which host the datagram should be sent to.
 
-UDP based. Broadcast: dst = 255.255.255.255, client src = 0.0.0.0. DHCP server port = 67, DHCP client port = 68.
-
-### NAT
-private IP Addr: 10.0.0.0 A, 172.16.0.0 B, 192.168.0.0 C.
-
-Why NAT? All device inside local network uses just one IP address, sufficient IP address use. Security. Reduce IP update traffic.
-
-NAT table: private host IP, port - NAT IP, new port
-
-Why include port? Datagrams arrive from WAN have same dst. Router use port number to identify which host the datagram should be sent to.
-
-### ipv6
-no fragmentation or checksum. flow.
-
+ipv6
+-no fragmentation or checksum. flow.
 - Dual Stack: some routers can translate between tow formats. Loss flow fields.
 - Tunneling: IPv6 carried as payload in IPv4 datagram among routers.
 
-### ICMP
-Internet Control Message Protocol.
+ICMP: Internet Control Message Protocol.
 - error reporting
-- echo request/reply, used by *ping*.
+- echo request/reply, used by *ping* and *traceroute*.
 
-### Routing
+## Routing
 
-#### Link-State
-Find single source shortest path. All routers have complete topology and all link cost.
+Link-State
+- Find single source shortest path. All routers have complete topology and all link cost.
 - Cons: oscillations possible, e.g. cost = traffic
 
-#### Distance-Vector
-wait for cost change (in links) or vector update (from neighbors)  -> recompute -> notify only if paths to any dst change.
+Distance-Vector
+- wait for cost change (in links) or vector update (from neighbors)  -> recompute -> notify only if paths to any dst change.
 - distributed and decentralized: Routers only know physically connected neighbors and directly attached link cost. Update its own distance vector only when it sees a cost change in directly attached links or receives a distance vector update from phycially connected neighbors.
 - iterative and self-terminating: continues until no nodes exchange info. No 'signals' to stop.
 - asynchronous: Needn't to exchange info or iterate in lock step.
 - Cons: convergence time varies
 
-### Hiearachical Routing
+Hiearachical Routing
 - scalable and administrative autonomy.
 - autonomous system: organize routers into regions.
 - IGP: interior gateway protocol, intra-AS routing, RIP, OSPF, EIGRP. Determine routing paths for source-destination pairs that are internal to the AS.
 - BGP: border gateway protocol, inter-AS routing, standard. (1) Obtain subnet reachability from neighboring ASs. (2) propogate subnet reachability to entire AS. (3) determine routing paths based on the reachability and policy.
 - gateway router: responsible for forwarding packets to destinations outside AS
 
-#### RIP
-Routing Information Protocol.
+RIP: Routing Information Protocol.
 - DV, UDP.
 - Distance Diameter: 15
 - DV exchange period: 30s
 - Advertisement: route up to 25 dst
 - Used by small organization.
 
-#### OSPF
+OSPF: Open short path first
 - LS, TCP
 - router type: boundary, backbone, area border.
 - two-level hierarchy: backbone and local area.
@@ -309,9 +297,58 @@ Routing Information Protocol.
 - backbone: exactly one, contains all area border routers. route packets between different areas.
 - relatively complicated, used by giant company.
 
-### BGP
+BGP
 - DV, TCP.
 - Most complicated.
+
+## Broadcast and Multicast
+Broadcast
+- send to all nodes
+- flooding: Duplicate the received pkt and broadcast copies to all neighbors. Cons: cycles and broadcast storm
+- controlled flooding: Broadcast only if the received pkt wasn't broadcasted before.
+    - RPF: reversed path forwarding. A router broadcasts pkt only if pkt is on the link that is on its shortest unicast path back to the source.
+    - Cons: redundant received pkt.
+- spanning tree: Broadcast alone tree.
+    - Pros: No redundant
+    - How: Each node unicasts a join message addressed to the center node. Messages are forwarded util arrive at the center or at the node that already belongs to the spanning tree.
+
+Multicast
+- send to a subnet of nodes
+- PIM: Protocol Indepedent Multicast
+- PIM Sparse mode: center based. 
+    - Group member explicitly join
+    - Switch to source-specific tree, less concentration
+
+# Chapter 5
+## Link Service
+- framing
+- link access: Medium Access control protocol.
+    - point-to-point: single sender and receiver. Send whenever the link is idle.
+    - broadcast: coordinate the frame transmissions of many nodes over the broadcast link.
+- reliable delivery: used in wireless network.
+- flow control: pacing sender and receiver
+- error detection and correction
+    - parity checking: A parity value for each column and row. EDC contains i+j+1 bits. Basic idea.
+    - checksum: used only in layer 4.
+    - cyclic redundacy check: adapter: 
+- full duplex and half duplex: nodes at both side may transmit packets at the same time.
+
+## CSMA
+- random access: allow and recover from collisions. Used by Ethernet. 'Taking turns' and channel partitioning is the other two broadcast access MAC protocol.
+- CSMA: Carrier sense multiple access
+    - sense channel before transmission.
+    - busy channel: defer transmission
+    - idle channel: transmit entire packet
+    - retransmit
+        - persistent: instable. retransmit immediatedly with probability when sense idel channel.
+        - non persistent: retransmit after random intervel
+    - Collision probability deponds on the propogation delay and distance.
+    - Cons: channel waste, transmit entire package even though a collision happen.
+- Ethernet CSMA/CD (Collision Detection)
+    - Action when collision occurs: abort (cease/ refrain from) and send jam signal. Exponential backoff wait.
+    - collision detection: easy in wired network.
+    - Pros: reduce channel waste
+
 
 ## 4 scrapy
 Switch 48 port
