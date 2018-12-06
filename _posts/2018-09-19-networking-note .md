@@ -254,7 +254,12 @@ NAT
 - Why include port? Datagrams arrive from WAN have same dst. Router use port number to identify which host the datagram should be sent to.
 
 ipv6
--no fragmentation or checksum. flow.
+- 128 bit
+- fixed length header : 40
+- don't include most of options IPV4 can incldue: no fragmentation or checksum.
+- several fields are same in spirit
+    - ipv6: traffic class, payload length, next header, hop limit
+    - ipv4: service type, datagram length, up-layer protocol, time to live
 - Dual Stack: some routers can translate between tow formats. Loss flow fields.
 - Tunneling: IPv6 carried as payload in IPv4 datagram among routers.
 
@@ -338,7 +343,7 @@ Multicast
     - parity checking: A parity value for each column and row. EDC contains i+j+1 bits. Basic idea.
     - checksum: used only in layer 4.
     - cyclic redundacy check: adapter: 
-- full duplex and half duplex: nodes at both side may transmit packets at the same time.
+- full duplex and half duplex: nodes at both side may transmit packets at the same time. input and output in the same interface
 
 ## CSMA
 - random access: allow and recover from collisions. Used by Ethernet. 'Taking turns' and channel partitioning is the other two broadcast access MAC protocol.
@@ -414,158 +419,22 @@ Switch VS Router
 - redundancy: TOR and tier-2
 - fully connected: improve the rack throughput via multiple routing paths; reliability via redundancy
 
-## 4 scrapy
-Switch 48 port
+# Other
+why router could prohibit the broadcast storm.
 
-Router 不会传播broadcast
+why ipv4 is better than ipv6
 
-switch会
 
 CRC
 
-why linked layer relia: save resource
+buffer formula: RTT\*C/root(N), C represents link capacity, N denotes \# flows
 
-RJ45, Network layer view, Router 
-Input: 0/1 DL forwarding table
+virtual circuit: guaranteed rate and dedicated bandwidth. expensive
 
-    Output: buffer, DL, 0/1
+DHCP: 20s, ARP: 20min
 
-PIM SPARSE 124
+Why switch store and forward
 
-BGP: most complicated
+Chapter 6
 
-rip: easy to config
-
-ospf: large company.
-
-is ospf not in rip: 95
-
-how ospf orgnazie: go to area zero
-
-Linked state and disvector any is done: 91. routing protocol has priority
-
-stop exchange: 1 parameter is not the saen
-
-
-Global: 
-
-Intranet: who decide what protocol. network ministrater. atonogy
-
-2 Character of routing algorithm Link-State OSPF and Distance-Vector RIP
-
-BGP fallen 在 Internet.
-
-Dual stack
-
-more efficient use for IP space. classful addressing, classless addressing
-
-one to one translation: NAT
-one to one many translation: PAT
-why 4 is better than 6
-
-NAT: RFC 1912, What is the definition
-PAT: 
-
-private IP Addr: 10.0.0.0 A, 172.16.0.0 B, 192.168.0.0 C 
-
-5 Info, DHCP: IP mask gw dns1 dns2
-
-8 wires/4pairs
-
-full duplex: input and output in the same interface.
-
-interface: 3 layers. bit, MAC Addr,IP addr
-
-buffer公式： RTT * C
-
-2 router algo: BGP ERGARP linespeed: bandwidth
-
-3 farctor in net work layer, Call set up, routing, forwarding
-
-forwarding (inside router, look up forwaring table, send to the output interface) vs routing.
-
-virtual channel: guranteed rate, dedicated bandwidth. dis: expensive
-
-## 5
-Transport: Logical end
-
-Network: Router to Router
-
-LinkedLayer : node (adapter, 网卡) to node, why. Collision.
-
-synchronized: time order
-
-100 meters
-
-fully duplex, parital duplex
-
-CSMA/CD
-
-DHCP 返回5 20s
-
-ARP 20minites
-
-48 Mac: 24 manufacture
-
-CRC 算法
-
-Ethernet cheaper, openstandard
-
-When Ethernet's CSMD: half duplicate
-
-Each link is its own collision domain.
-
-Swithcer - Switcher 不阻止 broadcast ，因为有store, 相连的s impact with each other
-Router-Router. 阻止
-
-switch 有点想ARP 可以自我学习
-
-LAN segment
-
-Switch: CPU memory
-
-贵的swittch，4个port 对应 一个CPU. Console port可以连PC -> config IP addr, http. serialially
-
-box 可以you trunk frame
-
-Trunk的字段只有switch有 802.1Q frame。
-
-Token passing不考
-
-CSMD: half duplex involved in hub, wireless AP
-full duplex, switch dont need
-
-hub: 如果有一个collision， 所有人的都可以感到。 wireless
-one broadcast 和 one collision domain
-
-switch: 48 collision domain
-
-Switch keep track of TIES MAC ADDRESS WITH INTERFACE, keep ARP TABLE
-
-Why switch store and forward: check error
-
-如果switch的摸个port是full dupelx，不需要check error
-
-table 20 minites
-
-hub每个端口的传输速录是一样的
-
-switch: learning, VLAN
-
-ethner cable: 8 wire, 4 pair. half duplex, 占有一个pair， t/r共享 有冲突
-
-43-44 on test
-
-boder router - core router - distribution swithers - access swithches
-
-load balancer: 
-
-TOR: top of rack
-
-redundancy zai tier-2和tor
-
-two options： pipe bigger
-
-77
-iGP：3
-EGP：BGP
+CSMA: half duplex and wireless AP
