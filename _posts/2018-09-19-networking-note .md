@@ -297,6 +297,13 @@ OSPF: Open short path first
 - backbone: exactly one, contains all area border routers. route packets between different areas.
 - relatively complicated, used by giant company.
 
+OSPF Features not in RIP:
+- multiple same-cost path
+- multiple link cost metrics
+- multicast support
+- hierarcy in large domain
+- security: TCP, authenticated msg
+
 BGP
 - DV, TCP.
 - Most complicated.
@@ -345,10 +352,67 @@ Multicast
     - Collision probability deponds on the propogation delay and distance.
     - Cons: channel waste, transmit entire package even though a collision happen.
 - Ethernet CSMA/CD (Collision Detection)
-    - Action when collision occurs: abort (cease/ refrain from) and send jam signal. Exponential backoff wait.
+    - Action when collision occurs
+        - abort (cease/ refrain from) 
+        - send jam signal: make sure all other transmitters aware of collision
+        - Exponential backoff random wait: adapt retransmission to esitimated current load
     - collision detection: easy in wired network.
     - Pros: reduce channel waste
 
+## ARP
+- MAC Address: 48 bit, burn in the adapter ROM, unique.
+- Address Resolution Protocol: resolve IP to MAC only on the subnet
+- ARP table entry's TTL: 20 min
+
+## Switch and Hub
+Hub
+- one broadcast domain and one collision domain
+- 10BaseT: 10 Mbps rate, T stands for twisted pair. 100 meters distance per hub. star topology.
+- LAN segment: each connected LAN
+- Repeaters repeat bit in both direction.
+- CSMA/CD implemented in hub
+- Hierarchy: backbone at top
+- Pros: cheap; Multi-tier provides degragation
+- Cons: single collision domain, collide with all nodes; cannot connect diff Ethernet types.
+
+Switch
+- One broadcast domain and dedicated collision domain for each interface
+    - full duplex, outgoing buffer
+    - don't need CRC and CSMA
+- Self learning: learn which hosts can be reached through which interface. When frame arrives, combine the incoming link and MAC address of sender.
+- Filtering and forwarding: index switch table.
+    - not found: flooding
+    - found: drop if the frame comes from the destination segment (the interface associated with the destination MAC = the incoming interface); otherwise, forward to the associated interface.
+
+VLAN: trunk prot
+- why VLAN: avoid lay-2 broadcast traffic crossing entire LAN; security
+- define multiple VLAN over single physical LAN infrastructure via tag
+- Trunk port: carry frames between VLANS defined over multiple physical switches
+- forward between different VLANs: router
+
+Switch VS Router
+- Both are store-and-forward
+- Both have forwarding table: switch is self-learning while router's table is computed by routing algo.
+- Both isolate traffic
+- Swith: plug-and-play
+- Router: control broadcast storm
+
+## MPLS
+- Multiprotocol Label Switching: use a fixed length label without ever touching the IP header
+- Speed up switching in the router. Longest Prefix matching too flow
+- distribute traffic to the same destination through different path
+- VPN, virtual private networks. isolate resources and addressing
+
+## DataCenter Network
+
+- border router: connect the data center network to the public Internet
+- access router: subnet
+- tier-1 switch: distribution switch, associated with load balancer
+- load balancer: balance the load accross hosts as the function of their current load. NAT-like function
+- tier-2 switch: same application, VLAN
+- TOR switch: interconnects the hosts in the rack with each other and with other switches in the data center
+- redundancy: TOR and tier-2
+- fully connected: improve the rack throughput via multiple routing paths; reliability via redundancy
 
 ## 4 scrapy
 Switch 48 port
