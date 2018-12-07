@@ -384,10 +384,20 @@ Switch
 - One broadcast domain and dedicated collision domain for each interface
     - full duplex, outgoing buffer
     - don't need CRC and CSMA
+- transparent: a node addresses a frame to another node (rather than addressing the frame to switch) and happily send the frame into a LAN, unaware that a switch will be receiving the frame and forwarding.
 - Self learning: learn which hosts can be reached through which interface. When frame arrives, combine the incoming link and MAC address of sender.
 - Filtering and forwarding: index switch table.
     - not found: flooding
     - found: drop if the frame comes from the destination segment (the interface associated with the destination MAC = the incoming interface); otherwise, forward to the associated interface.
+
+Switch vs Router
+- elimination of collisions: buffer frames and never transmit more than one frame on a LAN segment at any one time
+- heterogeneous links.
+- management: disconnect the malfunctioning (jarbbering) adapter.
+
+Why Switch has buffer at outgoing link?
+- arrivate rate exceed the link capacity
+- to make sure never transmit more than one frame on a LAN segment at any one time to avoid collision on broadcast link.
 
 VLAN: trunk prot
 - why VLAN: avoid lay-2 broadcast traffic crossing entire LAN; security
@@ -399,8 +409,8 @@ Switch VS Router
 - Both are store-and-forward
 - Both have forwarding table: switch is self-learning while router's table is computed by routing algo.
 - Both isolate traffic
-- Swith: plug-and-play
-- Router: control broadcast storm
+- Swith: plug-and-play, relatively high filtering and switching (less per-packet processing time, process only up through layer-2). Restricted to a spanning tree 
+- Router: control broadcast storm. 
 
 ## MPLS
 - Multiprotocol Label Switching: use a fixed length label without ever touching the IP header
@@ -421,9 +431,12 @@ Switch VS Router
 
 # Other
 why router could prohibit the broadcast storm.
+- TTL
+- firewall
 
-why ipv4 is better than ipv6
+LAN: a computer network concentrated in a geographical area
 
+LAN Segment
 
 CRC
 
@@ -438,3 +451,20 @@ Why switch store and forward
 Chapter 6
 
 CSMA: half duplex and wireless AP
+
+How a hierarchical organiztion of the Internet has made scalability possible?<br>
+Routers are organized in ASs. Within an AS, all routers run the same protocol. The problem of scale is solved since an router in an AS need only know routers within AS and subnets attaches to AS. To router accross ASs, the inter-AS is based on the AS graph and don't take interior routers into account.
+
+Why hierarchy?
+- save table size
+- reduce update traffic
+
+Why is different is IGP and BGP?
+- IGP
+    - Policy: Single admin, no policy decision needed
+    - Performance: can focus on.
+    - Scale: less concern. 
+- BGP:
+    - Policy: control how the traffic routes, who route throuth its network.
+    - Performance: policy domain over performance
+    - Scale: critical issue becasue it has to handle routing across large number of networks.
