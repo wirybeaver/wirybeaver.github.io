@@ -377,7 +377,7 @@ Multicast
     - Action when collision occurs
         - abort (cease/ refrain from) 
         - send jam signal: make sure all other transmitters aware of collision
-        - Exponential backoff random wait: adapt retransmission to esitimated current load
+        - Exponential backoff random wait: adapt retransmission attempt to esitimated current load
     - collision detection: easy in wired network.
     - Pros: reduce channel waste
 
@@ -430,7 +430,7 @@ Switch VS Router
 - Router: control broadcast storm. 
 
 ## MPLS
-- Multiprotocol Label Switching: use a fixed length label without ever touching the IP header
+- Multiprotocol Label Switching: use a fixed length label without even touching the IP header
 - Speed up switching in the router. Longest Prefix matching too flow
 - distribute traffic to the same destination through different path
 - VPN, virtual private networks. isolate resources and addressing
@@ -455,15 +455,13 @@ LAN: a computer network concentrated in a geographical area
 
 LAN Segment
 
-CRC
+CRC: Generator G divide into Dx2^r XOR R without remainder. G has r+1 bits. R = reaminder(Dx2^r/G)
 
 buffer formula: RTT x C/root(N), C represents link capacity, N denotes  flows
 
 virtual circuit: guaranteed rate and dedicated bandwidth. expensive
 
 DHCP: 20s, ARP: 20min
-
-Why switch store and forward
 
 Chapter 6
 
