@@ -215,8 +215,8 @@ Congesition Stage
 - Datagram network provides connectionless service.
 
 ## forwarding
-- forwarding table: the entries of pairs of prefix and outgoing link interface
-- prefix: represents a range of IP address
+- forwarding table: the entries of the pair of prefix and outgoing link interface
+- prefix: network portion of CIDR's address, representing a range of IP address
 - longest prefix (most specific) matching: The router finds the longest prefix that matches the destination address and then forwards the packet to the associated outgoinglink interface.
 
 inside router
@@ -244,8 +244,8 @@ CIDR: Classless Interdomain Routing.
 
 DHCP
 - Dynamic Host Configuration Protocol. Host can obtain 5 configurations: host ip address, subnet mask, gateway router ip address and 2 dns server ip adress.
-- DHCP has 4 steps in the process. discover, offer, request, ACK. The first 3 messages is broadcast
-- UDP based. Broadcast: dst = 255.255.255.255, client src = 0.0.0.0. DHCP server port = 67, DHCP client port = 68.
+- DHCP has 4 steps in the process. discover, offer, request, ACK.
+- UDP based. dst = 255.255.255.255, client src = 0.0.0.0. DHCP server port = 67, DHCP client port = 68.
 
 NAT
 - private IP Addr: 10.0.0.0 A, 172.16.0.0 B, 192.168.0.0 C.
@@ -290,12 +290,12 @@ Hiearachical Routing
 RIP: Routing Information Protocol.
 - DV, UDP.
 - Distance Diameter: 15
-- DV exchange period: 30s
 - Advertisement: route up to 25 dst
 - Used by small organization.
 
 OSPF: Open short path first
 - LS, TCP
+- DV exchange period: 30s
 - router type: boundary, backbone, area border.
 - two-level hierarchy: backbone and local area.
 - local area: LS advertisements only in area.
@@ -312,6 +312,23 @@ OSPF Features not in RIP:
 BGP
 - DV, TCP.
 - Most complicated.
+
+How a hierarchical organiztion of the Internet has made scalability possible?<br>
+Routers are organized in ASs. Within an AS, all routers run the same protocol. The problem of scale is solved since an router in an AS need only know routers within AS and subnets attaches to AS. To router accross ASs, the inter-AS is based on the AS graph and don't take interior routers into account.
+
+Why hierarchy?
+- save table size
+- reduce update traffic
+
+Why is different is IGP and BGP?
+- IGP
+    - Policy: Single admin, no policy decision needed
+    - Performance: can focus on.
+    - Scale: less concern. 
+- BGP:
+    - Policy: control how the traffic routes, who route throuth its network.
+    - Performance: policy domain over performance
+    - Scale: critical issue becasue it has to handle routing across large number of networks.
 
 ## Broadcast and Multicast
 Broadcast
@@ -440,7 +457,7 @@ LAN Segment
 
 CRC
 
-buffer formula: RTT\*C/root(N), C represents link capacity, N denotes \# flows
+buffer formula: RTT x C/root(N), C represents link capacity, N denotes  flows
 
 virtual circuit: guaranteed rate and dedicated bandwidth. expensive
 
@@ -452,19 +469,6 @@ Chapter 6
 
 CSMA: half duplex and wireless AP
 
-How a hierarchical organiztion of the Internet has made scalability possible?<br>
-Routers are organized in ASs. Within an AS, all routers run the same protocol. The problem of scale is solved since an router in an AS need only know routers within AS and subnets attaches to AS. To router accross ASs, the inter-AS is based on the AS graph and don't take interior routers into account.
+switch fabric: memory, bus, crossbar
 
-Why hierarchy?
-- save table size
-- reduce update traffic
-
-Why is different is IGP and BGP?
-- IGP
-    - Policy: Single admin, no policy decision needed
-    - Performance: can focus on.
-    - Scale: less concern. 
-- BGP:
-    - Policy: control how the traffic routes, who route throuth its network.
-    - Performance: policy domain over performance
-    - Scale: critical issue becasue it has to handle routing across large number of networks.
+What is call setup?
