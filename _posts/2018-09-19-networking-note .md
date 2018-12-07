@@ -427,7 +427,7 @@ Switch VS Router
 - Both have forwarding table: switch is self-learning while router's table is computed by routing algo.
 - Both isolate traffic
 - Swith: plug-and-play, relatively high filtering and switching (less per-packet processing time, process only up through layer-2). Restricted to a spanning tree 
-- Router: control broadcast storm. 
+- Router: control broadcast storm via TTL and firewall
 
 ## MPLS
 - Multiprotocol Label Switching: use a fixed length label without even touching the IP header
@@ -446,24 +446,26 @@ Switch VS Router
 - redundancy: TOR and tier-2
 - fully connected: improve the rack throughput via multiple routing paths; reliability via redundancy
 
-# Other
-why router could prohibit the broadcast storm.
-- TTL
-- firewall
+# Chapter 6
 
+- SNR: signal-to-noise rate
+- BER: bit error rate
+- given SNR, higher throughput, higher BER
+- larger SNR, easier to extract signal from noise. good
+- given throughput, increase power, higher SNR, lower BER. good
+
+# Other
 LAN: a computer network concentrated in a geographical area
 
 LAN Segment
 
-CRC: Generator G divide into Dx2^r XOR R without remainder. G has r+1 bits. R = reaminder(Dx2^r/G)
+CRC: Generator G divide into D\*2^r XOR R without remainder. G has r+1 bits. R = reaminder(D\*2^r/G)
 
-buffer formula: RTT x C/root(N), C represents link capacity, N denotes  flows
+buffer formula: RTT \* C/root(N), C represents link capacity, N denotes  flows
 
 virtual circuit: guaranteed rate and dedicated bandwidth. expensive
 
 DHCP: 20s, ARP: 20min
-
-Chapter 6
 
 CSMA: half duplex and wireless AP
 
