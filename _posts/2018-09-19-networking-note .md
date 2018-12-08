@@ -459,7 +459,7 @@ LAN: a computer network concentrated in a geographical area
 
 LAN Segment
 
-CRC: Generator G divide into D\*2^r XOR R without remainder. G has r+1 bits. R = reaminder(D\*2^r/G)
+CRC: Generator G divide into D \* 2^r XOR R without remainder. G has r+1 bits. R = reaminder(D\*2^r/G)
 
 buffer formula: RTT \* C/root(N), C represents link capacity, N denotes  flows
 
