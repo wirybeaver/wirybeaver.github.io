@@ -15,7 +15,7 @@ tags:
 qualitative: norminal, ordinal <br>
 quantitative: interval, ratio
 
-valid transformations
+valid transformations<br>
 - nominal: any one-to-one mapping, like permutation
 - ordinal: any monotonic order-preserving function
 - interval: new = a \* b + c
@@ -31,7 +31,6 @@ domain specific knowledge: expertise in a given field which enables informed, kn
 - sparsity: the frequency of non-zero values.
 
 ## data quality
-
 precision: the closeness of repeated measurement to one another <br>
 bias: systematic variation of measurements from the quantity <br>
 accuracy: the closeness of measurements to the true value of the quantity <br>
@@ -39,19 +38,19 @@ noise: random component of measurement error <br>
 outlier: unusuall data objects or unusual values of an attribute <br>
 
 ## data missing
-(1) remove the object or attritbute
-(2) evaluate
-(3) ignore the missing value during analysis
+1. remove the object or attritbute
+2. evaluate
+3. ignore the missing value during analysis
 
 ## selection
-goal: reduce the resources requirement
+goal: reduce the resources requirement<br>
 - aggregation. combine two or more objects into a single object.
 - sampleing. select a subset of data. represantative: sample has approximately the same property (interested) as the original data set.
 - dimensionality reduction. create new attributes that are a combination of old attributes.
 - feature subset selection. select new attributes that are a subset of old attributes.
 
 ## transformation
-goal: improve the utility
+goal: improve the utility<br>
 - extraction.
 - mapping. e.g., fourier transformation
 - construction. e.g., density
@@ -72,10 +71,10 @@ similarity: a numeric measure of the degree to which two objects are like
 Hamming, Euclidean (positivity, symetry, triangle inequality), Chebycheve, Minkowski
 
 ## similarity
-SMC: simple matching coefficient. count both presences and absences.
-Jacard: only count presences. Handle objects that have assymetric binary attributes.
-Consine similarity
-Correlation: represent positive and negative relationships between attributes.
+SMC: simple matching coefficient. count both presences and absences.<br>
+Jacard: only count presences. Handle objects that have assymetric binary attributes.<br>
+Consine similarity<br>
+Correlation: represent positive and negative relationships between attributes.<br>
 
 # classification
 classification goal: predict class membership. develop a population description
@@ -90,14 +89,14 @@ decision tree pseudo code
 1. All training instances are initially put into the root node.
 2. Select an attribute which provides maximal information gain. Split based on that attribute.
 3. continue to recursively expand the internal node until some stopping criterias are satisfied:
-(1) all samples in a node have same label
-(2) no remaining attribute
-(3) number of samples in a node *falls below* threshold.
-(4) or, other criteras.
+    - all samples in a node have same label
+    - remaining attribute
+    - number of samples in a node *falls below* threshold.
+    - or, other criteras.
 
 overfitting: test error begins to increase even though training error continue to decrease.<br>
 cause: noise, lack of representative samples.<br>
-pre-pruning: early halt before generating a fully grown tree when some criterias are satified, e.g. information gain, entroy and number of samples in a node <= threshold or tree depth and number of used attributes >= threshod.
+pre-pruning: early halt before generating a fully grown tree when some criterias are satified, e.g. information gain, entroy and number of samples in a node <= threshold or tree depth and number of used attributes >= threshod.<br>
 Pro: cheap computation Drawback: suffer from premature termination due to the difficulty of choosing a right threshold. Too high, result in the unfitted model; Too low, not sufficient to overcome the overfitting problem.<br>
 post-pruning: generate a fully grown tree then trim it in a bottom-up fashion. The trim can be done by (1) subtree replacement, that is, to replace subtree with a new leaf node using majority vote (2) subtree raise, that is, to replac subtree with most used branches (3) eliminate sub-tree where E < threshold or gain < threshold. Processing penaly compared to pre-pruning Pro: better result Con: expensive computation
 
@@ -125,7 +124,7 @@ rule-based classifier is a collection of conditional statements where each antec
 multually exclusive: no two rules cover the same record.<br>
 exhausitive: cover entire attribute space.
 
-ordered rule: rules are ordered by decreasing order of their pririty. A test record is classified by the highest-rank rule that covers the record. Pro: avoid the problem of conflicting classes predicited by multiple rules. <nr>
+ordered rule: rules are ordered by decreasing order of their pririty. A test record is classified by the highest-rank rule that covers the record. Pro: avoid the problem of conflicting classes predicited by multiple rules. <br>
 unordered rule: Allows a record to trigger multiple rules and consider the consequent of each rule as a vote to a particular class.  Pro: model build is cheap due to no rule sorting. less susceptible to erros caused by wrong rules. Con: prediction is expenssive. A test record must be compared against the antecedent of each rule.
 
 rule-based ordering: Individual rule is ordered by some rule quality measure. Pro: Each record is classified by the best rule covering it. Con: low-rank rules are less expressive.<br>
