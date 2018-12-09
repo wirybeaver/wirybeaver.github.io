@@ -56,4 +56,14 @@ keep track of the largest or smallest elment. Use a complete binary tree, For ea
 
 Add a node. temporarily append it to the array. Swap out of order parent-child pair from bottom to up until find a right position.
 
-Delete a node. Replace the root with the tailing element, swap out of order parent-child from up to bottom until find a right position.
+Delete a node. Replace the root with the tailing element, swap out of order parent-child pait from up to bottom until find a right position.
+
+# Binary Index Tree
+Query Interval Summation
+
+# Dijstra
+Single Shortest Path. Greedy strategy. Generate a set S.
+
+Iterate N times, each time find a vertex u closest to the source. u is not a member of S. Add u to S.
+
+# LFU
