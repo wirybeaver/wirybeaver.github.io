@@ -11,11 +11,8 @@ tags:
 ---
 
 # daily note
-- monetize users
-- inform and shape their audience stories
-- enable/empower your brand to grow
-- grow business/revenue
-- get accurate breakout of traffics, demographics, brand preference, shopping habitts, customized to fit model
+- Narvar
+
 - nuance, cancel out, annihilate, * distribute over +
 - Punctuation: Question mark, Comma, Period, Exclamation mark
 - fabricated, agnostic, dictate, roster
@@ -37,8 +34,31 @@ tags:
 - Compute the proximity value *individually* between the test and training examples.
 - supply is way higher than demand.
 
+# Narvar
+- helper retailers **champion their customers** at every step of the journey
+- a platform designed from the ground up to **drive long-term customer loyalty**. **deliver** post-purchase experiences that **retain, engage, and delight customers, from cart to doorstep, and beyond**.
+- Convert: turn shoppers into happy customers throught clear expectations, personalized convenience, and relevant delivery options.
+    - increase customer visibility and confidence.
+    - maximize convenience by offering the right choices.
+- Engage: keep them combing back with branded experiences and keep channels open for communication on their terms
+    - deliver authentic experiences at every touchpoint.
+    - build trust through relevant and proactive communication.
+- Care: treat your customers with empathy. Combine a **human touch** with self-service experiences that **address their evolving needs**.
+    - **enable seamless returns** and exchanges through convenience and choice
+    - help your customers help themselves throught smart self-service options.
+- Intelligence: get insight at scale. Machine learning applied to 3 billion interactions helps you understand trends and optimize your experience.
+    - understancd your customer from preferences, to purchase hisotry and feedback
+    - monitor trends, and otimize based on real-time performance and predictions
+
+# Quantcast
+- monetize users
+- inform and shape their audience stories
+- enable/empower your brand to grow
+- grow business/revenue
+- get accurate breakout of traffics, demographics, brand preference, shopping habits, customized to fit model
+
 # Databricks
-ai and big data are driving innovation across all industries. Innovation such as image recogonition, real time fraud detection and genome sequencing are changing the way business operate. I thought we were well positioned to achieve those innovations. Now I have a great team in place. Data engineers... Data scientist ... But It is challenging to tranlate our efforts into product outcome. We have different skill sets... We use diffrent tools making collebration harder. We spent 90% time with complex data pipelines and disjoint tools just to prepare data for analytics. Security became an afterthouhg. Innovation was a distant dream. Then we adopted the databricks, unified analytic platform. These breakthrough empowered my team to accelerate AI and innovation. It's unified management simplifies data engineering by enforcing data integrity and automating performance. Now my platform teams can make data available for analytics in near real time. It unifies people. Data engineers build data pipelines unifying both steaming and historical data. data scientist build model in one place while business users cosuming real-time dashboard. Databrickes is service. We don't have to manually configure and scale clusters. It's cloud based and for we managed. And enterprise security ensures data is protected.
+ai and big data are driving innovation across all industries. Innovation such as image recogonition, real time fraud detection and gene sequencing are changing the way business operate. I thought we **were well positioned to** achieve those innovations. Now I have a great team in place. Data engineers... Data scientist ... But It is challenging to **tranlate our efforts into product outcome**. We have different skill sets... We use diffrent tools making collebration harder. We spent 90% time with complex data pipelines and disjoint tools just to prepare data for analytics. **Security became an afterthought. Innovation was a distant dream.** Then we adopted the databricks, unified analytic platform. These **breakthrough** empowered my team to accelerate AI and innovation. It's unified management simplifies data engineering by enforcing data integrity and automating performance. Now my platform teams can make data available for analytics in near real time. It unifies people. Data engineers build data pipelines unifying both streaming and historical data. data scientist build model in one place while business users cosuming real-time dashboard. Databrickes is service. We don't have to manually configure and scale clusters. It's cloud based and for we managed. And enterprise security ensures data is protected.
 
 # 5902
 

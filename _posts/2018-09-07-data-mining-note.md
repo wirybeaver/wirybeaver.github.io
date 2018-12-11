@@ -334,11 +334,26 @@ Noise points: Neither. <br>
 - 超参：senstive to minpts.
 
 ## Cluster Evaluation
-
 cohesion: how closly objects in a cluster are.<br>
 seperation: how distint a cluster is from other clusters.<br>
 cophenetic distance: the proximity at which the algorithm puts two object in the same cluster for the first time.<br>
 cophenetic correlation: the correlation between the entries of the cophenetic matrix and the original disimilarity matrix.
+
+# Other
+
+## Bisecting K-means
+High level: split clusters with  highest SSE using basic 2-means until populating K clusters.
+
+Rationale: SSE between tow splitted child clusters is less than the SSE of their parent cluster so as to avoid local minima.
+
+pseudo-code:<br>
+Intialize the list of clusters with a single cluster containing all samples.<br>
+repeat<br>
+remove a cluster with highest SSE<br>
+bisect the selected cluster using basic 2-means<br>
+add the two splitted clusters into the list<br>
+until k cluster formatted<br>
+
 
 
 
