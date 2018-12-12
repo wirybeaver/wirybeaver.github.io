@@ -181,6 +181,12 @@ Con<br>
 
 # Association
 
+## association problem
+uncover correlationship which is not explicitly recorded
+
+## market problem
+find which items are purchased together
+
 ## terminology
 - itemset. A collection of 0 or more co-occurring items.
 - $$\sigma(X)$$ itemset support account. \# transactions containing itemset X.
@@ -224,6 +230,8 @@ Lesson: Need stratification to avoid spurious pattern.
 $$\sigma_{m-a}(x) = \sum\min\limits_{y \in x}(\sigma_{m-a}(y))$$
 
 ## sequence
+number of subsequence of a certern sequence: $$O(2^{nk})$$
+
 ordered list of elments. Each element is an itemset, collection of one or more events.
 
 Support of a sequence *s* is the fraction of all sequences containing *s*.
@@ -235,6 +243,7 @@ order matters in sequence, but not in itemset.
 \\(t(t_1, t_2, \ldots, t_m) \in s(s_1, s_2, s_m)\\), if there exits integers<br>
 1 \\(\le j_1 < j_2 < \ldots < j_m \le n such that t_1 \in s_{j_1}, t_2 \in s_{j_2}, \ldots, t_m \in s_{j_m}\\)
 
+two sequence can be merged if and only if s1 \\ {first event of e1} == s2 \\ {last event of e'n}
 
 # Clustering
 
@@ -270,6 +279,9 @@ repeat<br>
     Recompute the centroids of each cluster<br>
 until the centroids don't change<br>
 
+### What phenomenon of greedy algorithm
+gradient descent is likely to find local minima.
+
 ### find initial centroids
 farthest point method. Advantage: well-seperated. Shortcoming: computationally expensive.<br>
 density-based: choose k moste dense points. no repetition within esp.<br>
@@ -296,6 +308,18 @@ repeat<br>
     measure $$SSE_{total}$$<br>
 until $$SSE_{total}$$ doesn't improve<br>
 
+### Bisecting K-means
+High level: split clusters with  highest SSE using basic 2-means until populating K clusters.
+
+Rationale: SSE between tow splitted child clusters is less than the SSE of their parent cluster so as to avoid local minima.
+
+pseudo-code:<br>
+Intialize the list of clusters with a single cluster containing all samples.<br>
+repeat<br>
+remove a cluster with highest SSE<br>
+bisect the selected cluster using basic 2-means<br>
+add the two splitted clusters into the list<br>
+until k cluster formatted<br>
 
 ### Cons
 - 贵, 高维：无
@@ -341,24 +365,15 @@ cophenetic correlation: the correlation between the entries of the cophenetic ma
 
 # Other
 
-## Bisecting K-means
-High level: split clusters with  highest SSE using basic 2-means until populating K clusters.
+Kmeans proximity metrics: Manhattan, Squared Euclidean, consine, Bregman divergence
 
-Rationale: SSE between tow splitted child clusters is less than the SSE of their parent cluster so as to avoid local minima.
+min-apriori why?
 
-pseudo-code:<br>
-Intialize the list of clusters with a single cluster containing all samples.<br>
-repeat<br>
-remove a cluster with highest SSE<br>
-bisect the selected cluster using basic 2-means<br>
-add the two splitted clusters into the list<br>
-until k cluster formatted<br>
+record data:
+graph-based data:
+prototype-based:
 
-
-
-
-
-
+qualitative definition?
 
 
 
