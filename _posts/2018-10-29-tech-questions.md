@@ -24,10 +24,9 @@ Functianl programming is so called because a program consists entirely functiona
 - eliminate a major source of bugs.
 - relief programmers of the burden of prescibing the flow control
 
-# Classical Algorithm
+# Algorithm
 
 ## Topological sort
-
 format a linear ordering s.t for each directed edge u->v, u comes before v in the ordering.
 
 Observation: if the node has no incoming edges, it should be sorted first.
@@ -50,7 +49,7 @@ Find operation:
 
 Union operation: given two elments, get two roots using find operation respectively. Make one of them pointing to anohter.
 
-## complete binary tree
+## Complete binary tree
 every level is completely filled except possibly the last level. All nodes are as far left as possible.
 
 ## Heap
@@ -65,10 +64,30 @@ Query Interval Summation
 
 ## Dijstra
 
-## LFU
+## HashMap
+
+### Data Structure
+lookup table. An array of bucket, each bucket is associated with a linked list
+
+### How to locate bucket
+Step 1. Key could be arbitrary type, we have translate the key to an interger. Fortunately, each java object has a hashCode() function, call Key's hashCode().<br>
+Step 2. The interger obtained in the previous step may have bad quality. Amelirate with HashMap's internal hash().<br>
+Step 3. mod by table length.<br>
+hash(): XORs with higher 16 bits. Ratinale: spread the impact of higher bits downward. Otherwise higher bits would never be used in index calculations if the table length is small;
+
+### When to resize
+number of entries > loadFactor * capacity, where capacity is consistent to the table length.
+
+### How to resize
+Prerequisite: power of two table length, power of tow expansion.
+
+Observation: For each bucket in the old table, associated elements must either stay at same index or move forward with a fixed offset in the new table. The offset equals old table length. In short, one old bucket is splitted into two new bucket, the index difference is exactly old table length.
+
+Advantage: insertion order is kept.
+
+### ![Source Code](https://leetcode.com/problems/design-hashmap/discuss/205285/reproduce-hash-and-resize-from-Java-8-source-code)
 
 # Database
-
 ## inner join
 only produce records that match both left and right table
 
@@ -105,141 +124,28 @@ Secondary Index: a leaf node stores primary keys.
 
 ## Virtual Memory
 
+# Project
 
-# Java Source Code
+## Sprint Boot
 
-## HashMap
+## Microservice
 
-### Data Structure
-lookup table. An array of bucket, each bucket is associated with a linked list
+## What you learned
 
-### How to locate bucket
-Step 1. Key could be arbitrary type, we have translate the key to an interger. Fortunately, each java object has a hashCode() function, call Key's hashCode().<br>
-Step 2. The interger obtained in the previous step may have bad quality. Amelirate with HashMap's internal hash().<br>
-Step 3. mod by table length.<br>
-hash(): XORs with higher 16 bits. Ratinale: spread the impact of higher bits downward. Otherwise higher bits would never be used in index calculations if the table length is small;
+### Production workflow
+Document: UML, Sequence 
 
-### When to resize
-number of entries > loadFactor * capacity, where capacity is consistent to the table length.
+Git
 
-### How to resize
-Prerequisite: power of two table length, power of tow expansion.
+Unit Test
 
-Observation: For each bucket in the old table, associated elements must either stay at same index or move forward with a fixed offset in the new table. The offset equals old table length. In short, one old bucket is splitted into two new bucket, the index difference is exactly old table length.
+### Teamwork Responsibility
+Integration Test with front-end engineer
 
-Advantage: insertion order is kept.
+### Senior Development Tech
+Design Pattern:
 
-### Source Code
-```java
-    class MyHashMap {
+Scale web service: Learn the theory and make a practice (RPC, Message broker, Config Management System, Cache)
 
-        /** Initialize your data structure here. */
-        float loadFactor = 0.75f;
-        int size = 0;
-        int cap = 16;
-        Node[] table;
-        public MyHashMap() {
-            table = new Node[cap];
-        }
-        
-        /** value will always be non-negative. */
-        public void put(int key, int value) {
-            int hash = hash(key);
-            int idx = hash & (cap-1);
-            Node cur = table[idx];
-            while(cur!=null && cur.key != key){
-                cur = cur.next;
-            }
-            if(cur == null){
-                table[idx] = new Node(key, value, hash, table[idx]);
-                size++;
-            }
-            else{
-                cur.val = value;
-            }
-            if(size > cap * loadFactor){
-                resize();
-            }
-        }
-        
-        /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
-        public int get(int key) {
-            int idx = hash(key) & (cap-1);
-            Node cur = table[idx];
-            while(cur != null && cur.key!=key){
-                cur = cur.next;
-            }
-            return cur == null ? -1 : cur.val;
-        }
-        
-        /** Removes the mapping of the specified value key if this map contains a mapping for the key */
-        public void remove(int key) {
-            int idx = hash(key) & (cap-1);
-            Node cur = table[idx];
-            Node pre = null;
-            while( cur != null && cur.key!=key){
-                pre = cur;
-                cur = cur.next;
-            }
-            if(cur!=null){
-                size--;
-                if(pre == null){
-                    table[idx] = cur.next;
-                }
-                else{
-                    pre.next = cur.next;
-                }
-            }
-        }
-        
-        private static int hash(int key){
-            int h;
-            return (h=Integer.valueOf(key).hashCode()) ^ (h >>> 16);
-        }
-        
-        private void resize(){
-            int oldCap = table.length;
-            cap = oldCap << 1;
-            Node[] newTable = new Node[cap];
-            for(int i=0; i<oldCap; i++){
-                Node lohead = new Node(-1, -1, -1, null);
-                Node lotail = lohead;
-                Node hihead = new Node(-1, -1, -1, null);
-                Node hitail = hihead;
-                Node cur = table[i];
-                while(cur != null){
-                    int idx = hash(cur.key);
-                    Node next = cur.next;
-                    if((cur.hash & oldCap) == 0){
-                        lotail.next = cur;
-                        lotail = lotail.next;
-                        lotail.next = null;
-                    }
-                    else{
-                        hitail.next = cur;
-                        hitail = hitail.next;
-                        hitail.next = null;
-                    }
-                    cur = next;
-                }
-                newTable[i] = lohead.next;
-                newTable[i+oldCap] = hihead.next;
-            }
-            table = newTable;
-        }
-        
-        private class Node{
-            int key;
-            int val;
-            int hash;
-            Node next;
-            Node(int key, int val, int hash, Node next){
-                this.key= key;
-                this.val = val;
-                this.hash = hash;
-                this.next = next;
-            }
-        }
-    }
-```
+
 
