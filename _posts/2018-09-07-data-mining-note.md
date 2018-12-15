@@ -181,6 +181,8 @@ Con<br>
 
 # Association
 
+X -> Y, occurs X -> seems to co-occurs
+
 ## association problem
 uncover correlationship which is not explicitly recorded
 
@@ -327,6 +329,13 @@ until k cluster formatted<br>
 - 超参：senstive to K.
 
 ## Agglomerative Hierachical
+presudo code:<br>
+compute proximity matrix
+
+while >1 cluster
+    merge two closest cluster
+    update proximity matrix
+
 MIN: senstive to noise. 
 MAX: less susceptible to noise; break down large clusters, biased towards globular clusters.
 Group Average: less susceptible to noise; biased towards globular clusters.

@@ -24,7 +24,9 @@ Functianl programming is so called because a program consists entirely functiona
 - eliminate a major source of bugs.
 - relief programmers of the burden of prescibing the flow control
 
-# Topological sort
+# Classical Algorithm
+
+## Topological sort
 
 format a linear ordering s.t for each directed edge u->v, u comes before v in the ordering.
 
@@ -37,7 +39,7 @@ while loop, pop out a node, append it to the ultimate ordering. Walk through all
 
 Eventually, check if all node's indegree becomes zero. If not, it indicates there is a cycle in the graph.
 
-# Union Find
+## Union Find
 keep track of elements partitioned into disjoint sets. Unify operation: merge two sets. Find option: find the id of the associated set.
 
 Use a tree to represent a set. The identify of a set is the root of the tree.
@@ -48,22 +50,76 @@ Find operation:
 
 Union operation: given two elments, get two roots using find operation respectively. Make one of them pointing to anohter.
 
-# complete binary tree
+## complete binary tree
 every level is completely filled except possibly the last level. All nodes are as far left as possible.
 
-# Heap
+## Heap
 keep track of the largest or smallest elment. Use a complete binary tree, For each subtree, the top node is the largers one. In practice, use an array to represent a complete binary tree. Zero based, given index i, then the left child index is 2i+1 and the right child index is 2i+2, the parent index is the floor of half of i-1. 
 
 Add a node. temporarily append it to the array. Swap out of order parent-child pair from bottom to up until find a right position.
 
 Delete a node. Replace the root with the tailing element, swap out of order parent-child pait from up to bottom until find a right position.
 
-# Binary Index Tree
+## Binary Index Tree
 Query Interval Summation
 
-# Dijstra
-Single Shortest Path. Greedy strategy. Generate a set S.
+## Dijstra
 
-Iterate N times, each time find a vertex u closest to the source. u is not a member of S. Add u to S.
+## LFU
 
-# LFU
+# Database
+
+## inner join
+only produce records that match both left and right table
+
+## left join
+produce all records in left table, with matching records from right table where available. If no match, the right side would be null
+
+## full join
+produce all records in left table and right table, with matching records from both side where available. If no match, the left side or right side would be null.
+
+## ACID
+
+## ![Transcation Isolation level](https://mydbops.wordpress.com/2018/06/22/back-to-basics-isolation-levels-in-mysql/)
+- read uncommited: Uncommited data changes is visible to other transactions.
+    - How: No locks.
+    - Problem: dirty read
+- read commited: Avoid dirty read, i.e., uncommited data changes is visible to other transactions. "Perplexed" state.
+    - How: Each SELECT has its own snapshot of commited data that was commited before the execution of the SELECT.
+    - Problem: non-repeatable read, running same SELECT multiple times during the same transaction could obtain different results.
+- repeatable read: Avoid unreaptable read, i.e., running same SELECT multiple times during the same transaction could obtain same results.
+    - How: Same SELECT use same snapshot.
+    - Problem: phantom reads. Phantom: a row apprears where it is not visible before
+- serializable read: complete isolated
+    - How: sequential transaction.
+
+## ![Clustered Index and Secondary Index](https://dev.mysql.com/doc/refman/8.0/en/innodb-index-types.html)
+Clustered Index: data raws with similiar index values would be physically stored together. InnoDB, a leaf node is a disk page, storing the actual data. Pro: provide linear access to data and save disk I/O.
+
+Secondary Index: a leaf node stores primary keys.
+
+# OS
+## CAS
+
+## Dead Lock
+
+## Virtual Memory
+
+
+# Java Source Code
+
+## HashMap
+
+### hash()
+
+XORs naive hashCode() with its onw higher 16 bits in order to reduce hash collision.
+
+```java
+    static final int hash(Object key) {
+        int h;
+        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+    }
+```
+
+Computes key.hashCode() and spreads (XORs) higher bits of hash to lower.  Because the table uses power-of-two masking, sets of hashes that vary only in bits above the current mask will always collide. So we apply a transform that spreads the impact of higher bits downward. we just XOR some shifted bits in the cheapest possible way to reduce systematic lossage, as well as to incorporate impact of the highest bits that would otherwise never be used in index calculations because of table bounds.
+
