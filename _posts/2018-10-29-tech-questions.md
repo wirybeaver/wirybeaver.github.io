@@ -43,7 +43,7 @@ keep track of elements partitioned into disjoint sets. Unify operation: merge tw
 
 Use a tree to represent a set. The identify of a set is the root of the tree.
 
-Find operation: 
+Find operation:<br>
 - Straigh forward is going from bottom to up until we arrive at the root. Worse case, take linear time.
 - Optimize to amortized constant time using path compression. Use an array to keep track of the root instead of the immediate parent. Everything along the path got compressed. 
 
@@ -85,7 +85,7 @@ Observation: For each bucket in the old table, associated elements must either s
 
 Advantage: insertion order is kept.
 
-### ![Source Code](https://leetcode.com/problems/design-hashmap/discuss/205285/reproduce-hash-and-resize-from-Java-8-source-code)
+### [Source Code](https://leetcode.com/problems/design-hashmap/discuss/205285/reproduce-hash-and-resize-from-Java-8-source-code)
 
 # Database
 ## inner join
@@ -99,7 +99,7 @@ produce all records in left table and right table, with matching records from bo
 
 ## ACID
 
-## ![Transcation Isolation level](https://mydbops.wordpress.com/2018/06/22/back-to-basics-isolation-levels-in-mysql/)
+## [Transcation Isolation level](https://mydbops.wordpress.com/2018/06/22/back-to-basics-isolation-levels-in-mysql/)
 - read uncommited: Uncommited data changes is visible to other transactions.
     - How: No locks.
     - Problem: dirty read
@@ -112,7 +112,7 @@ produce all records in left table and right table, with matching records from bo
 - serializable read: complete isolated
     - How: sequential transaction.
 
-## ![Clustered Index and Secondary Index](https://dev.mysql.com/doc/refman/8.0/en/innodb-index-types.html)
+## [Clustered Index and Secondary Index](https://dev.mysql.com/doc/refman/8.0/en/innodb-index-types.html)
 Clustered Index: data raws with similiar index values would be physically stored together. InnoDB, a leaf node is a disk page, storing the actual data. Pro: provide linear access to data and save disk I/O.
 
 Secondary Index: a leaf node stores primary keys.
@@ -127,25 +127,60 @@ Secondary Index: a leaf node stores primary keys.
 # Project
 
 ## Sprint Boot
+IOC, DI.
 
 ## Microservice
 
 ## What you learned
 
 ### Production workflow
-Document: UML, Sequence 
+Document: UML, Sequence Digram
 
-Git
+Aone: internal DevOps platform, integrating GitLab, Maven, Docker. <br>
+Step 1: creat new feature branch in Aone, fill description. Aone would return back the git url.
+Step 2: fix bug in PC, merge and push.
+Step 3: Maven bundle files.
+Step 4: deploy new Docker Image.
 
-Unit Test
+Unit Test<br>
+- JUnit: for instance POJO CRUD. Annotation.
+- Mockito: replace an object with a test double in order to verify some expectations, for example asserting that a certain method has been called.
+
+```java
+public class ResourceManagerImplTest {
+    private CloudProvider provider;
+
+    @Before
+    public void init(){
+        provider = mock(CloudProvider.class);
+    }
+
+
+    @Test
+    public void testPlaceContainerCaseA(){
+        // basic case: instanceSize is divisible by containerSize
+        // sequential request
+        double instanceSize = 2;
+        double containerSize = 1;
+        when(provider.requestInstance()).thenAnswer( prov -> new InstanceImpl(instanceSize));
+        ResourceManager manager = new ResourceManagerImpl(provider, instanceSize, containerSize);
+        for(int i=0; i<100; i++){
+            manager.placeContainers(1);
+        }
+        verify(provider, times(50)).requestInstance();
+    }
+}
+```
 
 ### Teamwork Responsibility
-Integration Test with front-end engineer
+Integration Test with front-end engineer, postman.
 
 ### Senior Development Tech
 Design Pattern:
 
 Scale web service: Learn the theory and make a practice (RPC, Message broker, Config Management System, Cache)
+
+### Gson
 
 
 
