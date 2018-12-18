@@ -14,10 +14,10 @@ tags:
 http://www.developersbook.com/corejava/interview-questions/corejava-interview-questions-faqs.php
 
 # Functional programming
-## What
+**What**<br>
 Functianl programming is so called because a program consists entirely functional. The main function is defined by other functions, which in turn are still difined by more functions, until at the bottom level the functions are language primitives.
 
-## Why
+**Why**<br>
 - no assignment. Variab les never changes once given a value.
 - no side-affect. A function have no affect other that compute itself.
 - no flow control. Expression's execution order is irrelevant.
@@ -60,41 +60,43 @@ Add a node. temporarily append it to the array. Swap out of order parent-child p
 Delete a node. Replace the root with the tailing element, swap out of order parent-child pait from up to bottom until find a right position.
 
 ## Binary Index Tree
-Query Interval Summation
+todo
 
 ## Dijstra
+todo
 
 ## HashMap
 
 ### Data Structure
 lookup table. An array of bucket, each bucket is associated with a linked list
 
-### How to locate bucket
+**How to locate bucket**<br>
 Step 1. Key could be arbitrary type, we have translate the key to an interger. Fortunately, each java object has a hashCode() function, call Key's hashCode().<br>
 Step 2. The interger obtained in the previous step may have bad quality. Amelirate with HashMap's internal hash().<br>
 Step 3. mod by table length.<br>
 hash(): XORs with higher 16 bits. Ratinale: spread the impact of higher bits downward. Otherwise higher bits would never be used in index calculations if the table length is small;
 
-### When to resize
+**When to resize**<br>
 number of entries > loadFactor * capacity, where capacity is consistent to the table length.
 
-### How to resize
+**How to resize**<br>
 Prerequisite: power of two table length, power of tow expansion.
 
 Observation: For each bucket in the old table, associated elements must either stay at same index or move forward with a fixed offset in the new table. The offset equals old table length. In short, one old bucket is splitted into two new bucket, the index difference is exactly old table length.
 
 Advantage: insertion order is kept.
 
-### [Source Code](https://leetcode.com/problems/design-hashmap/discuss/205285/reproduce-hash-and-resize-from-Java-8-source-code)
+[**Source Code**](https://leetcode.com/problems/design-hashmap/discuss/205285/reproduce-hash-and-resize-from-Java-8-source-code)
 
 # Database
-## inner join
+## join
+**inner join**<br>
 only produce records that match both left and right table
 
-## left join
+**left join**<br>
 produce all records in left table, with matching records from right table where available. If no match, the right side would be null
 
-## full join
+**full join**<br>
 produce all records in left table and right table, with matching records from both side where available. If no match, the left side or right side would be null.
 
 ## ACID
