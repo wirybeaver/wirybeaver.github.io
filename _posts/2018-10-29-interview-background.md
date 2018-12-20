@@ -10,8 +10,17 @@ tags:
     - Interview
 ---
 # Language
-## Core Java
-http://www.developersbook.com/corejava/interview-questions/corejava-interview-questions-faqs.php
+## [Core Java](http://www.developersbook.com/corejava/interview-questions/corejava-interview-questions-faqs.php)
+
+### polymorphism
+A method or an object can have more than one behavior. Java achieve polymorphism with overload and override.
+
+### Exception and Error
+Exception: could be handled by program. An event occurs during the program execution and disrupts the norm flow.
+Error: unrecoverable, JVM report it, e.g. OutOfMemoryError
+Unchecked Exception: Runtime exception, e.g. IndexOutOfBounds, NullPointer, IllegalArgument, ClassCast
+checked Exception: exceptions excludeind run time excpetion. e.g. NoSuchMethod, ClassNotFound, IO
+
 
 ## Functional programming
 **What**<br>
