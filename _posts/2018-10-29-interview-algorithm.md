@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Interview Algorithm
+title:      Pratical Algorithm
 date:       2018-10-29 09:00:00
 author:     "Shane"
-excerpt:    ""
+excerpt:    "Gist of pratical data structure and algorithm occuring often in SDE interview"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
