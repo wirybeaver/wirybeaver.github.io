@@ -10,9 +10,10 @@ tags:
     - Interview
 ---
 
-Imagine an appplication which reaches out millions of users. Request on the server should never fail even if theres is a hardware failure. We should have multiple copies of servers in the system. We should make sure information in each server is the same. This is important because the user should not get contradicting information when their requests is relayed by the load balancer and served on different servers over time.
+### Scale
+Imagine an appplication which reaches out millions of users. Request on the server should never fail even if theres is a hardware failure. Thus we should have multiple copies of servers in the system and redirect requests to available servers. We should make sure information in each server is the same. This is important because the user should not get contradicting information when their requests is relayed by the load balancer and served on different servers over time.
 
-Nothing really. Could is a set of computers. You pay could solution providers and they give you computation power. Computation power is nothing but a desktop that they have somewhere and run your algorithm. The reason we like to do this is because the configuration and the reliability can be taken care of to a large extent by clouder solution providers. 
+The difference between cloud and desktop is nothing really. Could is a set of computers. You pay cloud solution providers and they give you computation power. Computation power is nothing but a desktop that they have somewhere and run your algorithm. The reason we like to do this is because the configuration and the reliability can be taken care of to a large extent by clouder solution providers. 
 
 Scalability: the ability to handle more requests by adding more resources.
 
@@ -33,6 +34,16 @@ Like we said.
 
 [^3]: scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added
 
+### Consistent Hash
+Motivation: minimize the change of request-server. (todo)
+
+Method: Map request ID and server ID into a ring hash space. Clockwise assign the request to the nearest server. Theoretically, the load change in each server is minimal if there's a lot of server. 
+
+**What's the catch?**<br>
+In real world, the amount of physical servers is relatively less than the hashing space. Thus **skewed load** is likely to occur. For example, if we remove one physical server, the next adjacent server has to take all load belonging to the removed one, whose amount is possbibly large. 
+
+**How**<br>
+Make virtual servers with K hash functions. As a result, one phycial server manage K evenly distributed virtual node in the ring hash space. If one server is removed , the corresponding space would evenly hit multiple regions. The load increasement of each existing server is expectedly uniform.
 
 
 
