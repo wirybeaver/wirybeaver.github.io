@@ -27,12 +27,11 @@ Like we said.
 |[data consistency is a real issure](#2)|consistent|
 |[scales well as users increase](#3) |hardware limit|
 
-<a name="1">The request falls on any of the machine</a>
+<a name="1">1</a> The request falls on any of the machine
 
-<a name="2">The data could be sent from ont server to another. Data is complicated to maintain. If there's a transaction where operation have to be atomic, what could happens is to lock all server's read which is impractical. So usually what happens is we have some sort of lose transactional guarantee.
-</a>
+<a name="2">2</a> The data could be sent from ont server to another. Data is complicated to maintain. If there's a transaction where operation have to be atomic, what could happens is to lock all server's read which is impractical. So usually what happens is we have some sort of lose transactional guarantee.
 
-<a name="3">scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added</a>
+<a name="3">3</a> scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added
 
 
 
