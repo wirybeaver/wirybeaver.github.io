@@ -8,7 +8,6 @@ header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
     - Note
-    - Network
 ---
 
 FTP: contron connection 21, data connection 20 <br>

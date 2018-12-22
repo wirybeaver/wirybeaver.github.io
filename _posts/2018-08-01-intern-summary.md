@@ -7,11 +7,9 @@ author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
-    - AI
-    - OOD
     - Java
     - Spring Boot
-    - System Design
+    - Distributed System
 ---
 
 **Mlab** is a business intelligence platform I did during my Alibaba intern, helping machine learning engineers to reduce the development cycle of AI product. We tried to constitute a general but flexible machine learning process and automate all inner steps consecutively, including data aggregation, feature preprocessing, offline training, online deployment, real time computing, etc. I implemented offline training module as well as assisting in dynamic sql generation and online model deployment. Finally, our platform is accessed by Taobao seller union activity whose DAU is 10 million, shorterning development cycle to 1 week. This awesome and challengeable intern let me know how to set up an enterprise platform and gives me a sense of fulfillment.

@@ -8,7 +8,6 @@ header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
     - Note
-    - Data Mining
 ---
 
 # data preprocessing
