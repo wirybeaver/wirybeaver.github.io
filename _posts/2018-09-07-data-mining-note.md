@@ -1,7 +1,7 @@
 ---
 layout:     postMathJax
 title:      Data Mining Note
-excerpt:    Details about my intern project
+excerpt:    "Ohio State CSE5243 Note"
 date:       2018-09-07 10:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
