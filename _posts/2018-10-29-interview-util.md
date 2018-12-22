@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Java Python Util
+title:      Pratical Java Tools for Interviews
 date:       2018-12-20 12:00:00
 author:     "Shane"
 excerpt:    ""
@@ -8,6 +8,7 @@ header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
     - Interview
+    - java
 ---
 
 [HttpClient Basic](http://www.vogella.com/tutorials/ApacheHttpClient/article.html)
