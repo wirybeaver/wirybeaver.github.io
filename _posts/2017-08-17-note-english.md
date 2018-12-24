@@ -10,9 +10,7 @@ tags:
     - Note
 ---
 
-# daily note
-- Narvar
-
+### daily note
 - nuance, cancel out, annihilate, * distribute over +
 - Punctuation: Question mark, Comma, Period, Exclamation mark
 - fabricated, agnostic, dictate, roster
@@ -34,7 +32,7 @@ tags:
 - Compute the proximity value *individually* between the test and training examples.
 - supply is way higher than demand.
 
-# Narvar
+### Narvar
 - helper retailers **champion their customers** at every step of the journey
 - a platform designed from the ground up to **drive long-term customer loyalty**. **deliver** post-purchase experiences that **retain, engage, and delight customers, from cart to doorstep, and beyond**.
 - Convert: turn shoppers into happy customers throught clear expectations, personalized convenience, and relevant delivery options.
@@ -50,18 +48,17 @@ tags:
     - understancd your customer from preferences, to purchase hisotry and feedback
     - monitor trends, and otimize based on real-time performance and predictions
 
-# Quantcast
+### Quantcast
 - monetize users
 - inform and shape their audience stories
 - enable/empower your brand to grow
 - grow business/revenue
 - get accurate breakout of traffics, demographics, brand preference, shopping habits, customized to fit model
 
-# Databricks
+### Databricks
 ai and big data are driving innovation across all industries. Innovation such as image recogonition, real time fraud detection and gene sequencing are changing the way business operate. I thought we **were well positioned to** achieve those innovations. Now I have a great team in place. Data engineers... Data scientist ... But It is challenging to **tranlate our efforts into product outcome**. We have different skill sets... We use diffrent tools making collebration harder. We spent 90% time with complex data pipelines and disjoint tools just to prepare data for analytics. **Security became an afterthought. Innovation was a distant dream.** Then we adopted the databricks, unified analytic platform. These **breakthrough** empowered my team to accelerate AI and innovation. It's unified management simplifies data engineering by enforcing data integrity and automating performance. Now my platform teams can make data available for analytics in near real time. It unifies people. Data engineers build data pipelines unifying both streaming and historical data. data scientist build model in one place while business users cosuming real-time dashboard. Databrickes is service. We don't have to manually configure and scale clusters. It's cloud based and for we managed. And enterprise security ensures data is protected.
 
-# 5902
-
+### 5902
 Claim, belive, agree, show, think, belive,suggest<br>
 Criticize, describe, identify, summarize, examine, discuss<br>
 Argue, point out, realize, explain, assert, acknowledge, admit, maintain, emphasize<br>
@@ -85,13 +82,13 @@ it save my minds 这样比较简单<br>
 it would complaint about it 编译器会抱怨它<br>
 rush this out<br>
 
-# 公共场合
+### 公共场合
 Leave personal belongings doens't reserve the room 个人物品<br>
 Be considerate of others and do not monopolize the room 考虑周到 垄断<br>
 Invite theft 引入小偷<br>
 pose a security for everyone<br>
 
-# whimspy dairy
+### whimspy dairy
 - The thing what really stinks me is that ... 让我恶心的事
 - get into sb 整天和某人在一起
 - stick with sb 厮混
@@ -101,7 +98,7 @@ pose a security for everyone<br>
 - it gets in one ear and out the other with him. 耳边风
 - have only come around in the last couple of years. 才来了几年
 
-# Cover Letter
+### Cover Letter
 
 This email can be broken into 3 parts. Subject line, email body and the resume attachment.
 
@@ -135,7 +132,7 @@ Do keep in mind that recruiters receive hundreds of applications from multiple s
 
 agility fuel iginte scrap idea
 
-# data mining 写作
+### data mining 写作
 This section examines some statistical tests available to compare the difference between two classifiers.
 
 **For illustrative purposes**, **consider** a pair of classification models... **Suppose** MA achieves 85% accuracy when evaluated on a set DA with size nA. **Based on this information**, ..?
@@ -148,9 +145,10 @@ The first quesiont **relates to the issue of estimating** the confidence interva
 
 To determine the confidence interval, we have to establish the probability distribution that governs acc measure. This section describe an approach of deriving the confidence interval by modeling the classificaton task as a binomial experiment. Following is a list of characters of a binomail experiment.
 
-# LinkedIn
-example: https://www.linkedin.com/in/nishanthgandhidoss/
-## self introduction
+### LinkedIn
+[example](https://www.linkedin.com/in/nishanthgandhidoss/)
+
+**self introduction**<br>
 I **completed** my Masters to **specialize myself in the field of** Data Science **with concentration in** Applied Deep learning for Artificial Intelligence.
 •   Gathered external data to analyze market strategies using exploratory data analysis and regression methods.
 •   Identified and examined industry and geographic trends to increase regional sales by 10%.
@@ -162,7 +160,7 @@ I **completed** my Masters to **specialize myself in the field of** Data Science
 •   Worked on the production line to have a closer understanding of the production workflow to improve the backtracking system functionality
 
 
-## recommendation
+**recommendation**
 Nishanth joined our team for a summer internship. Due to his specialization in Deep Learning, we were glad to have him tackle handwritten digit recognition, a difficult and open problem we had; and Nishanth in the short few months of internship developed a full protoype of a system using image processing for segmentation and CNNs for digit recognition. From the first day on he was determined to deliver great value, and was very organized and independent. Over the course of his internship, he was totally open to feedback and not just took it to heart, but immediately acted and improved on it. So in summary, he not just did a great job researching both modern and traditional methods, he developed a great sense of what works for the business, breaking down the larger task into manageable pieces and collaborating with the team to achieve these goals. More than that, he was always proactive in reaching out whenever he saw an opportunity to connect and learn, and put a lot of effort into very successful presentations to the team, and made tremendous strides in targeting communication to differing audience.
 Overall, it was a joy having Nishanth as an intern, and we'd be happy to have him back!
 
@@ -173,6 +171,56 @@ Nishanth is a quick learner and adapted himself in the project in a short span w
 Nishanth is a proficient developer come mentor. I have worked on several projects with him over the span of 6 years where he proved time and again that he can emerge from a complex situation, he is cool headed in handling complex and delicate situations. He also has good experience in working on multiple projects simultaneously. His deep knowledge and professional experience in the field of Big data and Full Stack Web development is always impressive. I wish all good happens to him and reach great heights in future.
 
 Nishanth is one of the hardest working students I've ever met. He takes the initiative to gain new knowledge and pursue solutions to complex problems. He will take a basic problem statement and use it as an opportunity to discover advanced problem solving skills. His communication skills are also exemplary. Nishanth will be an asset to any organization striving to find the value proposition in big data.
+
+### Kafka Introduce
+this kind of thing led us to the rat's nest of intergration complexity.
+
+use event instead of table as the source of the truth of the state  of the system. hook A up to B. Look the system of the truth as being the actual events and keep those around.
+
+Go back in time. **rewind back where we left off** or reproduce some of these events. That thing needs to not just be an event stream but it also needs to be a ledger, a ledger that we can go back in time. 
+
+**distibuteded from the outset**.
+
+Why not message systems?<br>
+Ordering, is ordering always **guranteed all the way to the consumption side** in message system? <br>
+Horizontal scaling?<br>
+Push. Back pressure<br> 
+
+it's distriubted by nature and it's redundant so it's creating copies of these events as they go.
+
+event ledger, distributed, redundant. a distributed commit log.
+
+Kafka fundamentals: durability and ordering guaranteed. cluster is core. Message queue semantics.
+
+come into play. let's go through some of those. So first is modern ETL, CDC(change data capture).
+
+Record: key, value, timestamp. immutable, append-only, persisted (do everything in disk)
+
+broker: node in the cluster
+producer: write record to a broker
+consumer: read record from a broker
+cluster: leader-follower for cluster distribution
+topic: logical name with 1 or more partitions.
+partition: replicated, ordering is only guaranteed in a partition. Partitioning can be done manually or based on a key.
+offset: unique sequetial id per partition. Consumer instances need to only keep track of the offsets. 
+
+producer partitioning: each partition has one lead server and has zero or more follower server. Write and Read are all done in leader.  Replication factor is based on topic. (when you produce a message to a topic, essentially it just do something like a round robin accross the partition) auto-rebalancing. 
+
+consumer groups: each partition is consumed by exactly one consumer in the group. Message consumption is balanced across all consumers in a group. 
+
+quorum, dramatic impact, do the right, confluent console
+
+### Tian Pan
+
+When we truly understand a system, we should be able to **identify what each component is and explain how they interact with one another**.
+
+
+### Gaurav Sen
+Imagine an appplication which **reaches out** millions of users. Request on the server should never fail even if theres is a hardware failure. Thus we should have multiple copies of servers in the system and redirect requests to available servers. We should make sure information in each server is the same. This is important because the user should not **get contradicting information** when their requests is **relayed** by the load balancer and served on different servers over time.
+
+The difference between cloud and desktop is **nothing really**. Could is a set of computers. You pay cloud solution providers and they give you computation power. Computation power **is nothing but a desktop that they have somewhere** and run your algorithm. **The reason we like to do this** is because the configuration and the reliability can **be taken care of to a large extent by clouder solution providers**. 
+
+
 
 
 

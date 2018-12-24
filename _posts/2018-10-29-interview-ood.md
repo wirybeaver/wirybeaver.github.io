@@ -10,12 +10,12 @@ tags:
     - Interview
 ---
 
-## Management System
 General Use case <br>
 - reserve
 - serve
 - checkout
 
+### Parking Lot
 Clarify<br>
 - What.
     - parking lot: multi-level
@@ -62,6 +62,16 @@ Class<br>
 - Vehicle
     - protected int size
     - public int getSize()
+
+
+### Restaurant
+Clarify <br>
+- Restaurant
+
+- Party
+- Table
+
+
 
 
 

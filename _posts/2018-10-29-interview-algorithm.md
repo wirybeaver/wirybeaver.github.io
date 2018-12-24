@@ -10,7 +10,7 @@ tags:
     - Interview
 ---
 
-## Topological sort
+### Topological sort
 format a linear ordering s.t for each directed edge u->v, u comes before v in the ordering.
 
 Observation: if the node has no incoming edges, it should be sorted first.
@@ -22,7 +22,7 @@ while loop, pop out a node, append it to the ultimate ordering. Walk through all
 
 Eventually, check if all node's indegree becomes zero. If not, it indicates there is a cycle in the graph.
 
-## Union Find
+### Union Find
 keep track of elements partitioned into disjoint sets. Unify operation: merge two sets. Find option: find the id of the associated set.
 
 Use a tree to represent a set. The identify of a set is the root of the tree.
@@ -33,19 +33,19 @@ Find operation:<br>
 
 Union operation: given two elments, get two roots using find operation respectively. Make one of them pointing to anohter.
 
-## Complete binary tree
+### Complete binary tree
 every level is completely filled except possibly the last level. All nodes are as far left as possible.
 
-## Heap
+### Heap
 keep track of the largest or smallest elment. Use a complete binary tree, For each subtree, the top node is the largers one. In practice, use an array to represent a complete binary tree. Zero based, given index i, then the left child index is 2i+1 and the right child index is 2i+2, the parent index is the floor of half of i-1. 
 
 Add a node. temporarily append it to the array. Swap out of order parent-child pair from bottom to up until find a right position.
 
 Delete a node. Replace the root with the tailing element, swap out of order parent-child pait from up to bottom until find a right position.
 
-## HashMap
+### HashMap
 
-### Data Structure
+**Data Structure**
 lookup table. An array of bucket, each bucket is associated with a linked list
 
 **How to locate bucket**<br>
@@ -67,6 +67,12 @@ Advantage: insertion order is kept.
 [**Source Code**](https://leetcode.com/problems/design-hashmap/discuss/205285/reproduce-hash-and-resize-from-Java-8-source-code)
 
 
-## Binary Index Tree
+### Binary Index Tree (todo)
 
-## Dijstra
+### Dijstra
+
+### Practice List
+- first round <https://mnmunknown.gitbooks.io/algorithm-notes/content/> and <https://stomachache007.wordpress.com/category/%E4%B9%9D%E7%AB%A0%E7%AE%97%E6%B3%95/page/1/>
+- second round <https://github.com/wisdompeak/LeetCode>
+- Others
+    - <https://cspiration.com/leetcodeClassification#10311>

@@ -10,18 +10,26 @@ tags:
     - Interview
 ---
 
-### Scale
-Imagine an appplication which reaches out millions of users. Request on the server should never fail even if theres is a hardware failure. Thus we should have multiple copies of servers in the system and redirect requests to available servers. We should make sure information in each server is the same. This is important because the user should not get contradicting information when their requests is relayed by the load balancer and served on different servers over time.
+### Resource List
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
+- [Tian Pan's Post](https://puncsky.com/hacking-the-software-engineer-interview)
+- [Distributed System for fun and Profit](http://book.mixu.net/distsys)
+- Others
+    - [System Design Interview Questions](http://blog.gainlo.co/index.php/category/system-design-interview-questions/)
+    - [educative.io](https://www.educative.io/collection/page/5668639101419520/5649050225344512/5668600916475904)
+    - [interviewbit](https://www.interviewbit.com/courses/system-design/topics/storage-scalability/)
+    - [tackling-the-system-design-interview](https://cternus.net/blog/2018/01/26/tackling-the-system-design-interview/)
+    - [OOD Questions](https://www.careercup.com/page?pid=object-oriented-design-interview-questions&n=1)
 
-The difference between cloud and desktop is nothing really. Could is a set of computers. You pay cloud solution providers and they give you computation power. Computation power is nothing but a desktop that they have somewhere and run your algorithm. The reason we like to do this is because the configuration and the reliability can be taken care of to a large extent by clouder solution providers. 
+### Scale
 
 Scalability: the ability to handle more requests by adding more resources.
 
 Like we said.
 
-| Vertical Scaling | Horizontal Scaling|
+| Horizontal Scaling | Vertical Scaling|
 |------------------|-------------------|
-|buy a bigger machine|buy more machines|
+|buy more machines|buy a bigger machine|
 |Load Balanceing required[^1]|N/A|
 |resilient|single point of failure|
 |network calls (RPC)|inter process communitation|
@@ -35,15 +43,25 @@ Like we said.
 [^3]: scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added
 
 ### Consistent Hash
-Motivation: minimize the change of request-server. (todo)
+Motivation: decouple the data-partition map and partition-machine map. Adding or deleteing a phycial machine impact less on the partiton-machine map.
 
-Method: Map request ID and server ID into a ring hash space. Clockwise assign the request to the nearest server. Theoretically, the load change in each server is minimal if there's a lot of server. 
+Method: Map request ID and server ID into a same ring hash space. Clockwise assign the request to the nearest server. 
 
 **What's the catch?**<br>
-In real world, the amount of physical servers is relatively less than the hashing space. Thus **skewed load** is likely to occur. For example, if we remove one physical server, the next adjacent server has to take all load belonging to the removed one, whose amount is possbibly large. 
+In real world, the amount of physical servers is relatively less than the hashing space. Thus **skewed load** is likely to occur. For example, if we remove one physical server, the successor has to take all load from the presessor, whose amount is possbibly large.
 
 **How**<br>
 Make virtual servers with K hash functions. As a result, one phycial server manage K evenly distributed virtual node in the ring hash space. If one server is removed , the corresponding space would evenly hit multiple regions. The load increasement of each existing server is expectedly uniform.
+
+### Kafka
+
+[Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s)  
+
+cluster: a group of computers sharing workload for a common purposes
+
+Topic: a feed name to which messages are published. Multi-subscriber.
+
+
 
 
 
