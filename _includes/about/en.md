@@ -1,6 +1,6 @@
 
 
-> Love life, the gift of god.
+> Pain past is pleasure
 
 
 Hi, this is Xuanyi(Shane) Li, a computer science master. My interest mainly focuses on distributed system and machine learning.
