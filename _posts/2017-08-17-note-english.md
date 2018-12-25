@@ -11,6 +11,7 @@ tags:
 ---
 
 ### daily note
+- Like we said.
 - eager beavour
 - grunt work: routine, menial work.
 - nuance, cancel out, annihilate, * distribute over +
@@ -194,7 +195,7 @@ event ledger, distributed, redundant. a distributed commit log.
 
 Kafka fundamentals: durability and ordering guaranteed. cluster is core. Message queue semantics.
 
-come into play. let's go through some of those. So first is modern ETL, CDC(change data capture).
+**come into play**. let's go through some of those. So first is modern ETL, CDC(change data capture).
 
 Record: key, value, timestamp. immutable, append-only, persisted (do everything in disk)
 

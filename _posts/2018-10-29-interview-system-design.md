@@ -25,8 +25,6 @@ tags:
 
 Scalability: the ability to handle more requests by adding more resources.
 
-Like we said.
-
 | Horizontal Scaling | Vertical Scaling|
 |------------------|-------------------|
 |buy more machines|buy a bigger machine|
@@ -54,12 +52,39 @@ In real world, the amount of physical servers is relatively less than the hashin
 Make virtual servers with K hash functions. As a result, one phycial server manage K evenly distributed virtual node in the ring hash space. If one server is removed , the corresponding space would evenly hit multiple regions. The load increasement of each existing server is expectedly uniform.
 
 ### Kafka
+[Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s) 
 
-[Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s)  
+**Role**<br>
+distributed stream platform
 
-cluster: a group of computers sharing workload for a common purposes
+**Essence**<br>
+an event redger could go back in time, distirbuted commit log
 
-Topic: a feed name to which messages are published. Multi-subscriber.
+**Fundamentals**<br>
+* distributed (horizontal scaling, auto-rebalancing)
+* redundant (creat multiple copies of events)
+* persisted
+* order guaranteed
+* multiple subscriber
+* pull
+
+**Component**<br>
+* Producer: write data to a broker
+* Consumer: read data from a broker
+* Broker: a node in the broker
+* Cluster: a group of computers sharing workload for a common purposes.
+* Record: key, value, timestamp. Immutable, persisited
+* Partition: sequence of record. Do partitioning by hand or based on key. Kafka would do something like a round-robin accross the partition if you produce a message without partitioning.
+    * Append-only
+    * Strong ordered: order is only guaranteed in a certain partition. May use timestamp to achieve total ordering across partitions within the topic.
+    * Replicated: each partition has one leader server and zero or more follewer surver. Replication Factor based on topic
+* Topic: logic name to which data subscribe. Composed of one or more partition.
+
+**Distribution**
+- Producer view: Topic could have multiple partions over servers. A server is a leader for some partitions and a follower for others.
+- Consumer view: each partition is consumed by exactly one consumer in the group. Message consumption is balanced across all consumers in a group. 
+
+### Zookeeper
 
 
 
