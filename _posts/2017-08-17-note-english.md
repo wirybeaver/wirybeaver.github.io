@@ -11,6 +11,8 @@ tags:
 ---
 
 ### daily note
+- eager beavour
+- grunt work: routine, menial work.
 - nuance, cancel out, annihilate, * distribute over +
 - Punctuation: Question mark, Comma, Period, Exclamation mark
 - fabricated, agnostic, dictate, roster
