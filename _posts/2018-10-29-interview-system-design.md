@@ -21,7 +21,7 @@ tags:
     - [tackling-the-system-design-interview](https://cternus.net/blog/2018/01/26/tackling-the-system-design-interview/)
     - [OOD Questions](https://www.careercup.com/page?pid=object-oriented-design-interview-questions&n=1)
 
-### Scale
+### Scaling
 
 Scalability: the ability to handle more requests by adding more resources.
 
@@ -61,30 +61,52 @@ distributed stream platform
 an event redger could go back in time, distirbuted commit log
 
 **Fundamentals**<br>
-* distributed (horizontal scaling, auto-rebalancing)
-* redundant (creat multiple copies of events)
-* persisted
-* order guaranteed
-* multiple subscriber
-* pull
+- distributed (horizontal scaling, auto-rebalancing)
+- redundant (creat multiple copies of events)
+- persisted
+- order guaranteed
+- multiple subscriber
+- pull
 
 **Component**<br>
-* Producer: write data to a broker
-* Consumer: read data from a broker
-* Broker: a node in the broker
-* Cluster: a group of computers sharing workload for a common purposes.
-* Record: key, value, timestamp. Immutable, persisited
-* Partition: sequence of record. Do partitioning by hand or based on key. Kafka would do something like a round-robin accross the partition if you produce a message without partitioning.
-    * Append-only
-    * Strong ordered: order is only guaranteed in a certain partition. May use timestamp to achieve total ordering across partitions within the topic.
-    * Replicated: each partition has one leader server and zero or more follewer surver. Replication Factor based on topic
-* Topic: logic name to which data subscribe. Composed of one or more partition.
+- Producer: write data to a broker
+- Consumer: read data from a broker
+- Broker: a node in the broker
+- Cluster: a group of computers sharing workload for a common purposes.
+- Record: key, value, timestamp. Immutable, persisited
+- Partition: sequence of record. Do partitioning by hand or based on key. Kafka would do something like a round-robin accross the partition if you produce a message without partitioning.
+    - Append-only
+    - Strong ordered: order is only guaranteed in a certain partition. May use timestamp to achieve total ordering across partitions within the topic.
+    - Replicated: each partition has one leader server and zero or more follewer surver. Replication Factor based on topic
+- Topic: logic name to which data subscribe. Composed of one or more partition.
 
 **Distribution**
 - Producer view: Topic could have multiple partions over servers. A server is a leader for some partitions and a follower for others.
 - Consumer view: each partition is consumed by exactly one consumer in the group. Message consumption is balanced across all consumers in a group. 
 
 ### Zookeeper
+
+### Load Balancer VS Reverse Proxy
+**Commonality**<br>
+sit between clients and servers, accept requests from the former and deliver responses from the latter.
+
+**Difference**  
+Deploying a load balancer makes sense only when you have multiple servers whereas it makes sense to deploying a reverse proxy even with just one server. For me, reverse proxy is more than a load balancer.
+
+**Load Balancer**<br>
+- load balancing
+    - pro: prevent overload on any server
+- health check
+    - pro: when servers go down, divert requests away from them to the other servers in the group.
+    - simple way: intercept error responses to regular requests
+    - flexible and sophisticated way: separate health-check request
+- session persistence (sticky session)
+    - def: send all requests from a particular client to the same server
+    - use case: online chart
+
+**Reverse Proxy**<br>
+- security
+- web acceleration
 
 
 
