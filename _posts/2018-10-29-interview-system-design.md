@@ -45,22 +45,22 @@ Motivation: decouple the data-partition map and partition-machine map. Adding or
 
 Method: Map request ID and server ID into a same ring hash space. Clockwise assign the request to the nearest server. 
 
-**What's the catch?**<br>
+**What's the catch?**  
 In real world, the amount of physical servers is relatively less than the hashing space. Thus **skewed load** is likely to occur. For example, if we remove one physical server, the successor has to take all load from the presessor, whose amount is possbibly large.
 
-**How**<br>
+**How**  
 Make virtual servers with K hash functions. As a result, one phycial server manage K evenly distributed virtual node in the ring hash space. If one server is removed , the corresponding space would evenly hit multiple regions. The load increasement of each existing server is expectedly uniform.
 
 ### Kafka
 [Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s) 
 
-**Role**<br>
+**Role**  
 distributed stream platform
 
-**Essence**<br>
+**Essence**  
 an event redger could go back in time, distirbuted commit log
 
-**Fundamentals**<br>
+**Fundamentals**
 - distributed (horizontal scaling, auto-rebalancing)
 - redundant (creat multiple copies of events)
 - persisted
@@ -68,7 +68,7 @@ an event redger could go back in time, distirbuted commit log
 - multiple subscriber
 - pull
 
-**Component**<br>
+**Component**
 - Producer: write data to a broker
 - Consumer: read data from a broker
 - Broker: a node in the broker
@@ -87,13 +87,13 @@ an event redger could go back in time, distirbuted commit log
 ### Zookeeper
 
 ### Load Balancer VS Reverse Proxy
-**Commonality**<br>
+**Commonality**  
 sit between clients and servers, accept requests from the former and deliver responses from the latter.
 
 **Difference**  
 Deploying a load balancer makes sense only when you have multiple servers whereas it makes sense to deploying a reverse proxy even with just one server. For me, reverse proxy is more than a load balancer.
 
-**Load Balancer**<br>
+**Load Balancer**
 - load balancing
     - pro: prevent overload on any server
 - health check
@@ -104,7 +104,7 @@ Deploying a load balancer makes sense only when you have multiple servers wherea
     - def: send all requests from a particular client to the same server
     - use case: online chart
 
-**Reverse Proxy**<br>
+**Reverse Proxy**
 - security
 - web acceleration
 
