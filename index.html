@@ -9,16 +9,16 @@ description: "Fake it, till make it"
         <h2 class="post-title">
             {{ post.title }}
         </h2>
-        {% if post.excerpt %}
+        {% if post.subtitle %}
         <h3 class="post-subtitle">
-            {{ post.excerpt }}
+            {{ post.subtitle }}
         </h3>
         {% endif %}
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
+                {{ post.excerpt | strip_html | truncate:300 }}
             {% else %}
-                {{ post.content | strip_html | truncate:200 }}
+                {{ post.excerpt | strip_html | truncate:200 }}
             {% endif %}
         </div>
     </a>
