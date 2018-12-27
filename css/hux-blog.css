@@ -570,7 +570,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 p {
-  margin: 0 0 15px;
+  margin: 15px 0 0;
 }
 h1,
 h2,
@@ -736,10 +736,6 @@ samp {
   margin-bottom: 5px;
 }
 .post-container li p {
-  margin: 0;
-  margin-bottom: 5px;
-}
-.post-container p li {
   margin: 0;
   margin-bottom: 5px;
 }
