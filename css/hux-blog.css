@@ -739,6 +739,10 @@ samp {
   margin: 0;
   margin-bottom: 5px;
 }
+.post-container p li {
+  margin: 0;
+  margin-bottom: 5px;
+}
 .post-container li h1,
 .post-container li h2,
 .post-container li h3,

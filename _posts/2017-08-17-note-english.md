@@ -11,7 +11,10 @@ tags:
 ---
 
 ### daily note
-- Like we said.
+- frees up resources on backend servers which they can then devote to their main purpose, serving content
+- malicious clients cannot access them directly to exploit any vulnerabilities
+- scale the number of servers up and down to match fluctuations in traffic volume.
+- Like we said
 - eager beavour
 - grunt work: routine, menial work.
 - nuance, cancel out, annihilate, * distribute over +
@@ -222,6 +225,51 @@ When we truly understand a system, we should be able to **identify what each com
 Imagine an appplication which **reaches out** millions of users. Request on the server should never fail even if theres is a hardware failure. Thus we should have multiple copies of servers in the system and redirect requests to available servers. We should make sure information in each server is the same. This is important because the user should not **get contradicting information** when their requests is **relayed** by the load balancer and served on different servers over time.
 
 The difference between cloud and desktop is **nothing really**. Could is a set of computers. You pay cloud solution providers and they give you computation power. Computation power **is nothing but a desktop that they have somewhere** and run your algorithm. **The reason we like to do this** is because the configuration and the reliability can **be taken care of to a large extent by clouder solution providers**. 
+
+### A perfect trio
+router inspecte the request and use some atributes to route the request to a server.
+
+in the world of database that would be sharding, using the primary key to determine on which database rows should reside
+
+independently deployable and scalable, standalone. automous work, adopt new tech
+
+Each one has own DB
+
+API gateway acts as a facade and expose public API to clients.
+
+complexity of distributed system:
+inter-process communication
+transactions across database
+test
+deployment. (Docker take care of an awful task)
+
+cathcing on right
+
+viable option
+
+### Microservices are bad
+Microservices are the current hot software fad, but otherwise a useless idea. Like all the previous fads in software, e.g. structured programming, OOP etc, it falsely assumes, that you can decompose the software into meaningful isolated units, preferably with three-like dependencies between them. The reality or course is, that you can't do that and moreover, you actually don't want that either. Whenever it makes any sense business wise to connect the existing independent services, then you connect them. A complex software system is just more valuable and to increase the value of the system you have to make it more complex. The conclusion is, that any approach to software, that assumes a simple structure (architecture), is doomed to fail.﻿
+
+### Uber Service
+Location indexing<br>
+so let's start by first talking about ...
+
+1. Current location points for all cars
+2. Fast queries by location
+3. filter by car properties
+4. high volume of reads and writes
+5. high ephemeral time sentive, so we don't need long-term storage. 
+All of these requirements put together suggerst that we should build in memory search index.
+
+
+Location storage
+
+ 
+
+
+
+
+
 
 
 

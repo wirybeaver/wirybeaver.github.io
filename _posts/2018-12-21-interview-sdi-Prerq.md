@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      System Design
+title:      System Design Primer
 date:       2018-12-21 09:00:00
 author:     "Shane"
 excerpt:    "Key concept in system design interview and distributed system"
@@ -20,6 +20,10 @@ tags:
     - [interviewbit](https://www.interviewbit.com/courses/system-design/topics/storage-scalability/)
     - [tackling-the-system-design-interview](https://cternus.net/blog/2018/01/26/tackling-the-system-design-interview/)
     - [OOD Questions](https://www.careercup.com/page?pid=object-oriented-design-interview-questions&n=1)
+
+### general bottleneck
+1. Qps and bandwidth
+2. how to improve the performance: non-blocking reactor pattern, scale out, async
 
 ### Scaling
 
@@ -87,6 +91,11 @@ an event redger could go back in time, distirbuted commit log
 ### Zookeeper
 
 ### Load Balancer VS Reverse Proxy
+
+Load Balancer distributes load across multiple servers as the function of their current load
+
+Reverse proxy is "public face". It centr
+
 **Commonality**  
 sit between clients and servers, accept requests from the former and deliver responses from the latter.
 
@@ -105,8 +114,57 @@ Deploying a load balancer makes sense only when you have multiple servers wherea
     - use case: online chart
 
 **Reverse Proxy**
-- security
-- web acceleration
+a web server centralizes internal services and provides unified interfaces to the public.
+- security: protect from DDoS using blacklist and  rate limit
+- flexibility: free to change backend configuration
+ - web acceleration
+    - SSL termination
+    - Compression
+        - reduce bandwidth
+    - Content Caching
+        - decrease RT
+        - reduce load on backend servers
+
+### Microservice
+
+### Uber redie sharing service
+
+**Requiremet**  
+1. User base
+2. last seen
+3. media
+4. encrypt
+5. telephone
+
+### Questions
+1. Given a (typically) long URL, how would you design a TinyURL or bit.ly (a URL shortening service), the unique ID for a shortened form of the same web address?
+2. Design a social network, such as Facebook, Quora or Reddit, on which users can view and post messages, comments, and links.
+3. Design a global chat service, such as WhatsApp or Messenger, that is both user-friendly and secure.
+4. Design a global video streaming service, like YouTube, including essential features, such as data recording and social commenting.
+5. Design a global file storage and sharing service, optimized for simultaneous use by multiple users.
+6. Design a search engine or related services such as a web crawler or type ahead.
+
+
+### Design Url Shortening Service
+#### Gather Requirement
+
+**Functional Requirement**
+1. shortering
+2. rediretion
+3. custom url
+4. expiration
+
+**Performance**
+1. HA
+2. not guess
+
+**External**
+1. analytics
+
+#### Sketch Design (abstract design)
+
+
+### Foot Note
 
 
 
