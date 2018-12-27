@@ -717,7 +717,7 @@ samp {
 .post-container ol {
   margin-bottom: 10px;
 }
-.post-container p ul {
+.post-container p + ul {
   margin: 0;
   margin-bottom: 5px;
 }
