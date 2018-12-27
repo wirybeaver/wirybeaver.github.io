@@ -32,17 +32,17 @@ Scalability: the ability to handle more requests by adding more resources.
 | Horizontal Scaling | Vertical Scaling|
 |------------------|-------------------|
 |buy more machines|buy a bigger machine|
-|Load Balanceing required[^footer1]|N/A|
+|Load Balanceing required[^f1]|N/A|
 |resilient|single point of failure|
 |network calls (RPC)|inter process communitation|
-|data consistency is a real issure[^footer2]|consistent|
-|scales well as users increase[^footer3] |hardware limit|
+|data consistency is a real issure[^f2]|consistent|
+|scales well as users increase[^f3] |hardware limit|
 
-[^footer1]: The request falls on any of the machine
+[^f1]: The request falls on any of the machine
 
-[^footer2]: The data could be sent from ont server to another. Data is complicated to maintain. If there's a transaction where operation have to be atomic, what could happens is to lock all server's read which is impractical. So usually what happens is we have some sort of lose transactional guarantee.
+[^f2]: The data could be sent from ont server to another. Data is complicated to maintain. If there's a transaction where operation have to be atomic, what could happens is to lock all server's read which is impractical. So usually what happens is we have some sort of lose transactional guarantee.
 
-[^footer3]: scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added
+[^f3]: scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added
 
 ### Consistent Hash
 Motivation: decouple the data-partition map and partition-machine map. Adding or deleteing a phycial machine impact less on the partiton-machine map.
@@ -64,7 +64,7 @@ distributed stream platform
 **Essence**  
 an event redger could go back in time, distirbuted commit log
 
-**Fundamentals**
+<p id='pli'>Fundamentals</p>
 - distributed (horizontal scaling, auto-rebalancing)
 - redundant (creat multiple copies of events)
 - persisted
@@ -72,7 +72,7 @@ an event redger could go back in time, distirbuted commit log
 - multiple subscriber
 - pull
 
-**Component**
+<p id='pli'>Component</p>
 - Producer: write data to a broker
 - Consumer: read data from a broker
 - Broker: a node in the broker
@@ -84,7 +84,7 @@ an event redger could go back in time, distirbuted commit log
     - Replicated: each partition has one leader server and zero or more follewer surver. Replication Factor based on topic
 - Topic: logic name to which data subscribe. Composed of one or more partition.
 
-**Distribution**
+<p id='pli'>Distribution</p>
 - Producer view: Topic could have multiple partions over servers. A server is a leader for some partitions and a follower for others.
 - Consumer view: each partition is consumed by exactly one consumer in the group. Message consumption is balanced across all consumers in a group. 
 
@@ -102,7 +102,7 @@ sit between clients and servers, accept requests from the former and deliver res
 **Difference**  
 Deploying a load balancer makes sense only when you have multiple servers whereas it makes sense to deploying a reverse proxy even with just one server. For me, reverse proxy is more than a load balancer.
 
-**Load Balancer**
+<p id='pli'>Load Balancer</p>
 - load balancing
     - pro: prevent overload on any server
 - health check
@@ -113,7 +113,7 @@ Deploying a load balancer makes sense only when you have multiple servers wherea
     - def: send all requests from a particular client to the same server
     - use case: online chart
 
-**Reverse Proxy**
+<p id='pli'>Reverse Proxy</p>
 a web server centralizes internal services and provides unified interfaces to the public.
 - security: protect from DDoS using blacklist and  rate limit
 - flexibility: free to change backend configuration
@@ -127,15 +127,6 @@ a web server centralizes internal services and provides unified interfaces to th
 
 ### Microservice
 
-### Uber redie sharing service
-
-**Requiremet**  
-1. User base
-2. last seen
-3. media
-4. encrypt
-5. telephone
-
 ### Questions
 1. Given a (typically) long URL, how would you design a TinyURL or bit.ly (a URL shortening service), the unique ID for a shortened form of the same web address?
 2. Design a social network, such as Facebook, Quora or Reddit, on which users can view and post messages, comments, and links.
@@ -143,26 +134,6 @@ a web server centralizes internal services and provides unified interfaces to th
 4. Design a global video streaming service, like YouTube, including essential features, such as data recording and social commenting.
 5. Design a global file storage and sharing service, optimized for simultaneous use by multiple users.
 6. Design a search engine or related services such as a web crawler or type ahead.
-
-
-### Design Url Shortening Service
-#### Gather Requirement
-
-**Functional Requirement**
-1. shortering
-2. rediretion
-3. custom url
-4. expiration
-
-**Performance**
-1. HA
-2. not guess
-
-**External**
-1. analytics
-
-#### Sketch Design (abstract design)
-
 
 ### Foot Note
 

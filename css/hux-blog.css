@@ -740,7 +740,7 @@ samp {
   margin: 0;
   margin-bottom: 5px;
 }
-.post-container p + ul{
+ p + ul{
   line-height: 1.4
 }
 .post-container li h1,
@@ -1654,4 +1654,9 @@ img::-moz-selection {
 .MathJax_SVG_Display {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+}
+#pli {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0
 }
