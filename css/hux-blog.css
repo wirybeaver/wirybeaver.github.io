@@ -716,6 +716,7 @@ samp {
 }
 .post-container ul,
 .post-container ol {
+  margin: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
