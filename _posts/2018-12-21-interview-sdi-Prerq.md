@@ -32,17 +32,17 @@ Scalability: the ability to handle more requests by adding more resources.
 | Horizontal Scaling | Vertical Scaling|
 |------------------|-------------------|
 |buy more machines|buy a bigger machine|
-|Load Balanceing required[^1]|N/A|
+|Load Balanceing required[^footer1]|N/A|
 |resilient|single point of failure|
 |network calls (RPC)|inter process communitation|
-|data consistency is a real issure[^2]|consistent|
-|scales well as users increase[^3] |hardware limit|
+|data consistency is a real issure[^footer2]|consistent|
+|scales well as users increase[^footer3] |hardware limit|
 
-[^1]: The request falls on any of the machine
+[^footer1]: The request falls on any of the machine
 
-[^2]: The data could be sent from ont server to another. Data is complicated to maintain. If there's a transaction where operation have to be atomic, what could happens is to lock all server's read which is impractical. So usually what happens is we have some sort of lose transactional guarantee.
+[^footer2]: The data could be sent from ont server to another. Data is complicated to maintain. If there's a transaction where operation have to be atomic, what could happens is to lock all server's read which is impractical. So usually what happens is we have some sort of lose transactional guarantee.
 
-[^3]: scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added
+[^footer3]: scales well in a sense that the amount of servers you throw at the problem is linear in terms of how many users are added
 
 ### Consistent Hash
 Motivation: decouple the data-partition map and partition-machine map. Adding or deleteing a phycial machine impact less on the partiton-machine map.

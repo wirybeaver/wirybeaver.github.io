@@ -5,18 +5,19 @@ date:       2018-12-20 23:00:00
 author:     "Shane"
 excerpt:    "Frequent OOD Questions and Solutions coupled with elegant design patterns"
 header-img: "img/bg-mac.jpg"
-catalog: true
 tags:
     - Interview
 ---
+* catalog
+[:toc]
 
-General Use case
+###### General Use case
 - reserve
 - serve
 - checkout
 
 ### Parking Lot
-Clarify
+###### Clarify
 - What.
     - parking lot: multi-level
     - vehicle: multiple size
@@ -25,13 +26,13 @@ Clarify
     - parking strategy: large size vehicle could occupy consequent parking spots in horizontal direction.
     - charging strategy: by time
 
-Core object
+###### Core object
 - Bus,Car, Motorcyle
 - Parking Lot
 - Level
 - Parking Spot
 
-Use case
+###### Use case
 - get available count
 - park vehicle
     - check vehicle size
@@ -42,7 +43,7 @@ Use case
     - update level's avaliable count
 - calculate price
 
-Class
+###### Class
 - ParkingLot
     - private List<Level>
     - public int getAvailableCount()
@@ -61,7 +62,7 @@ Class
 
 
 ### Restaurant
-Clarify <br>
+###### Clarify
 - Restaurant
 - Party
 - Table

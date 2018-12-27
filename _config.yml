@@ -45,6 +45,8 @@ disqus_username: shanelxy-top
 # Netease settings
 netease_comment: false
 
+# TOC Level
+toc_levels: 1..5
 
 
 # Analytics settings

@@ -5,7 +5,6 @@ excerpt:    Ohio State CSE5461
 date:       2018-09-19 10:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
-catalog: true
 tags:
     - Note
 ---
