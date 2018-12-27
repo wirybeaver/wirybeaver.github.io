@@ -10,13 +10,13 @@ tags:
     - Interview
 ---
 
-General Use case <br>
+General Use case
 - reserve
 - serve
 - checkout
 
 ### Parking Lot
-Clarify<br>
+Clarify
 - What.
     - parking lot: multi-level
     - vehicle: multiple size
@@ -25,13 +25,13 @@ Clarify<br>
     - parking strategy: large size vehicle could occupy consequent parking spots in horizontal direction.
     - charging strategy: by time
 
-Core object<br>
+Core object
 - Bus,Car, Motorcyle
 - Parking Lot
 - Level
 - Parking Spot
 
-Use case<br>
+Use case
 - get available count
 - park vehicle
     - check vehicle size
@@ -42,23 +42,19 @@ Use case<br>
     - update level's avaliable count
 - calculate price
 
-Class<br>
-
+Class
 - ParkingLot
     - private List<Level>
     - public int getAvailableCount()
-
 - Level
     - private List<Spot>
     - private int availableCount
     - public int getAvailableCount()
-
 - Spot
     - boolean isAvailable
     - boolean isAvailable()
     - void takeSpot()
     - void leaveSpot()
-
 - Vehicle
     - protected int size
     - public int getSize()
@@ -67,7 +63,6 @@ Class<br>
 ### Restaurant
 Clarify <br>
 - Restaurant
-
 - Party
 - Table
 

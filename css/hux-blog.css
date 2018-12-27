@@ -717,10 +717,6 @@ samp {
 .post-container ol {
   margin-bottom: 10px;
 }
-.post-container p + ul {
-  margin: 0;
-  margin-bottom: 5px;
-}
 @media screen and (max-width: 768px) {
   .post-container ul,
   .post-container ol {
