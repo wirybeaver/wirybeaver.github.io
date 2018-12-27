@@ -692,6 +692,7 @@ samp {
   margin-top: 5px;
 }
 .post-container h6 {
+  margin: 30px 0 0;
   font-size: 16px;
   font-weight: 600;
   color: gray;
@@ -738,6 +739,9 @@ samp {
 .post-container li p {
   margin: 0;
   margin-bottom: 5px;
+}
+.post-container p + ul{
+  line-height: 1.4
 }
 .post-container li h1,
 .post-container li h2,

@@ -8,10 +8,8 @@ header-img: "img/bg-mac.jpg"
 tags:
     - Interview
 ---
-* catalog
-[:toc]
 
-###### General Use case
+### General Use case
 - reserve
 - serve
 - checkout
