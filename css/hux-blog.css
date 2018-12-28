@@ -681,7 +681,6 @@ samp {
 .post-container h5,
 .post-container h6 {
   margin: 30px 0 0;
-  margin: 0;
   line-height: 1.4;
 }
 .post-container h5 {
@@ -689,19 +688,17 @@ samp {
   font-weight: 600;
 /*  color: gray;*/
 }
-/*.post-container h5 + p {
+.post-container h5 + p {
   margin-top: 5px;
-}*/
+}
 .post-container h6 {
-/*  margin: 30px 0 0;*/
-  margin: 0;
   font-size: 16px;
   font-weight: 600;
 /*  color: gray;*/
 }
-/*.post-container h6 + p {
+.post-container h6 + p {
   margin-top: 5px;
-}*/
+}
 @media screen and (max-width: 768px) {
   .post-container h1 {
     font-size: 30px;
@@ -717,9 +714,15 @@ samp {
   }
 }
 .post-container ul,
-.post-container ol {
+.post-container ol, {
   margin: 0;
   margin-bottom: 10px;
+}
+.post-container p + ul{
+  margin: 0;
+}
+.post-container p + ol{
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .post-container ul,
