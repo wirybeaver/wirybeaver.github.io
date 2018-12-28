@@ -1,10 +1,11 @@
 ---
-layout:     postMathJax
+layout:     post
 title:      Data Mining Note
 excerpt:    "Ohio State CSE5243 Note"
 date:       2018-09-07 10:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
+catalog: true
 tags:
     - Note
 ---
