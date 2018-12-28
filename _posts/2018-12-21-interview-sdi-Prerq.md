@@ -113,8 +113,8 @@ Deploying a load balancer makes sense only when you have multiple servers wherea
     - def: send all requests from a particular client to the same server
     - use case: online chart
 
-**Reverse Proxy**<br>
-<p id='pz'> a web server centralizes internal services and provides unified interfaces to the public. </p>
+<p id='pz'>**Reverse Proxy**<br/>
+a web server centralizes internal services and provides unified interfaces to the public. </p>
 - security: protect from DDoS using blacklist and  rate limit
 - flexibility: free to change backend configuration
  - web acceleration
