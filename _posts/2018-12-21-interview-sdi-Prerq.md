@@ -58,13 +58,13 @@ Make virtual servers with K hash functions. As a result, one phycial server mana
 ### Kafka
 [Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s) 
 
-**Role**  
+###### Role 
 distributed stream platform
 
-**Essence**  
+###### Essence
 an event redger could go back in time, distirbuted commit log
 
-<p id='pli'>Fundamentals</p>
+###### Fundamentals
 - distributed (horizontal scaling, auto-rebalancing)
 - redundant (creat multiple copies of events)
 - persisted
@@ -72,7 +72,7 @@ an event redger could go back in time, distirbuted commit log
 - multiple subscriber
 - pull
 
-<p id='pli'>Component</p>
+###### Component
 - Producer: write data to a broker
 - Consumer: read data from a broker
 - Broker: a node in the broker
@@ -84,7 +84,7 @@ an event redger could go back in time, distirbuted commit log
     - Replicated: each partition has one leader server and zero or more follewer surver. Replication Factor based on topic
 - Topic: logic name to which data subscribe. Composed of one or more partition.
 
-<p id='pli'>Distribution</p>
+###### Distribution
 - Producer view: Topic could have multiple partions over servers. A server is a leader for some partitions and a follower for others.
 - Consumer view: each partition is consumed by exactly one consumer in the group. Message consumption is balanced across all consumers in a group. 
 
@@ -96,10 +96,10 @@ Load Balancer distributes load across multiple servers as the function of their 
 
 Reverse proxy is "public face". It centr
 
-**Commonality**  
+###### Commonality
 sit between clients and servers, accept requests from the former and deliver responses from the latter.
 
-**Difference**  
+###### Difference   
 Deploying a load balancer makes sense only when you have multiple servers whereas it makes sense to deploying a reverse proxy even with just one server. For me, reverse proxy is more than a load balancer.
 
 <p id='pli'>Load Balancer</p>
@@ -113,8 +113,8 @@ Deploying a load balancer makes sense only when you have multiple servers wherea
     - def: send all requests from a particular client to the same server
     - use case: online chart
 
-<p id='pli'>Reverse Proxy</p>
-a web server centralizes internal services and provides unified interfaces to the public.
+###### Reverse Proxy
+<p id='pli'> a web server centralizes internal services and provides unified interfaces to the public. </p>
 - security: protect from DDoS using blacklist and  rate limit
 - flexibility: free to change backend configuration
  - web acceleration
@@ -135,7 +135,7 @@ a web server centralizes internal services and provides unified interfaces to th
 5. Design a global file storage and sharing service, optimized for simultaneous use by multiple users.
 6. Design a search engine or related services such as a web crawler or type ahead.
 
-### Foot Note
+### Footnote
 
 
 
