@@ -45,10 +45,6 @@ disqus_username: shanelxy-top
 # Netease settings
 netease_comment: false
 
-# TOC Level
-toc_levels: 3..4
-
-
 # Analytics settings
 # Baidu Analytics 
 # ba_track_id: [your track id]

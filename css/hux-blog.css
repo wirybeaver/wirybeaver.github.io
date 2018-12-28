@@ -718,12 +718,6 @@ samp {
   margin: 0;
   margin-bottom: 10px;
 }
-.post-container p + ul{
-  margin: 0;
-}
-.post-container p + ol{
-  margin: 0;
-}
 @media screen and (max-width: 768px) {
   .post-container ul,
   .post-container ol {
@@ -1661,8 +1655,13 @@ img::-moz-selection {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-#pli {
+#pz {
 /*  font-size: 16px;
   font-weight: 600;*/
+  margin: 0
+}
+#pzb {
+  font-size: 16px;
+  font-weight: 600;
   margin: 0
 }
