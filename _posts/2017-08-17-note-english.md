@@ -10,16 +10,21 @@ tags:
 ---
 
 ### daily note
-- frees up resources on backend servers which they can then devote to their main purpose, serving content
+- caught everyone off guard 措手不及
+- viable option 可行的方案
+- let's start by talking about
+- identify what each component is and explain how they interact with one another
+- signify
+- free up resources on backend servers which they can then devote to their main purpose, serving content
 - malicious clients cannot access them directly to exploit any vulnerabilities
 - scale the number of servers up and down to match fluctuations in traffic volume.
 - Like we said
 - eager beavour
 - grunt work: routine, menial work.
 - nuance, cancel out, annihilate, * distribute over +
-- Punctuation: Question mark, Comma, Period, Exclamation mark
+- Punctuation: Question mark, Comma, Period, Exclamation mark, pound sign
 - fabricated, agnostic, dictate, roster
-- mathematically shorthand, roughly spaeking
+- mathematically shorthand, roughly speaking
 - resiliency, scalability, agility, flexability
 - Answer the questions affirmatively
 - **Consult** the formal definition and verify that
@@ -33,7 +38,7 @@ tags:
     - 无语 I'm speechless | I have nothing to say
     - 钦佩 You blowed me away | I'm overwhelmed | That's impressive
 - savvy, tally
-- Eager learn spend the bulk of computational resources for model building.
+- Eager learning spends the bulk of computational resources for model building.
 - Compute the proximity value *individually* between the test and training examples.
 - supply is way higher than demand.
 
@@ -165,7 +170,7 @@ I **completed** my Masters to **specialize myself in the field of** Data Science
 •   Worked on the production line to have a closer understanding of the production workflow to improve the backtracking system functionality
 
 
-**recommendation**
+**recommendation**<br/>
 Nishanth joined our team for a summer internship. Due to his specialization in Deep Learning, we were glad to have him tackle handwritten digit recognition, a difficult and open problem we had; and Nishanth in the short few months of internship developed a full protoype of a system using image processing for segmentation and CNNs for digit recognition. From the first day on he was determined to deliver great value, and was very organized and independent. Over the course of his internship, he was totally open to feedback and not just took it to heart, but immediately acted and improved on it. So in summary, he not just did a great job researching both modern and traditional methods, he developed a great sense of what works for the business, breaking down the larger task into manageable pieces and collaborating with the team to achieve these goals. More than that, he was always proactive in reaching out whenever he saw an opportunity to connect and learn, and put a lot of effort into very successful presentations to the team, and made tremendous strides in targeting communication to differing audience.
 Overall, it was a joy having Nishanth as an intern, and we'd be happy to have him back!
 
@@ -180,7 +185,7 @@ Nishanth is one of the hardest working students I've ever met. He takes the init
 ### Kafka Introduce
 this kind of thing led us to the rat's nest of intergration complexity.
 
-use event instead of table as the source of the truth of the state  of the system. hook A up to B. Look the system of the truth as being the actual events and keep those around.
+use event instead of table as the source of the truth of the state of the system. hook A up to B. Look the system of the truth as being the actual events and keep those around.
 
 Go back in time. **rewind back where we left off** or reproduce some of these events. That thing needs to not just be an event stream but it also needs to be a ledger, a ledger that we can go back in time. 
 
@@ -215,36 +220,10 @@ consumer groups: each partition is consumed by exactly one consumer in the group
 
 quorum, dramatic impact, do the right, confluent console
 
-### Tian Pan
-
-When we truly understand a system, we should be able to **identify what each component is and explain how they interact with one another**.
-
-
 ### Gaurav Sen
 Imagine an appplication which **reaches out** millions of users. Request on the server should never fail even if theres is a hardware failure. Thus we should have multiple copies of servers in the system and redirect requests to available servers. We should make sure information in each server is the same. This is important because the user should not **get contradicting information** when their requests is **relayed** by the load balancer and served on different servers over time.
 
 The difference between cloud and desktop is **nothing really**. Could is a set of computers. You pay cloud solution providers and they give you computation power. Computation power **is nothing but a desktop that they have somewhere** and run your algorithm. **The reason we like to do this** is because the configuration and the reliability can **be taken care of to a large extent by clouder solution providers**. 
-
-### A perfect trio
-router inspecte the request and use some atributes to route the request to a server.
-
-in the world of database that would be sharding, using the primary key to determine on which database rows should reside
-
-independently deployable and scalable, standalone. automous work, adopt new tech
-
-Each one has own DB
-
-API gateway acts as a facade and expose public API to clients.
-
-complexity of distributed system:
-inter-process communication
-transactions across database
-test
-deployment. (Docker take care of an awful task)
-
-cathcing on right
-
-viable option
 
 ### Microservices are bad
 Microservices are the current hot software fad, but otherwise a useless idea. Like all the previous fads in software, e.g. structured programming, OOP etc, it falsely assumes, that you can decompose the software into meaningful isolated units, preferably with three-like dependencies between them. The reality or course is, that you can't do that and moreover, you actually don't want that either. Whenever it makes any sense business wise to connect the existing independent services, then you connect them. A complex software system is just more valuable and to increase the value of the system you have to make it more complex. The conclusion is, that any approach to software, that assumes a simple structure (architecture), is doomed to fail.﻿
@@ -259,7 +238,6 @@ so let's start by first talking about ...
 4. high volume of reads and writes
 5. high ephemeral time sentive, so we don't need long-term storage. 
 All of these requirements put together suggerst that we should build in memory search index.
-
 
 Location storage
 

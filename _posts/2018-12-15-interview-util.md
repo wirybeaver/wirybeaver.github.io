@@ -1,14 +1,14 @@
 ---
 layout:     post
-title:      Pratical Java Tools for Interviews
-date:       2018-12-20 12:00:00
+title:      Java Lib in Interviews
+date:       2018-12-15 09:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
     - Interview
-    - java
+    - Java
 ---
 
 [HttpClient Basic](http://www.vogella.com/tutorials/ApacheHttpClient/article.html)
