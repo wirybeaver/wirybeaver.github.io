@@ -6,6 +6,7 @@ date:       2018-09-07 10:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
+mathjax: true
 tags:
     - Note
 ---
