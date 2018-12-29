@@ -156,7 +156,11 @@ The first quesiont **relates to the issue of estimating** the confidence interva
 To determine the confidence interval, we have to establish the probability distribution that governs acc measure. This section describe an approach of deriving the confidence interval by modeling the classificaton task as a binomial experiment. Following is a list of characters of a binomail experiment.
 
 ### LinkedIn
-[example](https://www.linkedin.com/in/nishanthgandhidoss/)
+[example 1](https://www.linkedin.com/in/nishanthgandhidoss/)
+
+[example 2](https://www.linkedin.com/in/avinash-radhakrishnan-2519819a/)
+
+[example 3](http://blog.dennybritz.com/about/)
 
 **self introduction**<br>
 I **completed** my Masters to **specialize myself in the field of** Data Science **with concentration in** Applied Deep learning for Artificial Intelligence.

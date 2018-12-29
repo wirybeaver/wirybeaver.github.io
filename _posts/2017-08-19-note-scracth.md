@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Video Draft
+title:      Draft
 date:       2017-08-19 09:00:00
 author:     "Shane"
 excerpt:    ""
@@ -26,12 +26,45 @@ Location storage
 
 # Organized
 
-## Course
+## Blog
+[Ruder](http://ruder.io/)
 
-### Markdown
+[WILDML](http://www.wildml.com/)
+
+## Curated List
+[Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
+
+[Awesome NLP](https://github.com/keon/awesome-nlp)
+
+[Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
+
+## Course, Book, Tutorial
+
+[Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
+
+## Book
+[Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf)
+
+[Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
+
+[Statistical Learning Theory](https://github.com/percyliang/cs229t)
+
+## Tutorial
+
+[Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
+
+## Machine Learning Paper
+
+## Machine Learning Project
+
+## Computer System Paper
+
+## Computer System Project
+
+## Markdown
 [1](https://segmentfault.com/a/1190000010223222)
 
-### 系统设计
+## 系统设计
 
 [Uber Map Matching](https://www.youtube.com/watch?v=ChtumoDfZXI)
 

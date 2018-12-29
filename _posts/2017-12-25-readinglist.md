@@ -11,41 +11,41 @@ tags:
 
 # Compulsories
 ## Math
-[ ] [Linear Algebra](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8)
-[ ] [Probability and Statistics](https://lagunita.stanford.edu/courses/course-v1:OLI+ProbStat+Open_Jan2017/course/)
-[ ] [矩陣分析](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
-[ ] [Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
-[ ] [實變泛函](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
+- [ ] [Linear Algebra](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8)
+- [ ] [Probability and Statistics](https://lagunita.stanford.edu/courses/course-v1:OLI+ProbStat+Open_Jan2017/course/)
+- [ ] [Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
+- [ ] [矩陣分析](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
+- [ ] [實變泛函](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
 
 ## AI
 <p id='pzb'>Course</p>
-[ ] [機器學習基石](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
+- [ ] [機器學習基石](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 
-[ ] [機器學習技法](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
+- [ ] [機器學習技法](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
 
-[ ] [深度強化學習](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)
+- [ ] [深度強化學習](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)
 
-[ ] NLP Collins (Contact with me to get the private link)
+- [ ] NLP Collins (Contact with me to get the video link)
 
-[ ] [deeplearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w/featured)
+- [ ] [deeplearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w/featured)
 
 <p id='pzb'>Code, Book, Turotial</p>
-[ ] Book: Designing Data-Intensive Applications
+- [ ] Book: Designing Data-Intensive Applications
 
-[ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
+- [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
 
-[ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
+- [ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
 
-[ ] [Code: 统计机器学习](https://github.com/fengdu78/lihang-code)
+- [ ] [Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
 
-[ ] [Code: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
+- [ ] [Code: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 
 ## Infrastructure
-[ ] [Understanding Unix Linux Programming Code](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
+[Understanding Unix Linux Programming Code](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
 
 # Electivies
 
-Denote accomplished resources with ~~XX~~
+Denote accomplished resources with ~~balabala~~
 
 ## Course
 - [Computer Organization](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk)
@@ -67,17 +67,13 @@ Denote accomplished resources with ~~XX~~
 
 [Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares](https://web.stanford.edu/~boyd/vmls/)
 
-[Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf)
-
-[Mathematics For Machine Learning](https://github.com/mml-book/mml-book.github.io)
-
-[Statistical Learning Theory](https://github.com/percyliang/cs229t)
+[Code: 统计机器学习](https://github.com/fengdu78/lihang-code)
 
 [Code: PRML](https://github.com/ctgk/PRML)
 
-## Tutorial
+[Code: Reinforcement Learning](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
 
-[pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial)
+## Tutorial
 
 [Practical AI](https://github.com/GokuMohandas/practicalAI)
 
