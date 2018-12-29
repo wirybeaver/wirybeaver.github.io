@@ -32,6 +32,9 @@ Location storage
 [WILDML](http://www.wildml.com/)
 
 ## Curated List
+
+[Chinese SDE Interview](https://github.com/CyC2018/CS-Notes)
+
 [Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
 
 [Awesome NLP](https://github.com/keon/awesome-nlp)
