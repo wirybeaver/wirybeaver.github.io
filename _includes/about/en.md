@@ -15,7 +15,7 @@ Here is my [resume]({{site.url}}/assets/ResumeXuanyi.pdf)
 <!-- ![](http://www.weebly.com/weebly/images/file_icons/pdf.png) -->
 
 <!-- replace & to &amp; and add space before </iframe> -->
-<iframe scrolling="0" frameborder="0" width="95%" src="https://shanelxy.top/assets/ResumeXuanyi.pdf" > </iframe>
+<iframe frameborder="0" width="95%" height="600" src="https://shanelxy.top/assets/ResumeXuanyi.pdf" > </iframe>
 
 <!-- <center><embed src="https://shanelxy.top/assets/ResumeXuanyi.pdf" width="95%" height="600"></center> -->
 
