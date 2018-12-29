@@ -63,6 +63,8 @@ In real world, the amount of physical servers is relatively less than the hashin
 Make virtual servers with K hash functions. As a result, one phycial server manage K evenly distributed virtual node in the ring hash space. If one server is removed , the corresponding space would evenly hit multiple regions. The load increasement of each existing server is expectedly uniform.
 
 #### Y scaling
+[Video](https://videos.confluent.io/watch/8MLuNHnE3uSZPgstdzSk4Q?)
+
 microservice, function decomposition. Break down large systems into pieces of standalone services, each service has its own DB. API gateway acts as a facade and expose public API to clients.
 
 Pros: autonomous work, agile development, independently deployable and scalable, adopt new tech
