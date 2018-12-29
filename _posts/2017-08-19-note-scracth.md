@@ -21,6 +21,13 @@ All of these requirements put together suggerst that we should build in memory s
 
 Location storage
 
+### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
+
+# Other
+#### Markdown
+[1](https://segmentfault.com/a/1190000010223222)
+
+
  
 
 
