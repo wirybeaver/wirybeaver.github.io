@@ -21,15 +21,16 @@ tags:
 <p id='pzb'>Course</p>
 - [ ] [Machine Learning Foundations](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 - [ ] [Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
-- [ ] NLP Collins (Contact with me to get the video link)
-- [ ] [deeplearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w/featured)
+- [ ] NLP by Collins (Contact with me to get the video link)
+- [ ] [Deep Natural Language Processing](https://github.com/oxford-cs-deepnlp-2017/lectures)
 
 <p id='pzb'>Code, Book, Turotial</p>
 - [ ] Book: Designing Data-Intensive Applications
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
 - [ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
+- [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
+- [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 - [ ] [Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
-- [ ] [Code: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 
 ## Infrastructure
 - [] [Code: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
@@ -47,9 +48,10 @@ tags:
 - [Advanced Database Systems](https://www.youtube.com/playlist?list=PLSE8ODhjZXjYplQRUlrgQKwIAV3es0U6t)
 - [Reliable Distributed Algorithm](https://www.youtube.com/playlist?list=PLx3mQFFeHPjndmQ0iP9j6C58b90hqGa0X)
 - [Parallel Computing](https://developer.nvidia.com/educators/existing-courses)
+- [deeplearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w/featured)
 - [Neural Networks](https://www.youtube.com/watch?v=SGZ6BttHMPw&list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH)
 - [Deep Reiforcement Learning](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)
-- [More](https://www.youtube.com/channel/UCSynHr2gm5wAqG-69nsTl4A/playlists?shelf_id=0&view=52)
+- [**More**](https://www.youtube.com/channel/UCSynHr2gm5wAqG-69nsTl4A/playlists?shelf_id=0&view=52)
 
 ## Book
 [Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
