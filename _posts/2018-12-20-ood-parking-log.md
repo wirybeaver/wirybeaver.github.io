@@ -3,7 +3,7 @@ layout:     post
 title:      Parking Lot
 date:       2018-12-20 23:00:00
 author:     "Shane"
-excerpt:    "Frequent OOD Questions and Solutions coupled with elegant design patterns"
+excerpt:    ""
 header-img: "img/bg-mac.jpg"
 tags:
     - OOD

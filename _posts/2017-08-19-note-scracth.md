@@ -6,7 +6,7 @@ author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
 tags:
-    - Note
+    - Other
 ---
 ### Uber Service
 Location indexing<br>
@@ -31,8 +31,9 @@ Location storage
 
 [WILDML](http://www.wildml.com/)
 
-## Curated List
+[Neural Network Animation](http://colah.github.io/)
 
+## Curated List
 [Chinese SDE Interview](https://github.com/CyC2018/CS-Notes)
 
 [Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
@@ -42,7 +43,6 @@ Location storage
 [Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 
 ## Course, Book, Tutorial
-
 [Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
 
 ## Book
