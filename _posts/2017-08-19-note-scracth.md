@@ -8,6 +8,8 @@ header-img: "img/bg-mac.jpg"
 tags:
     - Other
 ---
+# Messy
+
 ### Uber Service
 Location indexing<br>
 so let's start by first talking about ...
@@ -21,19 +23,18 @@ All of these requirements put together suggerst that we should build in memory s
 
 Location storage
 
-# Messy
-[Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
+### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
 
 # Organized
 
-## Blog
+### Blog
 [Ruder](http://ruder.io/)
 
 [WILDML](http://www.wildml.com/)
 
 [Neural Network Animation](http://colah.github.io/)
 
-## Curated List
+### Curated List
 [Chinese SDE Interview](https://github.com/CyC2018/CS-Notes)
 
 [Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
@@ -42,32 +43,31 @@ Location storage
 
 [Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 
-## Course, Book, Tutorial
+### Course, Book, Tutorial
 [Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
 
-## Book
+### Book
 [Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf)
 
 [Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
 
 [Statistical Learning Theory](https://github.com/percyliang/cs229t)
 
-## Tutorial
-
+### Tutorial
 [Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
 
-## Machine Learning Paper
+### Paper
 
-## Machine Learning Project
 
-## Computer System Paper
+### Code
+[Attention](https://github.com/GokuMohandas/attentional-interfaces)
 
-## Computer System Project
+### Markdown
+[link 1](https://segmentfault.com/a/1190000010223222)
+[How to add GFM task lists in Jekyll?
+](https://stackoverflow.com/questions/47788154/how-to-add-gfm-task-lists-in-jekyll)
 
-## Markdown
-[1](https://segmentfault.com/a/1190000010223222)
-
-## 系统设计
+### 系统设计
 
 [Uber Map Matching](https://www.youtube.com/watch?v=ChtumoDfZXI)
 
@@ -104,21 +104,3 @@ Location storage
 [Code: Video Stream](https://www.geeksforgeeks.org/design-video-sharing-system-like-youtube/)
 
 [脸书系统设计面经](http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=289293&highlight=%CF%B5%CD%B3%C9%E8%BC%C6)
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
