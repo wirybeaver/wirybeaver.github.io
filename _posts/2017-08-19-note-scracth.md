@@ -8,7 +8,8 @@ header-img: "img/bg-mac.jpg"
 tags:
     - Other
 ---
-# Messy
+
+> Messy
 
 ### Uber Service
 Location indexing<br>
@@ -25,7 +26,9 @@ Location storage
 
 ### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
 
-# Organized
+---
+
+> Organized
 
 ### Blog
 [Ruder](http://ruder.io/)

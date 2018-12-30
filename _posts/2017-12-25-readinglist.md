@@ -9,8 +9,9 @@ tags:
     - Other
 ---
 
-### Compulsories
-#### Math
+> Compulsories
+
+### Math
 - [ ] [Linear Algebra](https://www.youtube.com/watch?v=AfY1ak89fwU&list=PLe94oLfiYuBCN-1N9aHJVjqO0K_Ug0VwZ)
 - [ ] [Statistical Inference](https://www.youtube.com/playlist?list=PLj6E8qlqmkFtvN44vX_D7YRxAgivkONyN)
 - [ ] [Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
@@ -18,7 +19,8 @@ tags:
 - [ ] [Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
 {: style='list-style-type: none'}
 
-#### AI
+####
+ AI
 <p id='pzb'>Course</p>
 - [ ] [Machine Learning Foundations](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 - [ ] [Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
@@ -35,13 +37,15 @@ tags:
 - [ ] [Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
 {: style='list-style-type: none'}
 
-#### Infrastructure
+### Infrastructure
 - [ ] [Code: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
 {: style='list-style-type: none'}
 
-### Electivies
+---
 
-#### Course
+> Electivies
+
+### Course
 [Computer Organization](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk)
 
 [Computer Architecture](https://www.coursera.org/learn/comparch/home/welcome)
@@ -70,7 +74,7 @@ tags:
 
 [**More**](https://www.youtube.com/channel/UCSynHr2gm5wAqG-69nsTl4A/playlists?shelf_id=0&view=52)
 
-#### Book, Code, Tutorial
+### Book, Code, Tutorial
 [Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
 
 [Book: Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html)
@@ -85,17 +89,17 @@ tags:
 
 [Tutorial: Practical AI](https://github.com/GokuMohandas/practicalAI)
 
-#### NLP Project
+### NLP Project
 [NER](https://github.com/ZhixiuYe/NER-pytorch)
 
 [Abstract Generation](https://github.com/WillKoehrsen/recurrent-neural-networks)
 
 [Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
 
-#### Tomcat
+### Tomcat
 [link 1](www.jianshu.com/p/dce1ee01fb90)
 
-#### Redo OS
+### Redo OS
 [os01](https://github.com/tuhdo/os01)
 
 [xv6](https://github.com/ranxian/xv6-chinese)
@@ -104,5 +108,5 @@ tags:
 
 [os tutorial](https://github.com/cfenollosa/os-tutorial)
 
-#### Redo DB
+### Redo DB
 [Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)
