@@ -43,6 +43,8 @@ Location storage
 
 [Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 
+[Java后端书架](http://www.importnew.com/22064.html)
+
 ### Course, Book, Tutorial
 [Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
 
@@ -57,7 +59,7 @@ Location storage
 [Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
 
 ### Paper
-
+[Neural Networks for NLP](http://phontron.com/class/nn4nlp2017/schedule.html)
 
 ### Code
 [Attention](https://github.com/GokuMohandas/attentional-interfaces)

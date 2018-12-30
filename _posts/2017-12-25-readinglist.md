@@ -16,6 +16,7 @@ tags:
 - [ ] [Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
 - [ ] [Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
 - [ ] [Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
+{: style='list-style-type: none'}
 
 #### AI
 <p id='pzb'>Course</p>
@@ -23,6 +24,7 @@ tags:
 - [ ] [Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
 - [ ] NLP by Collins (Contact with me to get the video link)
 - [ ] [Deep Natural Language Processing](https://github.com/oxford-cs-deepnlp-2017/lectures)
+{: style='list-style-type: none'}
 
 <p id='pzb'>Code, Book, Turotial</p>
 - [ ] Book: Designing Data-Intensive Applications
@@ -31,9 +33,11 @@ tags:
 - [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 - [ ] [Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
+{: style='list-style-type: none'}
 
 #### Infrastructure
 - [ ] [Code: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
+{: style='list-style-type: none'}
 
 ### Electivies
 
@@ -102,5 +106,3 @@ tags:
 
 #### Redo DB
 [Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)
-
-{: style='list-style-type: none'}
