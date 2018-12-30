@@ -26,8 +26,6 @@ Location storage
 
 ### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
 
----
-
 > Organized
 
 ### Blog

@@ -19,8 +19,7 @@ tags:
 - [ ] [Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
 {: style='list-style-type: none'}
 
-####
- AI
+### AI
 <p id='pzb'>Course</p>
 - [ ] [Machine Learning Foundations](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 - [ ] [Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
@@ -40,8 +39,6 @@ tags:
 ### Infrastructure
 - [ ] [Code: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
 {: style='list-style-type: none'}
-
----
 
 > Electivies
 
