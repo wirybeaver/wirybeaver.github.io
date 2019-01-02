@@ -10,7 +10,7 @@ tags:
     - System Design
 ---
 
-### Gather Requirement
+### Requirement
 
 **Functional Requirement**
 
@@ -27,6 +27,8 @@ HA
 ### Abstract Design
 
 ### Core Function
+
+### Scale out
 
 ### Foot Note
 

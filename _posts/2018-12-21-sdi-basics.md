@@ -63,17 +63,33 @@ In real world, the amount of physical servers is relatively less than the hashin
 Make virtual servers with K hash functions. As a result, one phycial server manage K evenly distributed virtual node in the ring hash space. If one server is removed , the corresponding space would evenly hit multiple regions. The load increasement of each existing server is expectedly uniform.
 
 #### Y scaling
-[Video](https://videos.confluent.io/watch/8MLuNHnE3uSZPgstdzSk4Q?)
+[Video 1 by Confluent](https://videos.confluent.io/watch/8MLuNHnE3uSZPgstdzSk4Q?)
+
+[Video 2 Saga](https://youtu.be/YPbGW3Fnmbc?list=WL)
 
 microservice, function decomposition. Break down large systems into pieces of standalone services, each service has its own DB. API gateway acts as a facade and expose public API to clients.
 
 Pros: autonomous work, agile development, independently deployable and scalable, adopt new tech
 
 <p id="pz">Cons: complexity of distributed system</p>
-- inter-process communication
-- transactions across database
-- test
+- service discovery. Zookeeper kicks in.
+- inter-process communication across servers. RPC deal kicks in.
+- transactions across database. Saga kicks in.
+- test.
 - deployment. Docker take care of this awful task
+
+> Saga
+
+1. Rollback using compensating transactions.<br>
+Each local transcation Ti has an associated compensating transaction Ci.
+2. Request obviously create a saga. But when to response?<br>
+Prefer to send back immediatesly instead of after completes. Good news is *highly availability*. No longer dependent on all components being up. They don't have to be capable of repsonding in a **timely** way. That order will still get verified. Downside is that response doesn't specify the outcome. Client must poll or notified.
+
+Minimal UI impact<br>
+- UI hides asynchronous API from the user. Humans' brain is slow.
+- Saga will usually appear instantaneous. <= 100s
+- If it takes longer -> Ui displays "processing" popup
+- Server can push notifications to UI with Websocket.
 
 ### Kafka
 [Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s) 

@@ -6,7 +6,7 @@ author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
 tags:
-    - Note
+    - Other
 ---
 
 ### daily note

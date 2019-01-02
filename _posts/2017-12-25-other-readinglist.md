@@ -29,11 +29,11 @@ tags:
 
 <p id='pzb'>Code, Book, Turotial</p>
 - [ ] Book: Designing Data-Intensive Applications
+- [ ] [Code: Machine Learning in Action](https://github.com/TingNie/Machine-learning-in-action)
+- [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
 - [ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
-- [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
-- [ ] [Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
 {: style='list-style-type: none'}
 
 ### Infrastructure
@@ -69,6 +69,8 @@ tags:
 
 [Deep Reiforcement Learning](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)
 
+[Deep Bayes](https://www.youtube.com/playlist?list=PLe5rNUydzV9Q01vWCP9BV7NhJG3j7mz62)
+
 [**More**](https://www.youtube.com/channel/UCSynHr2gm5wAqG-69nsTl4A/playlists?shelf_id=0&view=52)
 
 ### Book, Code, Tutorial
@@ -79,6 +81,8 @@ tags:
 [Book: Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares](https://web.stanford.edu/~boyd/vmls/)
 
 [Code: 统计机器学习](https://github.com/fengdu78/lihang-code)
+
+[Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
 
 [Code: PRML](https://github.com/ctgk/PRML)
 
