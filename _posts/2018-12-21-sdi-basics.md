@@ -80,16 +80,21 @@ Pros: autonomous work, agile development, independently deployable and scalable,
 
 > Saga
 
+Somthing Complicated<br>
 1. Rollback using compensating transactions.<br>
 Each local transcation Ti has an associated compensating transaction Ci.
 2. Request obviously create a saga. But when to response?<br>
-Prefer to send back immediatesly instead of after completes. Good news is *highly availability*. No longer dependent on all components being up. They don't have to be capable of repsonding in a **timely** way. That order will still get verified. Downside is that response doesn't specify the outcome. Client must poll or notified.
-
+Prefer to send back immediatesly instead of after completes. Good news is *highly availability*. No longer dependent on all components being up. They don't have to be capable of repsonding in a **timely** way. That order will still get verified. Downside is that response doesn't specify the outcome. Client must poll or notified.<br>
 Minimal UI impact<br>
 - UI hides asynchronous API from the user. Humans' brain is slow.
 - Saga will usually appear instantaneous. <= 100s
 - If it takes longer -> Ui displays "processing" popup
 - Server can push notifications to UI with Websocket.
+3. compliate the business logic. Other transaction see "inconsistent data" due to the pendting state.
+
+How to sequence saga?<br>
+Orchestration-based coordination: centrialized decision making. state machine: send out command, invoke participants, wait response, move to next state. 
+
 
 ### Kafka
 [Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s) 
