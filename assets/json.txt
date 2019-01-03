@@ -1,5 +1,0 @@
-{
-    name : ["Xuanyi", "Li"],
-    age: 32,
-    addr: [{state: "ohio"}, {city: "columbus"}]
-}
