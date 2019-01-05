@@ -18,10 +18,13 @@ https://crane-yuan.github.io/2016/08/15/The-map-of-java-sorted-by-value/
 
 # hate project
 
-# biggest failuer
+# biggest failure
+
+# Why this job
+## levarage my strength and make an impactful product.
 
 # 3 key factors important for you in your job search?
-Frist, fast team growth. A challengable job would stimulate me develop new skill sets and I could ignite productivity in turn. This is a win-win situation.
+First, levarage my strength and get fast growth. I have industry experience in backend development and am familiar with the algorithms, elementary distributed systems. All these stuff could help me face challenges better in Stripe and develop a repliable system. In this process, I could learn new skills, grow fast with the team and make an impactful product. It gives me a fense of fulfillment and stimulate me work harder and ignite productivity in turn. This is a win-win situation.
 
 Besides, positive company culture. Coworks should respect and trust to each other. We are definitely encounter some problems that are hard to deal with by individuals. But with others' help, problems are likely done in a short span of time. As a result, we save time and learn new skills.
 

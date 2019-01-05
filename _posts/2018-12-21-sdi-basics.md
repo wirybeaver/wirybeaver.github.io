@@ -10,20 +10,34 @@ tags:
     - System Design
 ---
 
-### Resource List
-- [System Design Primer](https://github.com/donnemartin/system-design-primer)
-- [Tian Pan's Post](https://puncsky.com/hacking-the-software-engineer-interview)
-- [Distributed System for fun and Profit](http://book.mixu.net/distsys)
-- Others
-    - [System Design Interview Questions](http://blog.gainlo.co/index.php/category/system-design-interview-questions/)
-    - [educative.io](https://www.educative.io/collection/page/5668639101419520/5649050225344512/5668600916475904)
-    - [interviewbit](https://www.interviewbit.com/courses/system-design/topics/storage-scalability/)
-    - [tackling-the-system-design-interview](https://cternus.net/blog/2018/01/26/tackling-the-system-design-interview/)
-    - [OOD Questions](https://www.careercup.com/page?pid=object-oriented-design-interview-questions&n=1)
-
-### general bottleneck
+### General bottleneck
 1. Qps and bandwidth
-2. how to improve the performance: non-blocking reactor pattern, scale out, async
+2. how to improve the performance: async, non-blocking reactor pattern, scale out, rate limiting
+
+### Rate limiter and load shedder
+
+when users can afford to change the pace at which they hit your API endpoints without affecting the outcome of their request, then a rate limiter is appropriate.
+
+load shedding: drop low-priority requests, make critical requests get throught.
+
+#### Request rate limiter
+Each user have at most *N* (1000) requests per second.
+
+#### Concurrent rate limiter
+Each user have at most *M* (20) API requests in the process at the same time.
+
+Intuition: resource-intensive API, chances are users get frustrated and then retry
+
+#### Fleet usage load shedder
+Reservce a fraction of infrastructure for critical requests. 
+
+How: divide up traffice into two types: critical and not critcal. Use Redis cluster to count how many requests we have of each type.
+
+#### Worker utilization load shedder
+
+When a worker is too busy to handle its request volume (starts getting back up with requests), then this will shed lower-priority requests. If shedding gets it back into a good state, then start to slowly bring traffic back. Otherwise, this will escalate and start shedding even more traffic.
+
+traffic priority: critial methods > POST > GET > test mode traffic
 
 ### Scaling
 Scalability: the ability to handle more requests by adding more resources.
@@ -93,14 +107,18 @@ Minimal UI impact<br>
 3. compliate the business logic. Other transaction see "inconsistent data" due to the pendting state.
 
 How to sequence saga?<br>
-Orchestration-based coordination: centrialized decision making. state machine: send out command, invoke participants, wait response, move to next state. 
+Orchestration-based coordination: centrialized decision making. 
 
+*Orchestration*<br>
+state machine: send out command, invoke participants, wait response, move to next state. 
+
+*Participants*<br>
 
 ### Kafka
 [Video](https://www.youtube.com/watch?v=UEg40Te8pnE&t=1609s) 
 
 **Role**  
-distributed stream platform
+message queue, pull model
 
 **Essence**  
 an event redger could go back in time, distirbuted commit log
@@ -128,6 +146,15 @@ an event redger could go back in time, distirbuted commit log
 <p id="pzb">Distribution</p>
 - Producer view: Topic could have multiple partions over servers. A server is a leader for some partitions and a follower for others.
 - Consumer view: each partition is consumed by exactly one consumer in the group. Message consumption is balanced across all consumers in a group. 
+
+
+### [Webhooks](https://blog.restcase.com/webhooks-role-in-the-api-world/)
+
+The main advantage of the webhooks pattern is that your application doesn’t have to make periodic calls to APIs while it’s waiting for changes. Instead, APIs will call your application on a specific endpoint informing that something interesting has happened. What’s missing is a way to programmatically tell APIs that you’re interested in receiving calls and registering endpoints.
+
+A webhook (also called a web callback or HTTP push API) is a way for an app to provide other applications with real-time information. A webhook delivers data to other applications as it happens, meaning you get data immediately.
+
+[Stripe WebEndpoint example](https://stripe.com/docs/api/webhook_endpoints/create)
 
 ### Zookeeper
 
@@ -173,6 +200,17 @@ Deploying a load balancer makes sense only when you have multiple servers wherea
 4. Design a global video streaming service, like YouTube, including essential features, such as data recording and social commenting.
 5. Design a global file storage and sharing service, optimized for simultaneous use by multiple users.
 6. Design a search engine or related services such as a web crawler or type ahead.
+
+### Resource List
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
+- [Tian Pan's Post](https://puncsky.com/hacking-the-software-engineer-interview)
+- [Distributed System for fun and Profit](http://book.mixu.net/distsys)
+- Others
+    - [System Design Interview Questions](http://blog.gainlo.co/index.php/category/system-design-interview-questions/)
+    - [educative.io](https://www.educative.io/collection/page/5668639101419520/5649050225344512/5668600916475904)
+    - [interviewbit](https://www.interviewbit.com/courses/system-design/topics/storage-scalability/)
+    - [tackling-the-system-design-interview](https://cternus.net/blog/2018/01/26/tackling-the-system-design-interview/)
+    - [OOD Questions](https://www.careercup.com/page?pid=object-oriented-design-interview-questions&n=1)
 
 ### Footnote
 

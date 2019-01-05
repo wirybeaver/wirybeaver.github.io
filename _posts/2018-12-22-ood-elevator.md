@@ -9,48 +9,134 @@ tags:
     - OOD
 ---
 
-### Clarify
-- What.
-    - parking lot: multi-level
-    - vehicle: multiple size
-    - parking spot: same size
-- How
-    - parking strategy: large size vehicle could occupy consequent parking spots in horizontal direction.
-    - charging strategy: by time
+```java
+interface DispatchStrategy{
+    Elevator selectElevator(List<Elevator> elevators, ExternalRequest request);
+}
 
-### Core object
-- Bus,Car, Motorcyle
-- Parking Lot
-- Level
-- Parking Spot
 
-### Use case
-- get available count
-- park vehicle
-    - check vehicle size
-    - get list of available spots
-    - vehicle take the spot
-- clear spot
-    - update spot
-    - update level's avaliable count
-- calculate price
+public enum Direction{
+    UP, DOWN;
+}
 
-### Class
-- ParkingLot
-    - private List<Level>
-    - public int getAvailableCount()
-- Level
-    - private List<Spot>
-    - private int availableCount
-    - public int getAvailableCount()
-- Spot
-    - boolean isAvailable
-    - boolean isAvailable()
-    - void takeSpot()
-    - void leaveSpot()
-- Vehicle
-    - protected int size
-    - public int getSize()
+public enum status{
+    UP, DOWN,  IDLE;
+}
+
+class ExternalRequest{
+    int level;
+    Direction Direction;
+}
+
+class InternalRequest{
+    int level;
+}
+
+
+class ElevatorSystem{
+    List<Elevator> elevators;
+    DispatchStrategy strategy;
+
+    void setDispatchStrategy(DispatchStrategy strategy);
+    void handleExternalRequest(ExternalRequest request){
+        strategy.selectElevator(elevators, request).handleExternalRequest(request);
+    }
+    void run{
+        while(true){
+            for(Elevator e: elevators){
+                e.makeDecision();
+            }
+            Thread.sleep(1000);
+        }
+    }
+}
+
+class Elevator{
+    int level;
+    Status status;
+    boolean isDoorOpen;
+    TreeSet<Integer> upstops;
+    TreeSet<Integer> downstops;
+    float weight;
+    float weightLimit;
+
+    void handleExternalRequest(ExternalRequest  request); 
+    void handleInternalRequest(InternalRequest request);
+    boolean isInternalRequestValid(InternalRequest request);
+    private boolean needOpen(){
+        return status==UP && upstops.contains(level) || status==DOWN && downstops.contains(level) || status==IDLE && upstops.contains(level) || status==IDLE && downstops.contains(level);
+    }
+    private void openDoor(){
+        isDoorOpen = true;
+        if(status==UP){
+            upstops.remove(level);
+        }
+        else if(status == DOWN){
+            downstops.remove(level);
+        }
+        else{
+            upstops.remove(level);
+            downstops.remove(level);
+        }
+    }
+    private void closeDoor(){
+        isDoorOpen = false;
+    }
+    
+    private boolean checkOverweight();
+    public void makeDecision(){
+        if(isDoorOpen){
+            if(checkOverweight()){
+                throw new OverWeightException();
+            }
+            else{
+                closeDoor();
+            }
+        }
+        else{
+            if(needOpen()){
+                openDoor();
+            }
+            else{
+                if(status == UP){
+                    if(upstops.higherKey(level)!=null || downstops.higherKey(level)!=null){
+                        level++;
+                    }
+                    else if(downstops.size()>0 || upstops.size()>0){
+                        status = DOWN;
+                        level--;
+                    }
+                    else{
+                        status = IDLE;
+                    }
+                }
+                else if(status == IDLE){
+                    if(upstops.higherKey(level)!=null){
+                        status = UP;
+                    }
+                    else if(downstops.lowerKey(level)!=null){
+                        status = DOWN;
+                    }
+                    else if(upstops.size()>0){
+                        status = DOWN;
+                    }
+                    else if(downstops.size()>0){
+                        status = UP;
+                    }
+                }
+                else{
+
+                }
+            }
+        }
+    }
+}
+
+class InvalidInternalRequest extends RuntimeException{
+
+}
+
+```
 
 
 
