@@ -14,10 +14,10 @@ tags:
 1. Post a tweet
 2. One's Timeline
 3. News Feed
-4. Follow/ Unfollow a User
+4. Follow/Unfollow a User
 5. Login/Register
 6. Upload Photo/Video
-6. HA
+7. HA
 
 ### Assumption
 DAU: 150M
@@ -108,6 +108,7 @@ Solution 1: movie star is not determined by follower numbers. The configuration 
 Solution 2: the combined pull model could deal with this problem eventually
 
 Follow up3: like. denormalization
+
 ```
 Tweet:
     int owner_id

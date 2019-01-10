@@ -20,7 +20,9 @@ reserve tables
 
 find table
 
-take order
+add meals into the order
+
+cook order
 
 checkout
 
@@ -38,13 +40,24 @@ No table preference, skip the selection process, go right into the confirmation 
 
 No deposit for reservation
 
-Edge Case: parity size > the maximum size of available tables, throw an exception, let customers split their parity size.
+Edge Case 1: parity size > the maximum size of available tables, throw an exception, let customers split their parity size.
+
+Edge Case 2: cu
 
 ### Class
 
 ```java
 class Parity{
     int size;
+}
+
+class SearchRequest{
+    TimeSlot TimeSlot;
+}
+
+class TimeSlot{
+    long start;
+    long end;
 }
 
 class Reservation{
@@ -56,17 +69,18 @@ class Reservation{
 
 class Restaurant{
     List<Table> table;
-    List<Meal> meal;
-    Map<Table, TreeMap<Integer, Integer>> reserveMap;
+    List<MealExample> mealExamples;
+    Map<Table, TreeMap<Long, Long>> reserveMap;
     List<Order> orders;
+    List<Reservation> reservations;
 
-    Reservation book(Parity p, int start, int end);
+    Reservation book(Parity p, SearchRequest searchRequest);
     void confirm(Reservation r);
     void cancel(Reservation r);
 
     Order checkin(Reservation r);
-    void addMeal(Order o, Meal m);
-    void deleteMeal(Order o, Meal m);
+    void addMeal(Order o, MealExample me, int copy);
+    void cookOrder(Order o);
     float checkout(Order o);
 }
 
@@ -75,9 +89,7 @@ class Order{
     Parity p;
     int startTime;
     List<Meal> meals;
-
     void addMeal(Meal m);
-    void deleteMeal(Meal, m);
 }
 
 class Table{
@@ -86,8 +98,16 @@ class Table{
     void unmarkOccupied();
 }
 
+class MealExample{
+    private float price;
+    private String mealName;
+}
+
 class Meal{
-    float price;
+    private MealExample MealExample;
+    private boolean isCooked;
+    private int copy;
+    cook();
 }
 
 class LargeParityException extends RuntimeException;

@@ -12,39 +12,58 @@ tags:
 
 ### Use Case
 
-**Functional Requirement**
+Two People Chat
+Group Chat
+Check online
 
-**Performance**
-HA
+Address Book
+Login/Logout
+Multi Device
 
-**Out of Scope**
+### Assumption
+DAU: 100M user
+Write QPS:
 
-### Constraint 
-1. read to write ratio
-2. bandwidth
-3. Qps
-
-### Abstract Design
+### High Level Architect
+Application Tier: User Service, Contacts Service, Message Service, Real-time Service
 
 ### Schema
-Message Table, NoSQL (large Volume, immutable), sharding key: message_id, column key: created_time <br>
-message_id, thread_id (sharding key), sender_id, content, created_time
+```
+Message:
+    message_id
+    thread_id (row_key)
+    created_time (column_key)
+    String content
+    sender_id
 
-Thread Table, SQL (secondary index), primary key: owner_id, thread_id <br>
-owner_id (used to identify private information), thread_table_id, paticipant_ids, update_time, is_muted, nickname
+Thread:
+    <user_id, thread_id> (primary index)
+    participants
+    update_time
+    is_muted
+    nickname
 
-BiUser Table, SQL
-user1_id, user2_id, thread_id
+User:
+    int user_id
+    String password
 
-### Solution
+```
+### Business Logic
 
-#### Deliver Message
-Case1: Two Users<br>
-API: send(from_user, to_user, message)<br>
-1. getThreadId(from_user, to_user)
-2. insertMsg(from_user, thread_id, message)
+** list thread by the decreasing update time **
+ThreadDB.listThread(user_id)
 
-Case2: Group Chat<br>
+** go into a specific thread **
+MessageDB.listMessage(thread_id)
+
+** create a thread **
+ThreadDB.insertThread(user1_id, user2_id)
+
+** Send a message **
+MessageDB.insertMessage(message)
+ThreadDB.updateTime(message.create_time)
+AsyncRealTimeServiceProvider.notify(message, to_user_id)
+AsyncRealTimeServiceConsumer.consume()
 
 ### Scale out
 

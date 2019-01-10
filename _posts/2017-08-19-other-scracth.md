@@ -11,7 +11,7 @@ tags:
 
 > Messy
 
-### Uber Service
+#### Uber Service
 Location indexing<br>
 so let's start by first talking about ...
 
@@ -24,7 +24,7 @@ All of these requirements put together suggerst that we should build in memory s
 
 Location storage
 
-### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
+#### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
 
 > Organized
 
@@ -36,7 +36,7 @@ Location storage
 [Neural Network Animation](http://colah.github.io/)
 
 ### Curated List
-[Chinese SDE Interview](https://github.com/CyC2018/CS-Notes)
+[SDE Interview at China](https://github.com/CyC2018/CS-Notes)
 
 [Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
 
@@ -49,20 +49,22 @@ Location storage
 ### Course, Book, Tutorial
 [Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
 
-### Book
 [Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf)
 
 [Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
 
 [Statistical Learning Theory](https://github.com/percyliang/cs229t)
 
-### Tutorial
-[Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
 
 ### Paper
 [Neural Networks for NLP](http://phontron.com/class/nn4nlp2017/schedule.html)
 
 ### Code
+
+[Abstract Generation](https://github.com/WillKoehrsen/recurrent-neural-networks)
+
+[Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
+
 [Attention](https://github.com/GokuMohandas/attentional-interfaces)
 
 ### Markdown

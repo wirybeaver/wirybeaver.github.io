@@ -91,14 +91,13 @@ tags:
 [Tutorial: Practical AI](https://github.com/GokuMohandas/practicalAI)
 
 ### NLP Project
+
+[Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
+
 [NER](https://github.com/ZhixiuYe/NER-pytorch)
 
-[Abstract Generation](https://github.com/WillKoehrsen/recurrent-neural-networks)
-
-[Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
-
 ### Tomcat
-[link 1](www.jianshu.com/p/dce1ee01fb90)
+[link 1](https://www.jianshu.com/p/dce1ee01fb90/)
 
 ### Redo OS
 [os01](https://github.com/tuhdo/os01)

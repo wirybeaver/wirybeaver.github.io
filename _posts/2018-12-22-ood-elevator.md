@@ -20,7 +20,7 @@ public enum Direction{
 }
 
 public enum status{
-    UP, DOWN,  IDLE;
+    UP, DOWN, IDLE;
 }
 
 class ExternalRequest{
@@ -57,12 +57,12 @@ class Elevator{
     boolean isDoorOpen;
     TreeSet<Integer> upstops;
     TreeSet<Integer> downstops;
-    float weight;
     float weightLimit;
 
     void handleExternalRequest(ExternalRequest  request); 
     void handleInternalRequest(InternalRequest request);
     boolean isInternalRequestValid(InternalRequest request);
+    boolean checkOverweight();
     private boolean needOpen(){
         return status==UP && upstops.contains(level) || status==DOWN && downstops.contains(level) || status==IDLE && upstops.contains(level) || status==IDLE && downstops.contains(level);
     }
@@ -93,40 +93,38 @@ class Elevator{
                 closeDoor();
             }
         }
+        else if(needOpen()){
+            openDoor();
+        }
         else{
-            if(needOpen()){
-                openDoor();
-            }
-            else{
-                if(status == UP){
-                    if(upstops.higherKey(level)!=null || downstops.higherKey(level)!=null){
-                        level++;
-                    }
-                    else if(downstops.size()>0 || upstops.size()>0){
-                        status = DOWN;
-                        level--;
-                    }
-                    else{
-                        status = IDLE;
-                    }
+            if(status == UP){
+                if(upstops.higherKey(level)!=null || downstops.higherKey(level)!=null){
+                    level++;
                 }
-                else if(status == IDLE){
-                    if(upstops.higherKey(level)!=null){
-                        status = UP;
-                    }
-                    else if(downstops.lowerKey(level)!=null){
-                        status = DOWN;
-                    }
-                    else if(upstops.size()>0){
-                        status = DOWN;
-                    }
-                    else if(downstops.size()>0){
-                        status = UP;
-                    }
+                else if(downstops.size()>0 || upstops.size()>0){
+                    status = DOWN;
+                    level--;
                 }
                 else{
-
+                    status = IDLE;
                 }
+            }
+            else if(status == IDLE){
+                if(upstops.higherKey(level)!=null){
+                    status = UP;
+                }
+                else if(downstops.lowerKey(level)!=null){
+                    status = DOWN;
+                }
+                else if(upstops.size()>0){
+                    status = DOWN;
+                }
+                else if(downstops.size()>0){
+                    status = UP;
+                }
+            }
+            else{
+                // status == DOWN
             }
         }
     }
