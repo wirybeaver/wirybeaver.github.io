@@ -1,10 +1,10 @@
 # Site settings
 title: Shane Blog
-SEOTitle: Xuanyi Li | 李宣毅
+SEOTitle: Xuanyi Li | Shane
 header-img: img/bg-mac.jpg
 email: shanelxy@outlook.com
 description: "Fake it till make it"
-keyword: "Backend, 后端开发, Distributed System, 分布式系统, NLP,  自然语言处理, Natural Language Processing"
+keyword: "Backend, Distributed System, NLP"
 url: "https://shanebacklight.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
