@@ -29,12 +29,14 @@ tags:
 
 <p id='pzb'>Code, Book, Turotial</p>
 - [ ] Book: Designing Data-Intensive Applications
+- [ ] Book: Linear Algebra and Learning from Data (http://math.mit.edu/~gs/learningfromdata/)
 - [ ] [Code: Machine Learning in Action](https://github.com/TingNie/Machine-learning-in-action)
+- [ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
 - [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
-- [ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
 - [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 {: style='list-style-type: none'}
+- [ ] [Project: Udacity Deep Learning](https://github.com/RyanCCollins/deep-learning-nd)
 
 ### Infrastructure
 - [ ] [Code: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
@@ -77,14 +79,6 @@ tags:
 [Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
 
 [Book: Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html)
-
-[Book: Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares](https://web.stanford.edu/~boyd/vmls/)
-
-[Code: 统计机器学习](https://github.com/fengdu78/lihang-code)
-
-[Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
-
-[Code: PRML](https://github.com/ctgk/PRML)
 
 [Code: Reinforcement Learning](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
 

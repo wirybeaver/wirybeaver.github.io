@@ -49,12 +49,11 @@ Location storage
 ### Course, Book, Tutorial
 [Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
 
-[Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf)
-
 [Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
 
 [Statistical Learning Theory](https://github.com/percyliang/cs229t)
 
+[Book: Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares](https://web.stanford.edu/~boyd/vmls/)
 
 ### Paper
 [Neural Networks for NLP](http://phontron.com/class/nn4nlp2017/schedule.html)
@@ -66,6 +65,12 @@ Location storage
 [Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
 
 [Attention](https://github.com/GokuMohandas/attentional-interfaces)
+
+[Code: 统计机器学习](https://github.com/fengdu78/lihang-code)
+
+[Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
+
+[Code: PRML](https://github.com/ctgk/PRML)
 
 ### Markdown
 [link 1](https://segmentfault.com/a/1190000010223222)
