@@ -35,8 +35,9 @@ tags:
 - [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
 - [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
-{: style='list-style-type: none'}
 - [ ] [Project: Udacity Deep Learning](https://github.com/RyanCCollins/deep-learning-nd)
+{: style='list-style-type: none'}
+
 
 ### Infrastructure
 - [ ] [Code: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
