@@ -35,42 +35,63 @@ Location storage
 
 [Neural Network Animation](http://colah.github.io/)
 
-### Curated List
-[SDE Interview at China](https://github.com/CyC2018/CS-Notes)
+### Java
+[Inteview: 天朝Java后端面试](https://github.com/CyC2018/CS-Notes)
 
-[Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
+[Interview: 海量数据处理](https://github.com/julycoding/The-Art-Of-Programming-By-July)
 
-[Awesome NLP](https://github.com/keon/awesome-nlp)
+[Curated List: Java后端书架](http://www.importnew.com/22064.html)
 
-[Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
+[Design Pattern](https://github.com/knightsj/object-oriented-design)
 
-[Java后端书架](http://www.importnew.com/22064.html)
+### Traditional AI
 
-### Course, Book, Tutorial
-[Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
+[Curated List: Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
 
-[Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
+[Slide: Machine Learning by HsuanTien Lin](https://github.com/RedstoneWill/NTU-HsuanTienLin-MachineLearning)
 
-[Statistical Learning Theory](https://github.com/percyliang/cs229t)
+[Book: Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
+
+[Book: Statistical Learning Theory](https://github.com/percyliang/cs229t)
 
 [Book: Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares](https://web.stanford.edu/~boyd/vmls/)
-
-### Paper
-[Neural Networks for NLP](http://phontron.com/class/nn4nlp2017/schedule.html)
-
-### Code
-
-[Abstract Generation](https://github.com/WillKoehrsen/recurrent-neural-networks)
-
-[Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
-
-[Attention](https://github.com/GokuMohandas/attentional-interfaces)
 
 [Code: 统计机器学习](https://github.com/fengdu78/lihang-code)
 
 [Code: StatLearning](https://github.com/sujitpal/statlearning-notebooks)
 
 [Code: PRML](https://github.com/ctgk/PRML)
+
+### Deep Learning
+[Interview: 天朝深度学习面试](https://github.com/ShanghaiTechAIClub/DLInterview)
+
+[Curated List: Awesome NLP](https://github.com/keon/awesome-nlp)
+
+[Paper List: Machine Translation](https://github.com/THUNLP-MT/MT-Reading-List)
+
+[Paper List: CMU Neural Networks for NLP](http://phontron.com/class/nn4nlp2017/schedule.html)
+
+[Code: Abstract Generation](https://github.com/WillKoehrsen/recurrent-neural-networks)
+
+[Code: Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
+
+[Code: Attention](https://github.com/GokuMohandas/attentional-interfaces)
+
+### OS
+
+[Wheel: xv6](https://github.com/ranxian/xv6-chinese)
+
+[Wheel: How to Make a Computer Operating System](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
+
+[Wheel: os tutorial](https://github.com/cfenollosa/os-tutorial)
+
+### DataBase
+[Curated List: SFU DB](https://sfu-db.github.io/dbsystems/)
+
+[Wheel: Peloton DB](https://github.com/cmu-db/peloton)
+
+### Distrubuted System
+[Curated List: Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 
 ### Markdown
 [link 1](https://segmentfault.com/a/1190000010223222)

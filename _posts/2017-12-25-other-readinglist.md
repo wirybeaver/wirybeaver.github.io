@@ -12,35 +12,35 @@ tags:
 > Compulsories
 
 ### Math
-- [ ] [Linear Algebra](https://www.youtube.com/watch?v=AfY1ak89fwU&list=PLe94oLfiYuBCN-1N9aHJVjqO0K_Ug0VwZ)
-- [ ] [Statistical Inference](https://www.youtube.com/playlist?list=PLj6E8qlqmkFtvN44vX_D7YRxAgivkONyN)
-- [ ] [Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
-- [ ] [Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
-- [ ] [Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
+- [ ] [Video: Linear Algebra](https://www.youtube.com/watch?v=AfY1ak89fwU&list=PLe94oLfiYuBCN-1N9aHJVjqO0K_Ug0VwZ)
+- [ ] [Video: Statistical Inference](https://www.youtube.com/playlist?list=PLj6E8qlqmkFtvN44vX_D7YRxAgivkONyN)
+- [ ] [Video: Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
+- [ ] [Video: Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
+- [ ] [Video: Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
+- [ ] [Book: Linear Algebra and Learning from Data] (http://math.mit.edu/~gs/learningfromdata/)
+{: style='list-style-type: none'}
+
+### System
+- [ ] Book: Designing Data-Intensive Applications
+- [ ] [Wheel: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
+- [ ] [Wheel: Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)
+- [ ] [Wheel: os01](https://github.com/tuhdo/os01)
+- [ ] [Wheel: uCore](https://github.com/chyyuu/ucore_os_lab/blob/master/README-chinese.md)
+- [ ] [Wheel: MIT6.824](https://github.com/chaozh/MIT-6.824)
 {: style='list-style-type: none'}
 
 ### AI
-<p id='pzb'>Course</p>
-- [ ] [Machine Learning Foundations](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
-- [ ] [Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
-- [ ] NLP by Collins (Contact with me to get the video link)
-- [ ] [Deep Natural Language Processing](https://github.com/oxford-cs-deepnlp-2017/lectures)
+- [ ] [Video: Machine Learning Foundations](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
+- [ ] [Video: Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
+- [ ] Video: NLP by Collins (Contact with me to get the video link)
+- [ ] [Video: Deep Natural Language Processing](https://github.com/oxford-cs-deepnlp-2017/lectures)
 {: style='list-style-type: none'}
-
-<p id='pzb'>Code, Book, Turotial</p>
-- [ ] Book: Designing Data-Intensive Applications
-- [ ] Book: Linear Algebra and Learning from Data (http://math.mit.edu/~gs/learningfromdata/)
 - [ ] [Code: Machine Learning in Action](https://github.com/TingNie/Machine-learning-in-action)
 - [ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
 - [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
 - [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 - [ ] [Project: Udacity Deep Learning](https://github.com/RyanCCollins/deep-learning-nd)
-{: style='list-style-type: none'}
-
-
-### Infrastructure
-- [ ] [Code: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
 {: style='list-style-type: none'}
 
 > Electivies
@@ -76,16 +76,18 @@ tags:
 
 [**More**](https://www.youtube.com/channel/UCSynHr2gm5wAqG-69nsTl4A/playlists?shelf_id=0&view=52)
 
-### Book, Code, Tutorial
-[Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
-
+### Modern AI
 [Book: Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html)
 
 [Code: Reinforcement Learning](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
 
+[Project: Udacity Reinforcment Learning](https://github.com/dalmia/udacity-deep-reinforcement-learning)
+
 [Tutorial: Practical AI](https://github.com/GokuMohandas/practicalAI)
 
-### NLP Project
+### NLP
+
+[Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
 
 [Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
 
@@ -94,14 +96,4 @@ tags:
 ### Tomcat
 [link 1](https://www.jianshu.com/p/dce1ee01fb90/)
 
-### Redo OS
-[os01](https://github.com/tuhdo/os01)
 
-[xv6](https://github.com/ranxian/xv6-chinese)
-
-[How to Make a Computer Operating System](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
-
-[os tutorial](https://github.com/cfenollosa/os-tutorial)
-
-### Redo DB
-[Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)

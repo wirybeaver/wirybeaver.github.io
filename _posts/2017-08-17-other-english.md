@@ -9,6 +9,9 @@ tags:
     - Other
 ---
 
+### DDIA
+- underbralla term lump
+
 ### daily note
 - caught everyone off guard 措手不及
 - viable option 可行的方案
