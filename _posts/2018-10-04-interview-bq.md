@@ -4,6 +4,7 @@ title:      Behavioral Question
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
+catalog: true
 tags:
     - Interview
 ---
