@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Draft
-date:       2017-08-19 09:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"

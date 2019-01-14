@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Reading List
-date:       2017-08-19 09:00:00
 author:     "Shane"
 excerpt:    "Catch someone doing something right"
 header-img: "img/bg-mac.jpg"

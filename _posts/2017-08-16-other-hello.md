@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Greet Blog
-date:       2017-08-16 09:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"

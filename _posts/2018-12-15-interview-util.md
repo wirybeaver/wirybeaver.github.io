@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Practical Programming Utils in Interviews
-date:       2018-12-15 09:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
