@@ -2,7 +2,6 @@
 layout:     post
 title:      Intern Summary
 excerpt:    Intern Project Introduction
-date:       2018-08-01 20:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
