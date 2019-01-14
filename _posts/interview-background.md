@@ -71,60 +71,39 @@ Secondary Index: a leaf node stores primary keys.
 
 ## Virtual Memory
 
-# OOD
-## Management System
-General Use case <br>
-- reserve
-- serve
-- checkout
+# SE
+## Aigle Development
+It is an iterative and team based approach. Basically, time is split into phases called ‘sprint’. Typically the span of a sprint is one week. At the start of sprint, teammates would meet together and negotiate the running list of deliverables. All deliverables would be prioritized by business value. Once a functionality is done, I have to design a unit test and notify others to review my code. The system would automatically check the code style and report conflict with other branches. The feature cannot be merged into the production branch until all those stuff are done. If all features cannot be completed, work is reprioritized at the future sprint.
+Pro: customer could early see the work and make decisions.
+Drawback: refactoring.
 
-Clarify<br>
-- What.
-    - parking lot: multi-level
-    - vehicle: multiple size
-    - parking spot: same size
-- How
-    - parking strategy
-    - tips by time
 
-Core object<br>
-- Bus,Car, Motorcyle
-- Parking Lot
-- Level
-- Parking Spot
+## Unit Test Demo
+```java
+public class ResourceManagerImplTest {
+    private CloudProvider provider;
 
-Use case<br>
-- get available count
-- park vehicle
-    - check vehicle size
-    - get list of available spots
-    - vehicle take the spot
-- clear spot
-    - update spot
-    - update level's avaliable count
-- calculate price
+    @Before
+    public void init(){
+        provider = mock(CloudProvider.class);
+    }
 
-Class<br>
 
-- ParkingLot
-    - private List<Level>
-    - public int getAvailableCount()
-
-- Level
-    - private List<Spot>
-    - private int availableCount
-    - public int getAvailableCount()
-
-- Spot
-    - boolean isAvailable
-    - boolean isAvailable()
-    - void takeSpot()
-    - void leaveSpot()
-
-- Vehicle
-    - protected int size
-    - public int getSize()
-
+    @Test
+    public void testPlaceContainerCaseA(){
+        // basic case: instanceSize is divisible by containerSize
+        // sequential request
+        double instanceSize = 2;
+        double containerSize = 1;
+        when(provider.requestInstance()).thenAnswer( prov -> new InstanceImpl(instanceSize));
+        ResourceManager manager = new ResourceManagerImpl(provider, instanceSize, containerSize);
+        for(int i=0; i<100; i++){
+            manager.placeContainers(1);
+        }
+        verify(provider, times(50)).requestInstance();
+    }
+}
+```
 
 
 

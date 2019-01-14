@@ -17,7 +17,8 @@ tags:
 - [ ] [Video: Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
 - [ ] [Video: Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
 - [ ] [Video: Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
-- [ ] [Book: Linear Algebra and Learning from Data] (http://math.mit.edu/~gs/learningfromdata/)
+- [ ] [Book: Linear Algebra and Learning from Data](http://math.mit.edu/~gs/learningfromdata/)
+- [ ] Book: Linear Algebra done right
 {: style='list-style-type: none'}
 
 ### System
