@@ -18,14 +18,13 @@ tags:
 - [ ] [Video: Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
 - [ ] [Book: Linear Algebra and Learning from Data](http://math.mit.edu/~gs/learningfromdata/)
 - [ ] Book: Linear Algebra done right
+- [ ] [Tutorial: Matrix Calculus](https://arxiv.org/pdf/1802.01528.pdf)
 {: style='list-style-type: none'}
 
 ### System
 - [ ] Book: Designing Data-Intensive Applications
 - [ ] [Wheel: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
 - [ ] [Wheel: Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)
-- [ ] [Wheel: os01](https://github.com/tuhdo/os01)
-- [ ] [Wheel: uCore](https://github.com/chyyuu/ucore_os_lab/blob/master/README-chinese.md)
 - [ ] [Wheel: MIT6.824](https://github.com/chaozh/MIT-6.824)
 {: style='list-style-type: none'}
 
@@ -95,5 +94,18 @@ tags:
 
 ### Tomcat
 [link 1](https://www.jianshu.com/p/dce1ee01fb90/)
+
+### DataBase
+[LSM tree](http://www.pandademo.com/wp-content/uploads/2017/12/A-Comparison-of-Fractal-Trees-to-Log-Structured-Merge-LSM-Trees.pdf)
+
+[levelDB](https://dirtysalt.github.io/html/leveldb.html)
+
+### OS
+[Create your own kernel in C](https://www.codeproject.com/Articles/1225196/%2FArticles%2F1225196%2FCreate-Your-Own-Kernel-In-C)
+
+[Wheel: os01](https://github.com/tuhdo/os01)
+
+[Wheel: uCore](https://github.com/chyyuu/ucore_os_lab/blob/master/README-chinese.md)
+
 
 

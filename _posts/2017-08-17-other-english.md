@@ -12,6 +12,7 @@ tags:
 - underbralla term lump
 
 ### daily note
+- resort city 度假村
 - caught everyone off guard 措手不及
 - viable option 可行的方案
 - let's start by talking about
@@ -233,31 +234,3 @@ The difference between cloud and desktop is **nothing really**. Could is a set o
 
 ### Microservices are bad
 Microservices are the current hot software fad, but otherwise a useless idea. Like all the previous fads in software, e.g. structured programming, OOP etc, it falsely assumes, that you can decompose the software into meaningful isolated units, preferably with three-like dependencies between them. The reality or course is, that you can't do that and moreover, you actually don't want that either. Whenever it makes any sense business wise to connect the existing independent services, then you connect them. A complex software system is just more valuable and to increase the value of the system you have to make it more complex. The conclusion is, that any approach to software, that assumes a simple structure (architecture), is doomed to fail.﻿
-
-### Uber Service
-Location indexing<br>
-so let's start by first talking about ...
-
-1. Current location points for all cars
-2. Fast queries by location
-3. filter by car properties
-4. high volume of reads and writes
-5. high ephemeral time sentive, so we don't need long-term storage. 
-All of these requirements put together suggerst that we should build in memory search index.
-
-Location storage
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-

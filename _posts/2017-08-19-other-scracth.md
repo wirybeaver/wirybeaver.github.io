@@ -10,19 +10,6 @@ tags:
 
 > Messy
 
-#### Uber Service
-Location indexing<br>
-so let's start by first talking about ...
-
-1. Current location points for all cars
-2. Fast queries by location
-3. filter by car properties
-4. high volume of reads and writes
-5. high ephemeral time sentive, so we don't need long-term storage. 
-All of these requirements put together suggerst that we should build in memory search index.
-
-Location storage
-
 #### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
 
 > Organized
@@ -33,6 +20,8 @@ Location storage
 [WILDML](http://www.wildml.com/)
 
 [Neural Network Animation](http://colah.github.io/)
+
+[Paperspace](https://blog.paperspace.com/tag/tutorial/)
 
 ### Java
 [Inteview: 天朝Java后端面试](https://github.com/CyC2018/CS-Notes)
@@ -83,6 +72,9 @@ Location storage
 [Wheel: How to Make a Computer Operating System](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
 
 [Wheel: os tutorial](https://github.com/cfenollosa/os-tutorial)
+
+### Network
+[Tutorial: Network Programming](http://beej-zhcn.netdpi.net/introduction/sites-and-books)
 
 ### DataBase
 [Curated List: SFU DB](https://sfu-db.github.io/dbsystems/)
