@@ -23,6 +23,8 @@ tags:
 
 [Paperspace](https://blog.paperspace.com/tag/tutorial/)
 
+[Trask](http://iamtrask.github.io/)
+
 ### Java
 [Inteview: 天朝Java后端面试](https://github.com/CyC2018/CS-Notes)
 
@@ -54,6 +56,10 @@ tags:
 [Interview: 天朝深度学习面试](https://github.com/ShanghaiTechAIClub/DLInterview)
 
 [Curated List: Awesome NLP](https://github.com/keon/awesome-nlp)
+
+[Paper List: GNN, NRL, KRL](https://github.com/thunlp)
+
+[Paper List: Dialog](https://snakeztc.github.io/NeuralDialogPapers/)
 
 [Paper List: Machine Translation](https://github.com/THUNLP-MT/MT-Reading-List)
 

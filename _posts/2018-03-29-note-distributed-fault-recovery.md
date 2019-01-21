@@ -2,7 +2,6 @@
 layout:     post
 title:      Distributed Fault Recovery
 excerpt:    Prove the consistency of checkpoint algorithm by contradiction.
-date:       2018-03-29 20:00:00
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true

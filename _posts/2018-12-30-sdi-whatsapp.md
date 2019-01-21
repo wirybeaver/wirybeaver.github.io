@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      WhatsApp
-date:       2018-12-30 09:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"

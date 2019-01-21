@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Restaurant
-date:       2018-12-29 13:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"

@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      New Feeds
-date:       2018-12-27 09:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"

@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Parking Lot
-date:       2018-12-20 23:00:00
 author:     "Shane"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"

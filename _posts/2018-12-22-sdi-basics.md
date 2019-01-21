@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      System Design Primer
-date:       2018-12-22 09:00:00
 author:     "Shane"
 excerpt:    "Key concept in system design interview and distributed system"
 header-img: "img/bg-mac.jpg"
