@@ -10,33 +10,24 @@ tags:
 
 > Compulsories
 
-### Math
-- [ ] [Video: Linear Algebra](https://www.youtube.com/watch?v=AfY1ak89fwU&list=PLe94oLfiYuBCN-1N9aHJVjqO0K_Ug0VwZ)
-- [ ] [Video: Statistical Inference](https://www.youtube.com/playlist?list=PLj6E8qlqmkFtvN44vX_D7YRxAgivkONyN)
-- [ ] [Video: Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
-- [ ] [Video: Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
-- [ ] [Video: Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
-- [ ] [Book: Linear Algebra and Learning from Data](http://math.mit.edu/~gs/learningfromdata/)
-- [ ] Book: Linear Algebra done right
-- [ ] [Tutorial: Matrix Calculus](https://arxiv.org/pdf/1802.01528.pdf)
+### System
+- [ ] [Wheel: MIT6.824](https://github.com/chaozh/MIT-6.824)
+- [ ] [Video: Advanced Database System](https://www.youtube.com/watch?v=poEfLYH9W2M&list=PLSE8ODhjZXjYplQRUlrgQKwIAV3es0U6t&index=1)
+- [ ] Book: Designing Data-Intensive Applications
+- [ ] [Wheel: Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)
 {: style='list-style-type: none'}
 
-### System
-- [ ] Book: Designing Data-Intensive Applications
-- [ ] [Wheel: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
-- [ ] [Wheel: Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)
-- [ ] [Wheel: MIT6.824](https://github.com/chaozh/MIT-6.824)
-{: style='list-style-type: none'}
 
 ### AI
+- [ ] Book: Linear Algebra done right
+- [ ] [Video: Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8)
+- [ ] [Tutorial: Matrix Calculus](https://arxiv.org/pdf/1802.01528.pdf)
 - [ ] [Video: Machine Learning Foundations](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 - [ ] [Video: Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
+- [ ] [Neural Networks](https://www.youtube.com/watch?v=SGZ6BttHMPw&list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH)
+- [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] Video: NLP by Collins (Contact with me to get the video link)
 - [ ] [Video: Deep Natural Language Processing](https://github.com/oxford-cs-deepnlp-2017/lectures)
-{: style='list-style-type: none'}
-- [ ] [Code: Machine Learning in Action](https://github.com/TingNie/Machine-learning-in-action)
-- [ ] [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
-- [ ] [Turotial: Grokking Deep Learning](https://github.com/iamtrask/Grokking-Deep-Learning)
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
 - [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 - [ ] [Project: Udacity Deep Learning](https://github.com/RyanCCollins/deep-learning-nd)
@@ -44,7 +35,20 @@ tags:
 
 > Electivies
 
-### Course
+### Math
+[Video: Linear Algebra](https://www.youtube.com/watch?v=AfY1ak89fwU&list=PLe94oLfiYuBCN-1N9aHJVjqO0K_Ug0VwZ)
+
+[Video: Statistical Inference](https://www.youtube.com/playlist?list=PLj6E8qlqmkFtvN44vX_D7YRxAgivkONyN)
+
+[Video: Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
+
+[Video: Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
+
+[Video: Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
+
+[Book: Linear Algebra and Learning from Data](http://math.mit.edu/~gs/learningfromdata/)
+
+### CS Course
 [Computer Organization](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk)
 
 [Computer Architecture](https://www.coursera.org/learn/comparch/home/welcome)
@@ -67,15 +71,13 @@ tags:
 
 [deeplearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w/featured)
 
-[Neural Networks](https://www.youtube.com/watch?v=SGZ6BttHMPw&list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH)
-
 [Deep Reiforcement Learning](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)
 
 [Deep Bayes](https://www.youtube.com/playlist?list=PLe5rNUydzV9Q01vWCP9BV7NhJG3j7mz62)
 
 [**More**](https://www.youtube.com/channel/UCSynHr2gm5wAqG-69nsTl4A/playlists?shelf_id=0&view=52)
 
-### Modern AI
+### AI
 [Book: Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html)
 
 [Code: Reinforcement Learning](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
@@ -84,7 +86,11 @@ tags:
 
 [Tutorial: Practical AI](https://github.com/GokuMohandas/practicalAI)
 
+[Code: Machine Learning in Action](https://github.com/TingNie/Machine-learning-in-action)
+
 ### NLP
+
+[Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
 
 [Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
 
@@ -101,11 +107,10 @@ tags:
 [levelDB](https://dirtysalt.github.io/html/leveldb.html)
 
 ### OS
+[Wheel: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
+
 [Create your own kernel in C](https://www.codeproject.com/Articles/1225196/%2FArticles%2F1225196%2FCreate-Your-Own-Kernel-In-C)
 
 [Wheel: os01](https://github.com/tuhdo/os01)
 
 [Wheel: uCore](https://github.com/chyyuu/ucore_os_lab/blob/master/README-chinese.md)
-
-
-
