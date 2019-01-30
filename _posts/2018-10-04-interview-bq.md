@@ -104,7 +104,7 @@ I wanna share a conflict with my advisor during my summer research at Singapore.
 
 ## [Negotiate](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
 ### Compete
-Like I told you before, I am really excited about Quantcast and totally love the mission and techniqual track of the Seattle team. But I just received a strong package from Appfolio, which makes me hesitate. Can we talk about the offer right now and make it work?
+I am really excited about Quantcast, but I just received a strong package from Appfolio, which makes me hesitate. As I told you before, Quantcast is my top choice and I really love the techniqual track of the Seattle team. Can we talk about improving the offer right now and make it work?
 
-The thing make it hard is the sign on bonus. You know, I wanna stay at Quantfast for a long while thus I need a stable place to live in. But I've never been to Seattle before so I need some time to find a fit living place. Sign on bonus could make it easier to settle down and convices me join Quantcast. My expection ranges from 15K to 20K. Do you think it is reasonable?
+The thing make me hesitate is the sign on bonus. You know, I wanna stay at Quantfast for a long while thus I need a stable place to live in. But I've never been to Seattle before so I need some time to find a fit living place. Sign on bonus could make it easier to settle down and convices me join Quantcast. My expection ranges from 15K to 20K. Do you think it is reasonable?
 
