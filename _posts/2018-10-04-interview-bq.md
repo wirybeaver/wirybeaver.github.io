@@ -60,8 +60,8 @@ It is somewhat an integration work. Alibaba has great AI teams in good place. Bu
 
 #### Difficulty
 
-#### Why you like it. What your learned
-### Production workflow
+### Why you like that project. What your learned
+#### Production workflow
 Document: UML, Sequence Digram
 
 Aone: internal DevOps platform, integrating GitLab, Maven, Docker. <br>
@@ -96,34 +96,15 @@ I wanna share a conflict with my advisor during my summer research at Singapore.
 
 ### proudest pieces of code
 
-#### team leader experience
+### team leader experience
 
 ### hate project
 
 ### biggest failure
 
-### [Negotiate](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
-Yeah, [COMPANY_NAME] sounds great! I really thought this was a good fit, and I’m glad that you guys agree. Right now I’m talking with a few other companies so I can’t speak to the specific details of the offer until I’m done with the process and get closer to making a decision. But I’m sure we’ll be able to find a package that we’re both happy with, because I really would love to be a part of the team.
+## [Negotiate](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
+### Compete
+Like I told you before, I am really excited about Quantcast and totally love the mission and techniqual track of the Seattle team. But I just received a strong package from Appfolio, which makes me hesitate. Can we talk about the offer right now and make it work?
 
-I’ll look over some of these details and discuss it with my [FAMILY/CLOSE_FRIENDS/SIGNIFICANT_OTHER]. I’ll reach out to you if I have any questions. Thanks so much for sharing the good news with me, and I’ll be in touch!
-
-#### Other Offer
-Hello [PERSON], I just wanted to update you on my own process. I’ve just received an offer from [COMPANY] which is quite strong. That said, I’m really excited about [YOUR AMAZING COMPANY] and really want to see if we can make it work. Since my timeline is now compressed, is there anything you can do to expedite the process?
-
-#### 48h
-
-I have one big concern. You mentioned that this offer explodes in 48 hours. I’m afraid this doesn’t work at all for me. There’s no way that I can make a decision on this offer within a 48 hour window. I’m currently wrapping up my interview process at a few other companies, which is likely to take me another week or so. So I’m going to need more time to make an informed decision.
-
-That’s really unfortunate. I like [YOUR COMPANY] and was really excited about the team, but like I said, there’s no way I can consider this offer. 48 hours just too unreasonable of a window. The first company I join will be a big life decision for me, and I take my commitments very seriously. I also need to consult with my [EXTERNAL_DECISION_MAKER]. There’s no way that I can make a decision I’m comfortable with in this short an amount of time.
-
-#### 第一个salary
-
-I don’t have any particular numbers in mind. I’m more interested in learning whether this will be a good mutual fit. If it is, I’m open to exploring any offer so long as it’s competitive.
-
-I completely hear you, and I agree it’s important that we’re on the same page. I really have no particular numbers in my head, it all depends on the fit and the composition of the offer. Once we decide we want to work together, I think that’s the best time to figure out a compensation package that makes sense.
-
-Well, okay. I know that the average software engineer in Silicon Valley makes roughly 120K a year salary. So I think that’s a good place to start.
-
-#### Ask more
-The offer you guys extended was strong. Right now my decision is basically between you and [XYZ CORP]. It’s a genuinely difficult decision for me, but there are a couple of dimensions where, if this offer improved, it would be much more compelling.
+The thing make it hard is the sign on bonus. You know, I wanna stay at Quantfast for a long while thus I need a stable place to live in. But I've never been to Seattle before so I need some time to find a fit living place. Sign on bonus could make it easier to settle down and convices me join Quantcast. My expection ranges from 15K to 20K. Do you think it is reasonable?
 
