@@ -25,6 +25,8 @@ tags:
 
 [Trask](http://iamtrask.github.io/)
 
+[Papers with coding]
+
 ### Java
 [Inteview: 天朝Java后端面试](https://github.com/CyC2018/CS-Notes)
 
@@ -88,15 +90,18 @@ tags:
 
 [Wheel: Peloton DB](https://github.com/cmu-db/peloton)
 
+[If either side may fork and execute a child process, ensure that the FD_CLOEXEC (close-on-exec) flag is set on the socket file descriptor](https://stackoverflow.com/questions/2235938/what-can-cause-a-spontaneous-epipe-error-without-either-end-calling-close-or-c)
+
+[EPIPE, no signal](https://cboard.cprogramming.com/c-programming/67822-socket-send-exits-app-unexceptively.html)
+
 ### Distrubuted System
 [Curated List: Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 
 ### Markdown
 [link 1](https://segmentfault.com/a/1190000010223222)
+
 [How to add GFM task lists in Jekyll?
 ](https://stackoverflow.com/questions/47788154/how-to-add-gfm-task-lists-in-jekyll)
-[If either side may fork and execute a child process, ensure that the FD_CLOEXEC (close-on-exec) flag is set on the socket file descriptor](https://stackoverflow.com/questions/2235938/what-can-cause-a-spontaneous-epipe-error-without-either-end-calling-close-or-c)
-[EPIPE, no signal](https://cboard.cprogramming.com/c-programming/67822-socket-send-exits-app-unexceptively.html)
 
 ### 系统设计
 
