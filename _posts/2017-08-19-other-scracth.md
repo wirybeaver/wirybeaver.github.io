@@ -81,6 +81,7 @@ tags:
 
 ### Network
 [Tutorial: Network Programming](http://beej-zhcn.netdpi.net/introduction/sites-and-books)
+[Why is my tcp not reliable](https://blog.netherlabs.nl/articles/2009/01/18/the-ultimate-so_linger-page-or-why-is-my-tcp-not-reliable)
 
 ### DataBase
 [Curated List: SFU DB](https://sfu-db.github.io/dbsystems/)
