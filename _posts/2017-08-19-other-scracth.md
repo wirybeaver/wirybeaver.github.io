@@ -27,6 +27,8 @@ tags:
 
 [Papers with coding](https://paperswithcode.com/)
 
+[NLP Tutorial](https://github.com/graykode/nlp-tutorial)
+
 ### Java
 [Inteview: 天朝Java后端面试](https://github.com/CyC2018/CS-Notes)
 
