@@ -95,6 +95,8 @@ tags:
 [link 1](https://segmentfault.com/a/1190000010223222)
 [How to add GFM task lists in Jekyll?
 ](https://stackoverflow.com/questions/47788154/how-to-add-gfm-task-lists-in-jekyll)
+[If either side may fork and execute a child process, ensure that the FD_CLOEXEC (close-on-exec) flag is set on the socket file descriptor](https://stackoverflow.com/questions/2235938/what-can-cause-a-spontaneous-epipe-error-without-either-end-calling-close-or-c)
+[EPIPE, no signal](https://cboard.cprogramming.com/c-programming/67822-socket-send-exits-app-unexceptively.html)
 
 ### 系统设计
 
