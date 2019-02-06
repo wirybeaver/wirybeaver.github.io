@@ -108,3 +108,13 @@ Like I told you before, I am really excited about Quantcast, but I just received
 
 The thing make me hesitate is the sign on bonus. You know, I wanna stay at Quantcast for a long while, thus I need a stable place to live in. But I've never been to Seattle before so I need some time to find a comfortable living place. Having some sign on bonus could help me to settle down better and convices me join Quantcast. My expection ranges from 13K to 20K. Do you think it is reasonable?
 
+### Decline 1
+I'm really impresssed by the team culture and the concept of custom driven development. But after a lot of thought, I decide to decline Appfolio's offer since another company gives me very strong salary.
+
+I really appreciate the time you spent talking with me and really enjoy the onsite interview. Appfolio is a wonderful company, the people, the lunch, the environment, everyhing makes me comfortable. Even though the salary didn't work this time, I hope our path can cross in the furture.
+
+### Decline 2
+I'm really interested in Appfolio, but after a lot thought, I decide to decline the offer. The main reason is the visa policy. I'm an international student and I have to get H1B within three years if I want to stay at Appfolio for a long while. But as I know, Appfolio doens't have oversea office. Thus I cannot take the risk of sent back to China. Hope you could understand. 
+
+I really appreicate the time you spent with me and helped me raise the package. Even though it doens't work out this time, I hope our path can cross in the future. I wish your team all success.
+
