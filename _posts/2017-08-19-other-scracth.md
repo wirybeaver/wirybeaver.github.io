@@ -25,6 +25,10 @@ tags:
 
 [Trask](http://iamtrask.github.io/)
 
+[Papers with coding](https://paperswithcode.com/)
+
+[NLP Tutorial](https://github.com/graykode/nlp-tutorial)
+
 ### Java
 [Inteview: 天朝Java后端面试](https://github.com/CyC2018/CS-Notes)
 
@@ -81,17 +85,23 @@ tags:
 
 ### Network
 [Tutorial: Network Programming](http://beej-zhcn.netdpi.net/introduction/sites-and-books)
+[Why is my tcp not reliable](https://blog.netherlabs.nl/articles/2009/01/18/the-ultimate-so_linger-page-or-why-is-my-tcp-not-reliable)
 
 ### DataBase
 [Curated List: SFU DB](https://sfu-db.github.io/dbsystems/)
 
 [Wheel: Peloton DB](https://github.com/cmu-db/peloton)
 
+[If either side may fork and execute a child process, ensure that the FD_CLOEXEC (close-on-exec) flag is set on the socket file descriptor](https://stackoverflow.com/questions/2235938/what-can-cause-a-spontaneous-epipe-error-without-either-end-calling-close-or-c)
+
+[EPIPE, no signal](https://cboard.cprogramming.com/c-programming/67822-socket-send-exits-app-unexceptively.html)
+
 ### Distrubuted System
 [Curated List: Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 
 ### Markdown
 [link 1](https://segmentfault.com/a/1190000010223222)
+
 [How to add GFM task lists in Jekyll?
 ](https://stackoverflow.com/questions/47788154/how-to-add-gfm-task-lists-in-jekyll)
 
