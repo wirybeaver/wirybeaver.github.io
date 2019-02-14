@@ -103,6 +103,28 @@ public class ResourceManagerImplTest {
     }
 }
 ```
+ 
+# Frequent git command
+> git checkout -b <local new branch>
+Note: create new local branch based on the current local branch
+
+> git checkout --track <repo/branch>
+Note: create new local branch based on the remote branch, the new local branch default
+
+> git branch -u <repo/branch> (<local branch>)
+Note: used to set upstream for current local branch. If no branch is specified it defaults to the current branch.
+
+> git branch --unset-upstream (<local branch>)
+Note: If no branch is specified it defaults to the current branch.
+
+> git branch -d <local branch>
+
+> git branch -d -r <repo/branch>
+
+> git fetch --all
+
+
+
 
 
 
