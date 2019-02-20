@@ -18,10 +18,14 @@ tags:
 {: style='list-style-type: none'}
 
 
-### AI
+### Math
 - [ ] Book: Linear Algebra done right
-- [ ] [Video: Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8)
+- [ ] [Video: Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
+- [ ] [Video: Statistical Inference](https://www.youtube.com/playlist?list=PLj6E8qlqmkFtvN44vX_D7YRxAgivkONyN)
+- [ ] [Video: Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
 - [ ] [Tutorial: Matrix Calculus](https://arxiv.org/pdf/1802.01528.pdf)
+
+### AI
 - [ ] [Video: Machine Learning Foundations](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 - [ ] [Video: Machine Learning Techniques](https://www.youtube.com/playlist?list=PLXVfgk9fNX2IQOYPmqjqWsNUFl2kpk1U2)
 - [ ] [Neural Networks](https://www.youtube.com/watch?v=SGZ6BttHMPw&list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH)
@@ -29,7 +33,6 @@ tags:
 - [ ] Video: NLP by Collins (Contact with me to get the video link)
 - [ ] [Video: Deep Natural Language Processing](https://github.com/oxford-cs-deepnlp-2017/lectures)
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
-- [ ] [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 - [ ] [Project: Udacity Deep Learning](https://github.com/RyanCCollins/deep-learning-nd)
 {: style='list-style-type: none'}
 
@@ -37,12 +40,6 @@ tags:
 
 ### Math
 [Video: Linear Algebra](https://www.youtube.com/watch?v=AfY1ak89fwU&list=PLe94oLfiYuBCN-1N9aHJVjqO0K_Ug0VwZ)
-
-[Video: Statistical Inference](https://www.youtube.com/playlist?list=PLj6E8qlqmkFtvN44vX_D7YRxAgivkONyN)
-
-[Video: Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/course/)
-
-[Video: Matrix Analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsnTes37wyzOREFTQ9Lv0hI)
 
 [Video: Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
 
@@ -94,9 +91,11 @@ tags:
 
 [Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
 
-[Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
+[Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 
 [NER](https://github.com/ZhixiuYe/NER-pytorch)
+
+[Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
 
 ### Tomcat
 [link 1](https://www.jianshu.com/p/dce1ee01fb90/)

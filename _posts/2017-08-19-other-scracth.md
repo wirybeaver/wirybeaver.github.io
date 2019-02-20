@@ -59,6 +59,8 @@ tags:
 ### Deep Learning
 [Interview: 天朝深度学习面试](https://github.com/ShanghaiTechAIClub/DLInterview)
 
+[Paper List: Paper with code](https://paperswithcode.com/)
+
 [Curated List: Awesome NLP](https://github.com/keon/awesome-nlp)
 
 [Paper List: GNN, NRL, KRL](https://github.com/thunlp)
@@ -69,7 +71,7 @@ tags:
 
 [Paper List: CMU Neural Networks for NLP](http://phontron.com/class/nn4nlp2017/schedule.html)
 
-[Code: Abstract Generation](https://github.com/WillKoehrsen/recurrent-neural-networks)
+[Code: Abstract Generation Deployment with Python flask](https://github.com/WillKoehrsen/recurrent-neural-networks)
 
 [Code: Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
 
