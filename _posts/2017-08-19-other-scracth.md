@@ -29,14 +29,19 @@ tags:
 
 [NLP Tutorial](https://github.com/graykode/nlp-tutorial)
 
-### Java
-[Inteview: 天朝Java后端面试](https://github.com/CyC2018/CS-Notes)
+### 天朝面试
+[Interview: Java后端基本知识](https://github.com/CyC2018/CS-Notes)
+
+[Interview: Java面试Road Map](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247488542&idx=1&sn=e82c66620330da13899fddf658c57793&chksm=eb539128dc24183ec1665edbf331bcc40bf71a0c6fd76c04dd41297242eb94f407b301864088&mpshare=1&scene=24&srcid=02217JJMsjUqqI3DtFJAm5cU#rd)
+
+[Interview: Java并发](https://blog.csdn.net/qq_34039315/article/details/78549311)
 
 [Interview: 海量数据处理](https://github.com/julycoding/The-Art-Of-Programming-By-July)
 
 [Curated List: Java后端书架](http://www.importnew.com/22064.html)
 
 [Design Pattern](https://github.com/knightsj/object-oriented-design)
+
 
 ### Traditional AI
 
@@ -108,6 +113,26 @@ tags:
 ](https://stackoverflow.com/questions/47788154/how-to-add-gfm-task-lists-in-jekyll)
 
 ### 系统设计
+
+[缓存1](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649047962&idx=1&sn=6c09ec59b49b98c08ea1047618bb2bee&chksm=875347a9b024cebf6ccf8bd427d65eea072afee43c65c034419937ba4f712afe31a75f2813f2&mpshare=1&scene=24&srcid=0718UNPxwv3nk4HVm459MWrT#rd)
+
+[缓存2](https://mp.weixin.qq.com/s/YmlcrHH1NeE_vWqDGSayVQ)
+
+[分布式事务1](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247487861&idx=1&sn=1e041eb56eaec737f95af0b3e65ac0e8&chksm=eb539443dc241d55bdbcee140ab8b33182bcf9768f21a13ba4b03fcccf331ca1eb757ba6b90e&mpshare=1&scene=24&srcid=12075VyGybutM2J7CbyMmZ1K#rd)
+
+[分布式事务2](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247486512&idx=1&sn=01ce7459e71ffe204025fb66248a0c08&chksm=eb538906dc240010f561e14f4a71f98db2e35eee892523e71456675bdbe30c56b0096433d975&mpshare=1&scene=24&srcid=0721oDEkEByaxLauJR2Ab3oE#rd)
+
+[百万级消息推送系统](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649048319&idx=1&sn=751011a1966cd9ad85e4492d7d79597e&chksm=875340ccb024c9da0326f99ca3e096f600415e50ce40ae4d57ecbc87e4319501b4cbf879a980&mpshare=1&scene=24&srcid=09271Mk2YuxwnLGLy65AA7Cp#rd)
+
+[分布式锁1](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649048309&idx=1&sn=e7a55ba98bc0078e07c99d8ee1f37dc5&chksm=875340c6b024c9d04612bf41b93ece089235a2fc870c6b233fa89c127251065df4b3bfed100a&mpshare=1&scene=24&srcid=0925C3pi5B8pt5H8A6QNftVQ#rd)
+
+[分布式锁2](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649048189&idx=1&sn=bbeec30fa2f9d8473cd8bcb27d637fb9&chksm=8753404eb024c9586cc3ff740f83bfc4d071a05e9b1c521de027155086e63d526a8287a5147f&mpshare=1&scene=24&srcid=0828DE0nhhauMjKdzh4VEzIb#rd)
+
+[高并发架构设计](https://mp.weixin.qq.com/s/NlKXktYSF5r8KTHZh7WdXw)
+
+[单点登录](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247486924&idx=1&sn=c02dccb1351469dab78e2f8a6cb68908&chksm=eb5388fadc2401ece42a2523c932accba7561432320628e1acf24b5e471fe5d51429c8b4f237&mpshare=1&scene=24&srcid=0901vC8oG9ryHIwmXOd6W8kk#rd)
+
+[秒杀架构](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649048034&idx=1&sn=9cb613033b33756ca32000e40d542f0a&chksm=875347d1b024cec75bea44277db4b9c1def9ccf6f5e2d6b98841f525dba7e039c1485efccabf&mpshare=1&scene=24&srcid=07318StDPc31dDbqIqLC7hAU#rd)
 
 [Uber Map Matching](https://www.youtube.com/watch?v=ChtumoDfZXI)
 
