@@ -118,3 +118,5 @@ I'm really interested in Appfolio, but after a lot thought, I decide to decline 
 
 I really appreicate the time you spent with me and helped me raise the package. Even though it doens't work out this time, I hope our path can cross in the future. I wish your team all success.
 
+### [How to decline](https://www.thecut.com/article/how-to-decline-a-job-offer.html)
+

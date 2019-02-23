@@ -14,9 +14,9 @@ tags:
 - [ ] [Wheel: MIT6.824](https://github.com/chaozh/MIT-6.824)
 - [ ] [Video: Advanced Database System](https://www.youtube.com/watch?v=poEfLYH9W2M&list=PLSE8ODhjZXjYplQRUlrgQKwIAV3es0U6t&index=1)
 - [ ] Book: Designing Data-Intensive Applications
+- [ ] Book: Redis设计与实现
 - [ ] [Wheel: Berkley SimpleDB](https://github.com/iamxpy/SimpleDB)
 {: style='list-style-type: none'}
-
 
 ### Math
 - [ ] Book: Linear Algebra done right
@@ -42,8 +42,6 @@ tags:
 [Video: Linear Algebra](https://www.youtube.com/watch?v=AfY1ak89fwU&list=PLe94oLfiYuBCN-1N9aHJVjqO0K_Ug0VwZ)
 
 [Video: Real Analysis and Functional Analysis](https://www.youtube.com/playlist?list=PLTZS5MfjsAzMKStF2fm3kolbIBVEa6Biu)
-
-[Book: Linear Algebra and Learning from Data](http://math.mit.edu/~gs/learningfromdata/)
 
 ### CS Course
 [Computer Organization](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk)
@@ -87,6 +85,8 @@ tags:
 
 ### NLP
 
+[NLP Tutorial](https://github.com/graykode/nlp-tutorial)
+
 [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
 
 [Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
@@ -95,21 +95,11 @@ tags:
 
 [NER](https://github.com/ZhixiuYe/NER-pytorch)
 
-[Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
-
-### Tomcat
-[link 1](https://www.jianshu.com/p/dce1ee01fb90/)
-
 ### DataBase
 [LSM tree](http://www.pandademo.com/wp-content/uploads/2017/12/A-Comparison-of-Fractal-Trees-to-Log-Structured-Merge-LSM-Trees.pdf)
 
 [levelDB](https://dirtysalt.github.io/html/leveldb.html)
 
-### OS
-[Wheel: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
+### 后端项目
+搜房网, 优惠券发放, 广告投放, 秒杀
 
-[Create your own kernel in C](https://www.codeproject.com/Articles/1225196/%2FArticles%2F1225196%2FCreate-Your-Own-Kernel-In-C)
-
-[Wheel: os01](https://github.com/tuhdo/os01)
-
-[Wheel: uCore](https://github.com/chyyuu/ucore_os_lab/blob/master/README-chinese.md)
