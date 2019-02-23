@@ -234,3 +234,9 @@ TiDB
 
 ### 后端项目
 搜房网, 优惠券发放, 广告投放, 秒杀
+
+### Java源码阅读
+disruptor, netty, juc里的concurrent skip list
+
+### C++源码
+SGI STL, leveldb, protobuffer, ngnix, [libevent](http://www.wangafu.net/~nickm/libevent-book/)
