@@ -233,7 +233,7 @@ TiDB
 [脸书系统设计面经](http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=289293&highlight=%CF%B5%CD%B3%C9%E8%BC%C6)
 
 ### 后端项目
-搜房网, 优惠券发放, 广告投放, 秒杀
+搜房网, 优惠券发放, 广告投放, Netty仿微信全栈, 秒杀
 
 ### Java源码阅读
 disruptor, netty, juc里的concurrent skip list

@@ -100,6 +100,3 @@ tags:
 
 [levelDB](https://dirtysalt.github.io/html/leveldb.html)
 
-### 后端项目
-搜房网, 优惠券发放, 广告投放, 秒杀
-

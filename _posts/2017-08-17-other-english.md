@@ -234,3 +234,91 @@ The difference between cloud and desktop is **nothing really**. Could is a set o
 
 ### Microservices are bad
 Microservices are the current hot software fad, but otherwise a useless idea. Like all the previous fads in software, e.g. structured programming, OOP etc, it falsely assumes, that you can decompose the software into meaningful isolated units, preferably with three-like dependencies between them. The reality or course is, that you can't do that and moreover, you actually don't want that either. Whenever it makes any sense business wise to connect the existing independent services, then you connect them. A complex software system is just more valuable and to increase the value of the system you have to make it more complex. The conclusion is, that any approach to software, that assumes a simple structure (architecture), is doomed to fail.
+
+
+### Job Responsibility
+#### New Graduate
+Quantcast is hiring software engineers to join our engineering teams in our San Francisco office.
+
+As the real-time pulse of the Internet, Quantcast runs the world’s largest AI-driven insights and measurement platform directly quantifying over 100 million web destinations. We are using machine learning to drive human learning. Quantcast provides brand marketers and publishers with significant audience insights, predictive targeting and measurement solutions across the customer journey.
+
+As a software engineer, you’ll seek significant answers related to Machine Learning, Distributed Storage Systems, Big data platforms, API development and Data Visualization.
+
+You’ll have the opportunity to learn software engineering methodologies and will own projects from start to finish. You are passionate about building scalable backend systems and customer-facing applications. You will thrive in an environment where independent decision-making based on product requirements is the norm. We foster an agile environment where new ideas and software development come together to effectively pursue some of our industry's toughest problems.
+
+Responsibilities
+You will provide technical solutions to take on challenging problems in the advertising industry
+You will partner with a team of engineers and work on a variety of large scale systems
+You will collaborate with Product & Business Operations teams to translate business requirements and build highly robust and scalable products
+You will gain exposure to existing Quantcast systems and our technologies to internal and external customers
+You will be responsible for the day-to-day product operations
+
+Requirements
+BS, MS or PhD degree in computer science or related field (Graduation date before August 2019)
+Excellent command of one or more programming language in Java or Python
+Experience working with distributed systems, big data and large-scale systems
+Deep understanding of algorithms and data structures
+Extraordinary verbal and written interpersonal skills
+
+Quantcast owns and operates the world’s largest audience insights and measurement platform on the open internet. Fueled by live data drawn from more than 100 million web and mobile destinations, Quantcast applies machine learning technology to help marketers, publishers, and agencies grow their brands by better understanding and predicting consumer interactions in real-time.
+
+Founded in 2006, Quantcast is headquartered in San Francisco and employs more than 700 employees in over 20 offices across 10 countries. We are committed to building an inclusive and diverse environment where everyone can be their authentic self.
+
+#### Intern
+Quantcast is hiring Software Engineering Interns to join our engineering teams in our Seattle office.
+
+As the real-time pulse of the Internet, Quantcast runs the world’s largest insights and measurement platform directly quantifying over 100 million web destinations. Using machine learning to drive human learning, we provide brand marketers and publishers with significant audience insights, predictive targeting and measurement solutions across the customer journey.
+
+Engineers from different technical backgrounds, who share your passions for technology, solving rewarding problems, and desire to make a tangible impact, will mentor you.
+
+You’ll have the opportunity to learn software engineering optimal standard practice and own projects from start to finish with teams that specialize in Machine Learning, distributed storage systems, big data platforms, API development and data visualization.
+Internship Program
+• Our 10 to 12 weeks summer internship program provides you with a comprehensive introduction to the ad tech industry while being fully integrated into a team
+• You will have full project ownership and the autonomy to build impactful products. At the of your internship, you will present your project to the entire engineering organization
+• We will pair you with a dedicated mentor on your team to ensure the success of your project. They will be your go-to person for any questions, suggestions, advice, and constructive feedback
+• You will engage with executives and industry leaders through intern and company wide events
+• You will participate in fun and memorable events with fellow interns, mentors, and full-timers
+• We offer perks, which include intern housing stipend, snacks and drinks, catered lunches, dinners & weekly happy hours
+
+Requirements
+• Excellent command of one or more programming languages: Java, C++ or Python
+• Strong understanding of algorithms and data structures
+• Strong interpersonal and written communication skills
+• Pursuing a BS, MS or PhD degree in Computer Science or related field
+• Graduation date between Dec 2019 and June 2020
+
+#### Software Engineer, Audience Platform
+Quantcast is hiring a Software Engineer to work on the Audience Platform team in our Seattle office.
+
+As the real-time pulse of the Internet, Quantcast runs the world’s largest AI-driven insights and measurement platform directly quantifying over 100 million web destinations. Using machine learning to drive human learning, Quantcast provides brand marketers and publishers with meaningful audience insights, predictive targeting and measurement solutions across the customer journey.
+
+You will be part of the key team that develops the backbone of one of the fastest growing SaaS companies in the advertising space. You will define and implement innovative Audience capabilities, pushing the boundaries of what the world’s biggest brands and publishers can do. You will thrive in an environment where independent decision-making based on product requirements is the norm. You will work on bleeding-edge distributed systems. You will utilize and keep on top of the incredibly fast-moving open source Big Data ecosystem and the fast evolving Amazon AWS tech stack. You should be comfortable in all aspects of building a backend like defining and implementing new distributed platforms that handle operations on trillions of objects, building new data pipelines that can transform petabytes of data fast yet cost-effectively, implementing new algorithms (often the basis of new patents) for providing insights and implementing robust APIs that allow efficient, easy consumption of the underlying data by our own products or external platforms.
+
+The Audience Platform team is responsible for developing Quantcast’s connections with brands and other data partners and integrating them with Quantcast's vast first-party dataset. The Audience Platform team works with the Product Managers and our customers to help define and refine the products and roadmap.
+
+Responsibilities
+Work with Product Managers to determine product direction and customer needs
+Work with Staff and Principal Engineers on your team to define architecture and implementation
+Develop and improve the backend and the big data systems that drive our Audience Platform
+Share knowledge and standard methodologies amongst the wider engineering teams
+Work with data modeling scientists to integrate with their models
+Participate in a team-wide on-call rotation to keep mission-critical systems performing at their best
+
+Requirements
+Bachelor's or Master’s degree in Computer Science, related field
+1 or 3+ years of software development experience with high volume data processing; preferably in the online or ad tech space
+Solid foundation of data structures and algorithms and ability to apply them to real-world problems
+Excellent command of one or more programming language in Java, Python or C++
+Experience working with time series and distributed systems.
+
+#### Senior
+Reveling in Big Data - join us to build analytics at a massive scale the right way!
+
+
+https://www.quantcast.com/careers
+
+Are you a seasoned engineer excited about building large scale distributed systems to be used by thousands of customers? Do you want to be on the leading edge of the massive innovation in the BigData space? Are you a leader who thrives in a fast-paced environment, builds and leads high-performing teams and delivers on initiatives of significant size and impact? 
+
+Quantcast ingests and processes petabytes of data daily. We do many interesting things with this data, including applying Machine Learning for novel modeling, that have made Quantcast a pioneer in data intelligence and insights. The Quantcast Seattle team is taking this further and building solutions for an unaddressed problem space at a scale that most other companies can neither imagine nor execute at. 
+
+We are looking for innovators. We work with Spark, Presto, Hadoop, super efficient distributed file systems, dynamic cluster management and massive scale analytics. We have just started the Seattle office and are growing at a record pace. We have begun a talented team with lots more opportunities to grow. If you have a strong background in engineering / management for distributed systems, highly available web services, or high-transaction-rate systems and are interested in making an immediate difference at scale, you need to talk to us - email me at vivek.muppalla AT quantcast.com to connect. 
