@@ -12,6 +12,7 @@ tags:
 - underbralla term lump
 
 ### daily note
+- nail it 搞定它
 - resort city 度假村
 - caught everyone off guard 措手不及
 - viable option 可行的方案

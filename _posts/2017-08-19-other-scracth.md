@@ -35,6 +35,8 @@ tags:
 
 [Road Map 2](https://mp.weixin.qq.com/s/IttAC_ptSvuhc97M7KTgcw)
 
+[题库0](https://github.com/aylei/interview)
+
 [题库1](https://mp.weixin.qq.com/s/FCZejw_eeOEWCLmgnVNiww)
 
 [题库2](https://www.jianshu.com/p/7d855a01674c?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=weixin&from=timeline&isappinstalled=0)
@@ -235,8 +237,16 @@ TiDB
 ### 后端项目
 搜房网, 优惠券发放, 广告投放, Netty仿微信全栈, 秒杀
 
+[初级版秒杀](https://github.com/qiurunze123/miaosha)
+
+[高级版秒杀](https://github.com/TyCoding/springboot-seckill)
+[SpringCloud](https://github.com/crossoverJie/springboot-cloud)
+[管理系统](https://github.com/watchdog-framework/watchdog-framework)
+
 ### Java源码阅读
 disruptor, netty, juc里的concurrent skip list
 
 ### C++源码
 SGI STL, leveldb, protobuffer, ngnix, [libevent](http://www.wangafu.net/~nickm/libevent-book/)
+
+

@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Pratical Algorithm
+title:      Pratical Algo.
 author:     "Shane"
-excerpt:    "Gist of pratical data structure and algorithm occuring often in SDE interview"
+excerpt:    "Brief introduction of the gist of algorithms"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
@@ -14,7 +14,7 @@ format a linear ordering s.t for each directed edge u->v, u comes before v in th
 
 Observation: if the node has no incoming edges, it should be sorted first.
 
-Straight forward way: Start with a node having no incoming edges, put it into the ordering list. And it from the graph as well as its outgoing edges. Repeat on the remaining graph
+Straight forward way: Start with a node having no incoming edges, put it into the ordering list. And delete it from the graph as well as its outgoing edges. Repeat on the remaining graph
 
 In practice, generate an array to keep track of the indegree of each node. We don't delete the outgoing edge right on the graph. Instead, we decrease the indegree of destination node. The other thing I typically use is a FIFO queue, which temporarily store nodes with zero indegree. If the q is not empty, iterate once more. In each
 while loop, pop out a node, append it to the ultimate ordering. Walk through all outgoing edges, decrease the indegree of neighboring node. If we find the indegree become zero, we put that node into the q. Repeat the while loop.
