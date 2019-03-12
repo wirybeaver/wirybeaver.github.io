@@ -91,6 +91,8 @@ tags:
 
 [Paper List: Paper with code](https://paperswithcode.com/)
 
+[Course: dive into deep learning](https://github.com/d2l-ai/d2l-en)
+
 [Curated List: Awesome NLP](https://github.com/keon/awesome-nlp)
 
 [Paper List: GNN, NRL, KRL](https://github.com/thunlp)
@@ -101,11 +103,13 @@ tags:
 
 [**Paper List: CMU Neural Networks for NLP**](http://phontron.com/class/nn4nlp2017/schedule.html)
 
-[Code: Abstract Generation Deployment with Python flask](https://github.com/WillKoehrsen/recurrent-neural-networks)
+[Code: Python Flask文本摘要](https://github.com/WillKoehrsen/recurrent-neural-networks)
 
-[Code: Dialog State Tracking](https://github.com/voicy-ai/DialogStateTracking)
+[Code: 对话状态跟踪](https://github.com/voicy-ai/DialogStateTracking)
 
-[Code: Attention](https://github.com/GokuMohandas/attentional-interfaces)
+[Code: 注意力机制](https://github.com/GokuMohandas/attentional-interfaces)
+
+[Code: 命名体识别](https://github.com/ZhixiuYe/NER-pytorch)
 
 [Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
 
@@ -148,6 +152,9 @@ TiDB
 [FastDFS](https://github.com/happyfish100/fastdfs.git)
 
 [yfs](https://github.com/chengdedeng/yfs)
+
+### Java
+[异常设计](https://cloud.tencent.com/developer/article/1131944)
 
 ### Spark
 [许鹏源码](https://blog.csdn.net/haluoluo211/article/details/50821720)

@@ -33,8 +33,7 @@ tags:
 - [ ] Video: NLP by Collins (Contact with me to get the video link)
 - [ ] [Video: Deep Natural Language Processing](https://github.com/oxford-cs-deepnlp-2017/lectures)
 - [ ] [Turotial: PyTorch Zero To All](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
-- [ ] [Project: Udacity Deep Learning](https://github.com/RyanCCollins/deep-learning-nd)
-{: style='list-style-type: none'}
+- [ ] [deeplearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w/featured)
 
 > Electivies
 
@@ -64,8 +63,6 @@ tags:
 
 [Parallel Computing](https://developer.nvidia.com/educators/existing-courses)
 
-[deeplearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w/featured)
-
 [Deep Reiforcement Learning](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)
 
 [Deep Bayes](https://www.youtube.com/playlist?list=PLe5rNUydzV9Q01vWCP9BV7NhJG3j7mz62)
@@ -83,17 +80,20 @@ tags:
 
 [Code: Machine Learning in Action](https://github.com/TingNie/Machine-learning-in-action)
 
+[Project: Udacity Deep Learning](https://github.com/RyanCCollins/deep-learning-nd)
+{: style='list-style-type: none'}
+
 ### NLP
+
+[Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
 
 [NLP Tutorial](https://github.com/graykode/nlp-tutorial)
 
 [Turotial: NLTK](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
 
-[Book: Georgia NLP](https://github.com/jacobeisenstein/gt-nlp-class)
-
 [Tutorial: Offical PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_nlp_tutorial.html)
 
-[NER](https://github.com/ZhixiuYe/NER-pytorch)
+[Project: Awesome pytorch list](https://github.com/bharathgs/Awesome-pytorch-list)
 
 ### DataBase
 [LSM tree](http://www.pandademo.com/wp-content/uploads/2017/12/A-Comparison-of-Fractal-Trees-to-Log-Structured-Merge-LSM-Trees.pdf)
