@@ -63,12 +63,63 @@ Clustered Index: data raws with similiar index values would be physically stored
 
 Secondary Index: a leaf node stores primary keys.
 
+# Computer Organization
+
+Bus: a collection of parallel wires that carry address, data and control signals. Buses are typically shared by multiple devices.
+
+Memory read transaction (movq A, %rax)</br>
+1. CPU places addr A on the memory bus.
+2. Main memory reads A from the memory bus, retrives word x , and places it on the bus.
+3. CPU read word x from the bus and copies it into register %rax.
+
+Memory write transaction (movq %rax, A)</br>
+1. CPU places address A on bus. Main memory reads A and waits for the corresponding data word to arrive.
+2. CPU places the word y on the bus.
+3. Main memory reads data word y from the bus and stores it at address A.
+
+Disk controller: the hardware/firmware maintains the mapping between logical blocks and (surface, track, sector) triples.
+
+Reading a Disk Sector </br>
+1. CPU put a command, logic block number and destination memory address to a port(address) associated with the disk controller.
+2. Disk controller reads the sector and performs a direct memory access (DMA) transfer into main memory.
+3. Disk controller notifies the CPU with an interrupt (i.e., asserts a special "interrupt" pin on the CPU)
+
+Linking and Loading:
+1. Memory Space of a program: Code(Read Only), Data, Heap, Page Table, Stack
+2. Loading: allocates VP for code and data and create PTEs.
+
 # OS
 ## CAS
 
 ## Dead Lock
+BRF: circular wait with the assumption mutual exclusion and no preemption
+Four Conditions:
+1. Mutual exclustion: Only one thread at a time can access a resource
+2. Hold and wait: holding one and waiting another held by other threads
+3. No preemption: voluntarily release
+4. Circular wait
 
 ## Virtual Memory
+contiguous bytes array stored on the disk. Use physical memory (DRAM) as a cache.
+
+Benifits:
+1. Memory Efficiency: use DRAM as a cache.
+2. Memory management: each process gets uniform linear address space.
+    - Simplify mem allocation: mappend to any PP. 
+    - Sharing code and data among processes.
+    - Linking and Loading in the same region at virtual space.
+3. Memory Protection: Add additional check field in Page tables: READ, WRTIE, EXEC. Check by MMU.
+
+PM and VM are divided into fixed size blocks called pages. Address the fragmentation problem.
+
+Page Table: an array of page table entries that maps virtual pages to physical pages. 
+
+Page Hit: reference to VM word that is in PM. (Judge by the field valid)
+
+Page Fault: reference to VM word that is not in PM. Select a victim block to be evicted if PM is full.
+
+## Lock Implementation
+
 
 # SE
 ## Aigle Development

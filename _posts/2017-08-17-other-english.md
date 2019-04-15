@@ -12,6 +12,7 @@ tags:
 - underbralla term lump
 
 ### daily note
+- companion 伴侣；一道题的伴侣
 - nail it 搞定它
 - resort city 度假村
 - caught everyone off guard 措手不及

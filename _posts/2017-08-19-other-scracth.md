@@ -28,8 +28,10 @@ tags:
 [Papers with coding](https://paperswithcode.com/)
 
 
-### 天朝Java面试
-[Github教材](https://github.com/CyC2018/CS-Notes)
+### 天朝面试
+[Github Java教材](https://github.com/CyC2018/CS-Notes)
+
+[Github C++教材](https://github.com/huihut/interview)
 
 [Road Map 1](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247488542&idx=1&sn=e82c66620330da13899fddf658c57793&chksm=eb539128dc24183ec1665edbf331bcc40bf71a0c6fd76c04dd41297242eb94f407b301864088&mpshare=1&scene=24&srcid=02217JJMsjUqqI3DtFJAm5cU#rd)
 
