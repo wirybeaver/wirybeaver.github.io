@@ -9,27 +9,30 @@ tags:
     - System Design
 ---
 
-### Requirement
+### Use Case
 
-**Functional Requirement**
+### Assumption
+1. Crawl 1.6M web page/s.
+    - 1 trillion pages
+    - update every week
+2. 10p to storage
+    - 10K per page
 
-**Performance**
-HA
+### Single Machine
+network bottleneck</br>
+content switch</br>
+thread port limit
 
-**Out of Scope**
+### High Level Architect
 
-### Constraint
-1. read to write ratio
-2. bandwidth
-3. Qps
 
-### Abstract Design
+### Data Schema
 
-### Core Function
 
-### Scale out
+### Business Logic
 
-### Foot Note
+
+### Scale
 
 
 
