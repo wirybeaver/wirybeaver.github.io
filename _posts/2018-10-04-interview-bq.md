@@ -35,8 +35,11 @@ Appfolio focused on providing software as a service for startups and middle size
 #### Offerup
 I konw Offerup smooths the experience of local e-commerce. Individuals could post items on Offerup and sell thems to people living nearby. The category is various, including baby and kids, clothes and shoes, furniture, and electronics. Users could browse items they are interested in and buy them with reasonable price. Besides, I think Offerup provides fertile enviroment for engineers. You know, I've already seen some reviews about Offerup. Almost all of engineers say that people at Offerup are smart and willing to help with each other. So I think Offerup has huge potential in the future.
 
+### Why hire you?
+I have industry experience in backend development and am familiar with the algorithms, elementary distributed systems. All these stuff could help me face challenges better in Stripe and develop a repliable system. In this process, I could learn new skills, grow fast with the team and make an impactful product. It gives me a fense of fulfillment and stimulate me work harder and ignite productivity in turn. This is a win-win situation.
+
 ### Why this Job? What are you looking for?
-First, levarage my strength and get fast growth. I have industry experience in backend development and am familiar with the algorithms, elementary distributed systems. All these stuff could help me face challenges better in Stripe and develop a repliable system. In this process, I could learn new skills, grow fast with the team and make an impactful product. It gives me a fense of fulfillment and stimulate me work harder and ignite productivity in turn. This is a win-win situation.
+First, the technical growth in the team. I am a life long leaner, thus I wanna face challenges and keep improving my abilitity to deal with real world problems. If I could grow fast with the team and make an impact, it definitely gives me a sense of fulfillment, stimulates me to work harder and ignite productivity in turn.
 
 Besides, positive company culture. Coworks should respect and trust to each other. We are definitely encounter some problems that are hard to deal with by individuals. But with others' help, problems are likely done in a short span of time. As a result, we save time and learn new skills.
 
