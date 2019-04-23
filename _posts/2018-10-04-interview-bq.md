@@ -105,25 +105,25 @@ I wanna share a conflict with my advisor during my summer research at Singapore.
 
 ### biggest failure
 
-## [Negotiate](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
-### Compete
+### [Negotiate](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
+#### Compete
 Like I told you before, I am really excited about Quantcast, but I just received a strong package from Appfolio, which makes me hesitate right now. As you know, Quantcast is my first choice and I really love the techniqual track of the Seattle team. Can we talk about improving the offer and make it work?
 
 The thing make me hesitate is the sign on bonus. You know, I wanna stay at Quantcast for a long while, thus I need a stable place to live in. But I've never been to Seattle before so I need some time to find a comfortable living place. Having some sign on bonus could help me to settle down better and convices me join Quantcast. My expection ranges from 13K to 20K. Do you think it is reasonable?
 
-### Decline 1
+#### Decline 1
 I'm really impresssed by the team culture and the concept of custom driven development. But after a lot of thought, I decide to decline Appfolio's offer since another company gives me very strong salary.
 
 I really appreciate the time you spent talking with me and really enjoy the onsite interview. Appfolio is a wonderful company, the people, the lunch, the environment, everyhing makes me comfortable. Even though the salary didn't work this time, I hope our path can cross in the furture.
 
-### Decline 2
+#### Decline 2
 I'm really interested in Appfolio, but after a lot thought, I decide to decline the offer. The main reason is the visa policy. I'm an international student and I have to get H1B within three years if I want to stay at Appfolio for a long while. But as I know, Appfolio doens't have oversea office. Thus I cannot take the risk of sent back to China. Hope you could understand. 
 
 I really appreicate the time you spent with me and helped me raise the package. Even though it doens't work out this time, I hope our path can cross in the future. I wish your team all success.
 
 ### [How to decline](https://www.thecut.com/article/how-to-decline-a-job-offer.html)
 
-## [Amazon Example](https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=478894&extra=&page=1)
+### [Amazon Example](https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=478894&extra=&page=1)
 
 地里面基本没有什么behaviour问题的样本，所以准备起来好艰难。下面是我准备的一些例子，本来准备每一条准备两个cases，然后14条太多了，写的快死掉了也没写完，大家可以用作样本看看。具体onsite回答的时候根本想不起来哪个对应哪个问题，但是准备的例子多了可以快速先选一个，然后说的时候往问题上套。我也遇到好多没准备的问题，就随便挑一个然后必要时伪造下经历。每个项目具体的流程是什么一定要很清楚，会问得很细，然后才是你干了什么。
 
