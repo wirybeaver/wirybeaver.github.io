@@ -22,12 +22,17 @@ checked Exception: exceptions excludeing run time excpetion. e.g. NoSuchMethod, 
 ## [JVM](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
 
 ### JVM vs JRE vs JDK
-JVM translates bytecodes into instructions that run on the local OS. This way, Java apps achieve platform independence.
+JVM translates bytecodes into instructions that run on the local OS. This way, Java apps achieve platform independence. <br>
 JRE (Java Runtime Environment) consists of JVM, core classes and supporting libs (command: java). <br>
 JDK is a full-featured SDK, containing everything in the JRE plus tools like compiler (command: javac) and debuger (command: jdb) 
 
+### JVM component
+Class Loader, Runtime Area (pc register, JVM stack, heap, method area, native method stack), Execution Engine (JIT, GC), JNI. <br>
+Note: method area is analogous to the "text" segment in an os process.
+
 ### GC
-look up heap and clean unreferenced objects. Observation: most objects have a very short life.
+look up heap and clean unreferenced objects. Observation: most objects have a very short life. <br>
+GC roots are directly accessible objects outside from the heap: local variables, static variables, active threads, JNI references (Java objects created by native code)
 
 ### Generation
 Young: minor GC, all new objects are allocated and aged here.
@@ -57,7 +62,7 @@ Multiple threads are used for GC. Use case: require throughput and long pause ac
 Mark-sweep used in the old generation. Use case: require low-pause.
 
 #### G1
-Replace of CMS. parrallel, concurrent, incrementally compacting low pause.
+Replacement of CMS. parrallel, concurrent, incrementally compacting low pause.
 
 # Database
 ## join
