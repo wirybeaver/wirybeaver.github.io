@@ -35,10 +35,8 @@ look up heap and clean unreferenced objects. Observation: most objects have a ve
 GC roots are directly accessible objects outside from the heap: local variables, static variables, active threads, JNI references (Java objects created by native code)
 
 ### Generation
-Young: minor GC, all new objects are allocated and aged here.
-
-Old: major GC, store long surviving objects.
-
+Young: minor GC, all new objects are allocated and aged here. <br>
+Old: major GC, store long surviving objects. <br>
 Permanent: full GC, store meta data decribing class information.
 
 ### Collection Method
