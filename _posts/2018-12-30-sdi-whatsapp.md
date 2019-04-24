@@ -10,37 +10,46 @@ tags:
 ---
 
 ### Use Case
-
 Two People Chat
 Group Chat
-Check online
-
-Address Book
-Login/Logout
-Multi Device
+Check online status
 
 ### Assumption
 DAU: 100M user
-Write QPS:
+Write QPS: 100M \* 20 / 86400 = 20K
+Peak QPS: 5\*20K = 100K
 
 ### High Level Architect
-Application Tier: User Service, Contacts Service, Message Service, Real-time Service
+Application Tier: Message Service, Real-time Service, Online Status Monitor Service
 
 ### Schema
 ```
-Message:
+message:
     message_id
     thread_id (row_key)
     created_time (column_key)
     String content
     sender_id
-
-Thread:
-    <user_id, thread_id> (primary index)
-    participants
+    
+p2p_thread_info:
+    thread_id
+    user_id_small_large (big int)
     update_time
+    
+p2p_info:
+    self_id
+    friend_id
     is_muted
     nickname
+
+group_thread_public_info:
+    thread_id (primary index)
+    participants (text)
+    update_time
+
+group_thread_private_info:
+    <thread_id, user_id> (primary index)
+    is_muted
 
 User:
     int user_id
@@ -65,8 +74,6 @@ AsyncRealTimeServiceProvider.notify(message, to_user_id)
 AsyncRealTimeServiceConsumer.consume()
 
 ### Scale out
-
-### Foot Note
 
 
 
