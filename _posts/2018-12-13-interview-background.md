@@ -8,9 +8,8 @@ catalog: true
 tags:
     - Interview
 ---
-# Language
-## [Core Java](http://www.developersbook.com/corejava/interview-questions/corejava-interview-questions-faqs.php)
-
+# Java
+## [Grammer](http://www.developersbook.com/corejava/interview-questions/corejava-interview-questions-faqs.php)
 ### polymorphism
 A method or an object can have more than one behavior. Java achieve polymorphism with overload and override.
 
@@ -18,19 +17,47 @@ A method or an object can have more than one behavior. Java achieve polymorphism
 Exception: could be handled by program. An event occurs during the program execution and disrupts the norm flow.
 Error: unrecoverable, JVM report it, e.g. OutOfMemoryError
 Unchecked Exception: Runtime exception, e.g. IndexOutOfBounds, NullPointer, IllegalArgument, ClassCast
-checked Exception: exceptions excludeind run time excpetion. e.g. NoSuchMethod, ClassNotFound, IO
+checked Exception: exceptions excludeing run time excpetion. e.g. NoSuchMethod, ClassNotFound, IO
 
+## [JVM](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
 
-## Functional programming
-**What**<br>
-Functianl programming is so called because a program consists entirely functional. The main function is defined by other functions, which in turn are still difined by more functions, until at the bottom level the functions are language primitives.
+### JVM vs JRE vs JDK
+JVM translates bytecodes into instructions that run on the local OS. This way, Java apps achieve platform independence.
+JRE (Java Runtime Environment) consists of JVM, core classes and supporting libs (command: java). <br>
+JDK is a full-featured SDK, containing everything in the JRE plus tools like compiler (command: javac) and debuger (command: jdb) 
 
-**Why**<br>
-- no assignment. Variab les never changes once given a value.
-- no side-affect. A function have no affect other that compute itself.
-- no flow control. Expression's execution order is irrelevant.
-- eliminate a major source of bugs.
-- relief programmers of the burden of prescibing the flow control
+### GC
+look up heap and clean unreferenced objects. Observation: most objects have a very short life.
+
+### Generation
+Young: minor GC, all new objects are allocated and aged here.
+
+Old: major GC, store long surviving objects.
+
+Permanent: full GC, store meta data decribing class information.
+
+### Collection Method
+Mark-copy is used in the young generation GC. Mark-sweep (CMS) or Mark-compact (Serial, Parrallel) is used in the old generation GC.
+
+### GC Process
+1. Allocate new objects in the eden space.
+2. Copy refrenced objects of the eden space and non-idle survivor space into the idle survivor space.
+3. Age living objects.
+4. Promote long life objects into the old generation.
+
+### Collectors
+
+#### Serial GC
+Both minor and major GC use single CPU. Use case: client style machine not requiring low-pause time
+
+#### Parallel GC
+Multiple threads are used for GC. Use case: require throughput and long pause acceptable ( batch processing, a large number of queries). 
+
+#### CMS
+Mark-sweep used in the old generation. Use case: require low-pause.
+
+#### G1
+Replace of CMS. parrallel, concurrent, incrementally compacting low pause.
 
 # Database
 ## join
@@ -123,7 +150,6 @@ Linking and Loading:
 2. Loading: allocates VP for code and data and create PTEs.
 
 # OS
-## CAS
 
 ## Dead Lock
 Def: a thread is waiting for a condition that will never be true.
@@ -167,7 +193,7 @@ contiguous bytes array stored on the disk. Use physical memory (DRAM) as a cache
 Benifits:
 1. Memory Efficiency: use DRAM as a cache. Only because of  locality
 2. Memory management: each process gets uniform linear address space.
-    - Simplify mem allocation: mappend to any PP.
+    - Simplify mem allocation: mapped to any PP.
     - Sharing code and data among processes. Many VP could be mapped to one PP.
     - Linking and Loading in the same region at virtual space.
 3. Memory Protection: Add additional check field in Page tables: READ, WRTIE, EXEC. Check by MMU.
@@ -210,7 +236,18 @@ K-level page tables.
 ## Malloc
 
 
-# SE
+# Other
+## Functional programming
+**What**<br>
+Functianl programming is so called because a program consists entirely functional. The main function is defined by other functions, which in turn are still difined by more functions, until at the bottom level the functions are language primitives.
+
+**Why**<br>
+- no assignment. Variab les never changes once given a value.
+- no side-affect. A function have no affect other that compute itself.
+- no flow control. Expression's execution order is irrelevant.
+- eliminate a major source of bugs.
+- relief programmers of the burden of prescibing the flow control
+
 ## Aigle Development
 It is an iterative and team based approach. Basically, time is split into phases called ‘sprint’. Typically the span of a sprint is one week. At the start of sprint, teammates would meet together and negotiate the running list of deliverables. All deliverables would be prioritized by business value. Once a functionality is done, I have to design a unit test and notify others to review my code. The system would automatically check the code style and report conflict with other branches. The feature cannot be merged into the production branch until all those stuff are done. If all features cannot be completed, work is reprioritized at the future sprint.
 Pro: customer could early see the work and make decisions.
