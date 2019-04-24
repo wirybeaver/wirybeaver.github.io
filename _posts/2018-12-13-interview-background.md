@@ -62,6 +62,9 @@ Mark-sweep used in the old generation. Use case: require low-pause.
 #### G1
 Replacement of CMS. parrallel, concurrent, incrementally compacting low pause.
 
+# Design Pattern
+## [Singleton](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
+
 # Database
 ## join
 **inner join**<br>
