@@ -76,13 +76,10 @@ MsgService.createThread(int userId, List<Integer> otherIds){
 }
 
 // Send a message
-MsgService.create
+MsgService.createMessage(message, threadId){
+
+}
 MesssageDAO.insertMessage(message, threadId);
 ThreadDAO.updateTime(message.create_time, message.isGroup);
 ```
 ### Scale out
-
-
-
-
-
