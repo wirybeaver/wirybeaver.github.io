@@ -76,10 +76,54 @@ MsgService.createThread(int userId, List<Integer> otherIds){
 }
 
 // Send a message
-MsgService.createMessage(message, threadId){
-
+MsgService.createMessage(String message, int threadId){
+    MesssageDAO.insertMessage(message, threadId);
+    ThreadDAO.updateTime(threadId);
 }
-MesssageDAO.insertMessage(message, threadId);
-ThreadDAO.updateTime(message.create_time, message.isGroup);
+
 ```
 ### Scale out
+```
+// server login, sharding user id
+void WhatsApp.init(int userID){
+    int serverip = RealtimeService.getPushServerIP(int userID);
+    List<Integer> threadIDList = MsgService.getThreadIdList(userID);
+    RealtimeService.insertNewUser(userID, threadIDList);
+    
+    // client sent its own userID in application layer, push server maitain a hash table: userID -> socket descriptor
+    void handShake(serverip, userID);
+}
+
+void RealTimeService.getPushServerIP(int userID){
+    int ip = consistantHash(userID);
+}
+
+void RealtimeService.insertNewUser(int userID, List<Integer> threadIDList){
+    // distributed cache, sharding by userID
+    cacheFacade.add(userID);
+}
+
+void RealTimeService.disPatch(String msg, userID, List<Integer> members){
+    // note: exclude userID 
+    List<Integer> aliveIDs = cacheFacade.getAlive(userID, members);
+    
+    // aggregate push server
+    Map<Integer, List<Integer>> pushMap = new HashMap<>();
+    for(int aid : aliveIDs){
+        int pushIP = consistantHash(aid);
+        // ignore null pointer exception here
+        pushMap.get(pushIP).add(aid);
+    }
+    
+    for(int ip : pushMap.keySet(ip)){
+        RealTimeService.batchSend(msg, pushMap.get(ip));
+    }
+}
+
+void WhatsApp.sendMsg(int threadID, String msg, int userID){
+    MsgService.createMessage(msg, threadID);
+    RealtimeSerice.disPatch(msg, userID, MsgService.getMemberIDList(threadID));
+}
+
+// Pull model to update online status. update through cacheFacade
+```
