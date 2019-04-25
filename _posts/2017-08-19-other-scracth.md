@@ -185,11 +185,15 @@ TiDB
 
 [缓存2](https://mp.weixin.qq.com/s/YmlcrHH1NeE_vWqDGSayVQ)
 
+[分布式事务0](https://www.cnblogs.com/xybaby/p/7465816.html)
+
 [分布式事务1](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247487861&idx=1&sn=1e041eb56eaec737f95af0b3e65ac0e8&chksm=eb539443dc241d55bdbcee140ab8b33182bcf9768f21a13ba4b03fcccf331ca1eb757ba6b90e&mpshare=1&scene=24&srcid=12075VyGybutM2J7CbyMmZ1K#rd)
 
-[分布式事务2](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247486512&idx=1&sn=01ce7459e71ffe204025fb66248a0c08&chksm=eb538906dc240010f561e14f4a71f98db2e35eee892523e71456675bdbe30c56b0096433d975&mpshare=1&scene=24&srcid=0721oDEkEByaxLauJR2Ab3oE#rd)
+[分布式事务2](https://juejin.im/post/5c41b97bf265da614e2c5824)
 
-[分布式事务3](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649047918&idx=1&sn=68494d9fdfe5d0fd99345002f20158ce&chksm=8753475db024ce4b9448d377d28d56aa1ef509e3eceb0cef4b5256a31ad44bdc1affe3ea095b&mpshare=1&scene=24&srcid=071082bUmbebfrexLNpKtQi9#rd)
+ebay本地消息表最实用 <br>
+其实TCC就是把2PC中的数据库commit, rollback放到了自己的commit/cancel ... <br>
+事务消息其实就是把本地消息表搬到了Broker, 由消息队列来实现接口 ... <br>
 
 [分布式锁1](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649048309&idx=1&sn=e7a55ba98bc0078e07c99d8ee1f37dc5&chksm=875340c6b024c9d04612bf41b93ece089235a2fc870c6b233fa89c127251065df4b3bfed100a&mpshare=1&scene=24&srcid=0925C3pi5B8pt5H8A6QNftVQ#rd)
 
