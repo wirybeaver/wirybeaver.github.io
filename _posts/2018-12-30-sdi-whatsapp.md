@@ -31,21 +31,12 @@ message:
     String content
     sender_id
     
-p2p_thread_public_info:
-    thread_id
-    user_id_small_large (big int, candidate key)
-    update_time
-    
-p2p_thread_private_info:
-    <user_id, thread_id> (primary key)
-    is_blocked
-    
-group_thread_public_info:
+thread_public_info:
     thread_id (primary index)
     participants (text, not necessarily unique)
     update_time
-
-group_thread_private_info:
+    
+thread_private_info:
     <thread_id, user_id> (primary index)
     is_muted
 
@@ -59,9 +50,10 @@ User:
 ```
 // list thread by the decreasing update time
 MsgService.getThreadList(int user_id){
-    List<Thread> sorted1 = P2PDAO.getThreadList(user_id);
-    List<Thread> sorted2 = GroupDAO.getThreadList(user_id);
-    return mergetSortedList(sorted1, sorted2);
+    List<Integer> tmp = ThreadPrivateDAO.getThreadIdList(user_id);
+    List<Thread> ans = ThreadPublicDAO.getThreadList(tmp);
+    // sort by timestamp
+    Collections.sort(ans, ...);
 }
 
 // dive into a specific thread, order by timestamp in sql
@@ -71,19 +63,20 @@ MsgService.getMessageList(int thread_id);
 MsgService.createThread(int userId, List<Integer> otherIds){
     if(otherIds.size()==1){
         int otherIdx = otherIds.get(0);
-        long[] tmp = {userId, otherId};
+        int[] tmp = {userId, otherId};
         Arrays.sort(tmp);
-        long combineKey = (tmp[0] << 32) | tmp[1];
-        if(P2PDAO.contains(combineKey)){return P2PDAO.getThread(combineKey);}
-        else{return P2PDAO.insertThread(combineKey);}
+        String combineKey = tmp[0]+""+tmp[1];
+        if(ThreadDAO.contains(combineKey)){return ThreadDAO.getThread(combineKey);}
+        else{return ThreadDAO.insertThread(combineKey);}
     }
     else{
         otherIds.add(userId);
-        return GroupDAO.insertThread(otherIds);
+        return ThreadDAO.insertThread(otherIds);
     }
 }
 
 // Send a message
+MsgService.create
 MesssageDAO.insertMessage(message, threadId);
 ThreadDAO.updateTime(message.create_time, message.isGroup);
 ```
