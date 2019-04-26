@@ -10,13 +10,10 @@ tags:
 ---
 
 ### Use Case
-1. Post a tweet
-2. One's Timeline
-3. News Feed
-4. Follow/Unfollow a User
-5. Login/Register
-6. Upload Photo/Video
-7. HA
+Post a tweet </br>
+get one's own timeline </br>
+follow/unfollow </br>
+like </br>
 
 ### Assumption
 DAU: 150M
