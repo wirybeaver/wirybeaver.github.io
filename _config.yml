@@ -4,8 +4,8 @@ SEOTitle: Xuanyi Li | 李宣毅
 header-img: img/bg-mac.jpg
 email: shanelxy@outlook.com
 description: "Fake it till make it"
-keyword: "Backend, Distributed System, NLP"
-url: "https://shanebacklight.github.io"          # your host, for absolute URL
+keyword: "Backend, Distributed System"
+url: "https://wirybeaver.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 # # Publish posts or collection documents with a future date.
@@ -13,8 +13,8 @@ baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
-github_username:    shanebacklight
-linkedin_username:  xuanyi-li-osu
+github_username:    wirybeaver
+linkedin_username:  wirybeaver
 facebook_username:  li.xuanyi.9
 
 # Build settings

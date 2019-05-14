@@ -8,13 +8,13 @@ tags:
     - Other
 ---
 
-> Messy
+> 未整理
 
 #### [Referral Template](https://mp.weixin.qq.com/s/QXKcEcjbnCzntflxeHGPSA)
 
-> Organized
+> 已整理
 
-### Blog
+### AI Blog
 [Ruder](http://ruder.io/)
 
 [WILDML](http://www.wildml.com/)
@@ -27,15 +27,14 @@ tags:
 
 [Papers with coding](https://paperswithcode.com/)
 
+### SDE Blog
 
 ### 天朝面试
 [Github Java教材](https://github.com/CyC2018/CS-Notes)
 
 [Github C++教材](https://github.com/huihut/interview)
 
-[Road Map 1](http://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247488542&idx=1&sn=e82c66620330da13899fddf658c57793&chksm=eb539128dc24183ec1665edbf331bcc40bf71a0c6fd76c04dd41297242eb94f407b301864088&mpshare=1&scene=24&srcid=02217JJMsjUqqI3DtFJAm5cU#rd)
-
-[Road Map 2](https://mp.weixin.qq.com/s/IttAC_ptSvuhc97M7KTgcw)
+[Road Map](https://mp.weixin.qq.com/s/IttAC_ptSvuhc97M7KTgcw)
 
 [题库0](https://github.com/aylei/interview)
 
@@ -66,7 +65,7 @@ tags:
 [常见计算机网络](https://mp.weixin.qq.com/s/YbQqvdgyuznbfn4HZLP-XQ)
 
 
-### Traditional AI
+### 传统AI
 
 [Curated List: Bayesian Learning](https://github.com/ReactiveCJ/BayesianLearning)
 
@@ -86,7 +85,7 @@ tags:
 
 [Code: PRML](https://github.com/ctgk/PRML)
 
-### Deep Learning
+### 深度学习
 [Interview: 天朝深度学习面试题](https://github.com/ShanghaiTechAIClub/DLInterview)
 
 [面试准备](https://github.com/imhuay/Algorithm_Interview_Notes-Chinese)
@@ -115,20 +114,20 @@ tags:
 
 [Pytorch Tutorial for Researchers](https://github.com/yunjey/pytorch-tutorial)
 
-### OS
-[Wheel: Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
+### 操作系统
+[源码 Understanding Unix Linux Programming](https://github.com/ZCplayground/Understanding-Unix-Linux-Programming)
 
-[Create your own kernel in C](https://www.codeproject.com/Articles/1225196/%2FArticles%2F1225196%2FCreate-Your-Own-Kernel-In-C)
+[源码 Create your own kernel in C](https://www.codeproject.com/Articles/1225196/%2FArticles%2F1225196%2FCreate-Your-Own-Kernel-In-C)
 
-[Wheel: os01](https://github.com/tuhdo/os01)
+[源码 os01](https://github.com/tuhdo/os01)
 
-[Wheel: uCore](https://github.com/chyyuu/ucore_os_lab/blob/master/README-chinese.md)
+[源码 uCore](https://github.com/chyyuu/ucore_os_lab/blob/master/README-chinese.md)
 
-[Wheel: xv6](https://github.com/ranxian/xv6-chinese)
+[源码 xv6](https://github.com/ranxian/xv6-chinese)
 
-[Wheel: How to Make a Computer Operating System](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
+[源码 How to Make a Computer Operating System](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
 
-[Wheel: os tutorial](https://github.com/cfenollosa/os-tutorial)
+[源码 os tutorial](https://github.com/cfenollosa/os-tutorial)
 
 ### Network
 [Tutorial: Network Programming](http://beej-zhcn.netdpi.net/introduction/sites-and-books)
@@ -140,35 +139,45 @@ tags:
 [EPIPE, no signal](https://cboard.cprogramming.com/c-programming/67822-socket-send-exits-app-unexceptively.html)
 
 ### DataBase
-[Curated List: SFU DB](https://sfu-db.github.io/dbsystems/)
+[清单 SFU DB](https://sfu-db.github.io/dbsystems/)
 
-[Wheel: Peloton DB](https://github.com/cmu-db/peloton)
+[源码 Peloton DB](https://github.com/cmu-db/peloton)
 
 TiDB
 
-[PostgreSQL](https://github.com/ty4z2008/Qix/blob/master/pg.md)
+[源码 PostgreSQL](https://github.com/ty4z2008/Qix/blob/master/pg.md)
 
 ### Distrubuted System
-[Curated List: Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
+[清单 Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 
-[FastDFS](https://github.com/happyfish100/fastdfs.git)
+[源码 FastDFS](https://github.com/happyfish100/fastdfs.git)
 
-[yfs](https://github.com/chengdedeng/yfs)
+[源码 yfs](https://github.com/chengdedeng/yfs)
 
 ### Java
 [异常设计](https://cloud.tencent.com/developer/article/1131944)
+
+### GO
+
+[The Go Programming Language](https://golang.org/) 未读
+
+Go Web Programming 未读
+
+Go in Action 可选
+
+[Go语言学习笔记下卷源码](https://github.com/qyuhen/book) 可选
 
 ### Spark
 [许鹏源码](https://blog.csdn.net/haluoluo211/article/details/50821720)
 
 ### Tomcat
-[0to1](https://www.jianshu.com/p/dce1ee01fb90/)
+[手写扫盲](https://www.jianshu.com/p/dce1ee01fb90/)
 
 ### RPC
-[0to1](https://mp.weixin.qq.com/s/Bgz4S17_-w71abBacJ36Ow)
+[手写扫盲](https://mp.weixin.qq.com/s/Bgz4S17_-w71abBacJ36Ow)
 
 ### Mybatis
-[0to1](https://mp.weixin.qq.com/s/EzkQHVmW2deBXlmj9jIOAg)
+[手写扫盲](https://mp.weixin.qq.com/s/EzkQHVmW2deBXlmj9jIOAg)
 
 ### Markdown
 [link 1](https://segmentfault.com/a/1190000010223222)
@@ -179,7 +188,7 @@ TiDB
 ### SpringCloud
 [扫盲](https://mp.weixin.qq.com/s/wG6CcJqKcDOKOJIFc65Q9g)
 
-### 天朝系统设计
+### 天朝系统设计面试
 
 [缓存1](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649047962&idx=1&sn=6c09ec59b49b98c08ea1047618bb2bee&chksm=875347a9b024cebf6ccf8bd427d65eea072afee43c65c034419937ba4f712afe31a75f2813f2&mpshare=1&scene=24&srcid=0718UNPxwv3nk4HVm459MWrT#rd)
 
@@ -192,8 +201,8 @@ TiDB
 [分布式事务2](https://juejin.im/post/5c41b97bf265da614e2c5824)
 
 ebay本地消息表最实用 <br>
-其实TCC就是把2PC中的数据库commit, rollback放到了自己的commit/cancel ... <br>
-事务消息其实就是把本地消息表搬到了Broker, 由消息队列来实现接口 ... <br>
+其实TCC就是把2PC中的数据库commit, rollback放到了自己的commit/cancel<br>
+事务消息其实就是把本地消息表搬到了Broker, 由消息队列来实现接口 <br>
 
 [分布式锁1](http://mp.weixin.qq.com/s?__biz=MzA3ODQ0Mzg2OA==&mid=2649048309&idx=1&sn=e7a55ba98bc0078e07c99d8ee1f37dc5&chksm=875340c6b024c9d04612bf41b93ece089235a2fc870c6b233fa89c127251065df4b3bfed100a&mpshare=1&scene=24&srcid=0925C3pi5B8pt5H8A6QNftVQ#rd)
 
@@ -210,7 +219,7 @@ ebay本地消息表最实用 <br>
 [消息队列](https://mp.weixin.qq.com/s/A5v6TOPCVEwdBiB5vSbs-w)
 
 
-### 美帝系统设计
+### 美帝系统设计面试
 [Uber Map Matching](https://www.youtube.com/watch?v=ChtumoDfZXI)
 
 [Uber Marketplace: Location Serving & Storage in the Uber Marketplace](https://www.youtube.com/watch?v=AzptiVdUJXg)
