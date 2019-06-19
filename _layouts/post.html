@@ -73,8 +73,8 @@ layout: default
                 {% endif %}
             </div>  
 
-    <!-- Side Catalog Container -->
-<!--         {% if page.catalog %}
+        {% if page.catalog %}
+            <!-- Side Catalog Container -->
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -88,14 +88,20 @@ layout: default
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        {% endif %} -->
-
-    <!-- Sidebar Container -->
-<!--             <div class="
+            <!-- Sidebar Container -->
+            <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
-                sidebar-container"> -->
-                <div class="
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                {% include featured-tags.html bottom=true %}
+
+                <!-- Friends Blog -->
+                {% include friends.html %}
+            </div>
+        {% else %}
+            <div class="
                 col-lg-3 col-lg-offset-0
                 col-md-3 col-md-offset-0
                 col-sm-12
@@ -103,7 +109,6 @@ layout: default
                 sidebar-container">
 
                 <!-- Featured Tags -->
-<!--                 {% include featured-tags.html bottom=true %} -->
                 {% include featured-tags.html %}
 
                 <!-- Short About -->
@@ -111,7 +116,8 @@ layout: default
 
                 <!-- Friends Blog -->
                 {% include friends.html %}
-            </div>
+            </div>           
+        {% endif %}
         </div>
     </div>
 </article>
