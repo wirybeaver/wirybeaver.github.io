@@ -15,9 +15,15 @@ layout: default
         <div class="row">
 
     <!-- Post Container -->
-            <div class="
+<!--             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
+                post-container"> -->
+                <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
                 post-container">
 
                 <!-- Multi-Lingual -->
@@ -68,7 +74,7 @@ layout: default
             </div>  
 
     <!-- Side Catalog Container -->
-        {% if page.catalog %}
+<!--         {% if page.catalog %}
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -82,7 +88,7 @@ layout: default
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        {% endif %}
+        {% endif %} -->
 
     <!-- Sidebar Container -->
             <div class="
@@ -91,7 +97,11 @@ layout: default
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                {% include featured-tags.html bottom=true %}
+<!--                 {% include featured-tags.html bottom=true %} -->
+                {% include featured-tags.html %}
+
+                <!-- Short About -->
+                {% include short-about.html %}
 
                 <!-- Friends Blog -->
                 {% include friends.html %}
