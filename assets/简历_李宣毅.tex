@@ -4,8 +4,8 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{geometry}
-\usepackage{CJK}
-\geometry{left=1in,right=1in,top=1in,bottom=0.9in}
+\usepackage{CJKutf8}
+\geometry{left=1in,right=1in,top=1in,bottom=1in}
 \hypersetup{hidelinks}
 \setlength{\parskip}{0pt}
 \setlength\parindent{0pt}
@@ -27,13 +27,13 @@
 \renewcommand{\subsection}[1]{\vspace{1pt}{#1}}
 
 \begin{document}
-\begin{CJK*}{GBK}{song}
+\begin{CJK*}{UTF8}{gbsn}
 \begin{center}
 \textbf{\LARGE{李宣毅}}
 
 {\small
-$\diamond$~微信18405816817~~$\diamond$~17342021872(国内同学)~~$\diamond$~\href{mailto:shanelxy@outlook.com}{shanelxy@outlook.com}\\
-$\diamond$~个人主页: shanelxy.top~~$\diamond$~毕业时间: 05/2019~~$\diamond$~岗位: Java后端
+$\diamond$~+1 6142849969~~$\diamond$~17342021872(国内同学)~~$\diamond$~\href{mailto:shanexuanyili@hotmail.com}{shanexuanyili@hotmail.com}\\
+$\diamond$~微信15700077501~~$\diamond$实习时间: 2018/5/7 -- 2018/8/15~~$\diamond$岗位: Java研发
 }
 \end{center}
 
@@ -43,7 +43,7 @@ $\diamond$~个人主页: shanelxy.top~~$\diamond$~毕业时间: 05/2019~~$\diamond$~岗位
 
 \subsection{\textbf{俄亥俄州立大学\hfill{哥伦布, 美国}}}
 
-{\small 学位: 硕士 \quad 专业: 计算机科学 \quad GPA: 3.96/4.0\hfill{{08/2017 -- 05/2019}}}
+{\small 学位: 硕士 \quad 专业: 计算机科学 \quad GPA: 4.0/4.0\hfill{{08/2017 -- 05/2019}}}
 
 \subsection{\textbf{浙江大学\hfill{杭州, 中国}}}
 
@@ -51,34 +51,20 @@ $\diamond$~个人主页: shanelxy.top~~$\diamond$~毕业时间: 05/2019~~$\diamond$~岗位
 
 \section{专业技能}
 {\small
-\textbf{熟练: }Java, SQL, SpringBoot, Mybatis, Git, Keras
+\textbf{语言: }Java, Python, JavaScript, SQL, C, Lisp, X86汇编 \hfill{\textbf{数据库: }MySQL, Redis, MongoDB}
 
-\textbf{掌握: }Python, C, Lisp, X86汇编, HSF, RocketMQ, Diamond, Tair, \LaTeX
+\textbf{全栈: }Spring, SpringMVC, Mybatis, Node.js, Bootstrap \hfill{\textbf{其它: }Keras, Git, Gitbook, \LaTeX}
 }
 
-\section{实习经历}
-
-\subsection{\textbf{业务智能化平台Mlab\hfill{阿里巴巴}}}
-
-{\small \emph{SpringBoot, Diamond, Tair, Pai, Odps}\hfill{05/10/2018 -- 07/27/2018}}
-
-{\small
-\begin{list}{$\bullet$}{\listparam}
-\item 项目目的: 打通机器学习样本提取、特征预处理、离线训练、灰度部署、实时计算等环节, 降低业务开发人员的算法接入成本; 负责工作: 离线训练环节, 包括数据库设计与领域建模,触发实验, 查询训练状态, 模型保存与下发, 前后端交互等功能.
-\item 针对算法模板里的不同节点, 实现根据节点类型来给前端传送相应的动态表单, 正反序列化参数(自定义注解，实现个性化的gson序列化策略).
-\item 采用生成者模式满足节点多样的构造方法; 借助反射、函数接口Predicate和模板方法实现各节点所有参数的检验; 枚举类充当简单工厂.
-\item 组装各节点参数，发送http put和get请求, 触发和查询Pai平台上的实验.
-\item 读取PAI平台存储于odps上的模型并保存至本地tddl, 并发布客户端模型至tair和更新diamond版本; 客户端异步监听diamond版本并从tair上获取新模型来刷新本地缓存, 以供实时计算使用.
-\end{list}
-}
+\section{工作经历}
 
 \subsection{\textbf{文本分类的多任务深度学习模型\hfill{新加坡科技设计大学}}}
 
-{\small \emph{CNN, SVM, Python, Keras}\hfill{07/2016 -- 08/2016}}
+{\small 助研(自然语言处理实验室)\emph{CNN, SVM, Python, Keras}\hfill{07/2016 -- 08/2016}}
 
 {\small
 \begin{list}{$\bullet$}{\listparam}
-\item 使用Python爬取来自烂番茄网的75000条电影短评作为评论者角色(专家/大众)数据集.
+\item 使用Python爬取烂番茄网的75000条电影短评作为评论者角色(专家/大众)数据集.
 \item 使用SVM算法构建基准线, 在不同文本数据集上识别情感极性、用户角色以及主客观性.
 \item 使用Keras框架搭建以CNN为基础的多任务神经网络模型, 成对训练不同任务. 通过增加独立的特征抽取层和增加门控制单元来改善共享机制, 将正确率分别提升了0.47\% 和 1.10\%.
 \end{list}
@@ -86,26 +72,40 @@ $\diamond$~个人主页: shanelxy.top~~$\diamond$~毕业时间: 05/2019~~$\diamond$~岗位
 
 \section{项目经历}
 
-\subsection{\textbf{秒杀API开发}\hfill{02/2018 -- 03/2018}}
+\subsection{\textbf{秒杀系统API开发}\hfill{02/2018 -- 03/2018}}
 
 {
 \small
 \begin{list}{$\bullet$}{\listparam}
-\item 使用Redis超时缓存订单表和库存表, 事先检验订单和预减库存, 重复秒杀或者超卖则返回失败.
-\item 使用消息队列RocketMQ完成异步事务补偿, 保证事务一致性同时兼顾并发量: 先扣库存，失败则直接返回; 再下单，失败则发送消息使库存加1, 否则主动更新缓存.
-\item 消息发送失败则本地消息落地, 启动定时任务扫表直至发送成功, 消费端做消息幂等.
-
+\item SSM框架开发秒杀功能: 时间未到倒计时, 超时不提供秒杀接口; 规定时间内禁止重复秒杀.
+\item Dao层使用Mybatis开发接口, 配置mapper.xml中的SQL.
+\item Service层使用md5加密方法暴露秒杀接口地址.
+\item 使用Spring声明式事务保证减库存和记录明细的一致性.
+\item Controller层使用基于注解的SpringMVC框架, 设计RESTful接口.
+\item 使用Redis超时缓存秒杀商品; MySQL端实现存储过程, 避免网络延时和GC对并发性能的影响.
 \end{list}
 }
 
-\subsection{\textbf{底层项目}\hfill{01/2018 -- 05/2018}}
+\subsection{\textbf{图片共享网站开发}\hfill{08/2017 -- 09/2017}}
 
 {
 \small
 \begin{list}{$\bullet$}{\listparam}
-\item \emph{程序语言: }Java实现Lisp解释器,包括S表达式解析, 函数形参与实参绑定, 函数的递归调用.
-\item \emph{操作系统: }Java多线程模拟餐厅运营, 使用可重入锁同步互斥和Lamport时钟同步线程时间.
-\item \emph{并行计算: }使用OpenMP, GPU, MPI, 循环展开与交换等策略, 加速矩阵乘法等科学计算问题.
+\item 使用JavaScript和BootStrap搭建前端;使用Node.js和Express 开发后端; 使用MongoDB作为后台数据库; 部署于Heroku云平台.
+\item 实现图片上传、描述编辑、添加评论、图片搜索、用户登录等基本功能.
+\item 使用Passport.js实现权限控制; 使用谷歌地图API显示摄影地点; 使用Ajax和Mansory插件集成搜索功能和瀑布流显示效果.
+\end{list}
+}
+
+\subsection{\textbf{数学建模竞赛: 美国大学教育发展五年投资策略制订}\hfill{01/2016 -- 02/2016}}
+
+{
+\small
+\begin{list}{$\bullet$}{\listparam}
+\item 利用PCA算法筛选7个指标; 使用K-means将样本聚类为三种学校, 针对其中一类做案例分析.
+\item 线性拟合部分学校的指标与现有QS评分的函数关系, 推算所有学校的QS分数; 使用逻辑斯蒂增长函数计算基于QS评分的学校潜力函数, 筛选出前十个潜力最大的候选机构.
+\item 利用柯布道格拉斯模型, 构建每个学校的投资回报函数; 使用遗传算法, 寻找最大化投资回报的最优解, 确定第一年的投资分配额度.
+\item 迭代更新指标和QS分数, 每年均需重新筛选前十潜力学校并确定投资分配额度, 直至投资期限.
 \end{list}
 }
 
@@ -115,4 +115,3 @@ Xuanyi Li, Weimin Wu, Hongye Su. Convolutional Neural Networks Based Multi-Task 
 }
 \end{CJK*}
 \end{document}
-
