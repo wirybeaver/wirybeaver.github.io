@@ -178,8 +178,10 @@ layout: default
         anchors.options = {
           visible: 'always',
           placement: 'right',
+          icon: '¶'
         };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+        // anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+        anchors.add('post-container h3').add('post-container h4')
     })
 </script>
 <style>
