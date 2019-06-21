@@ -5,7 +5,7 @@ title: "简历标题"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
 name: "你的名字"
 jobtitle: "求职意向" #可空不显示
-photo: "assets/img/photo.jpg" #照片可空，不显示
+photo: "img/me.jpg" #照片可空，不显示
 
 #联系方式
 contact: #联系方式连接等3~5行
@@ -108,15 +108,15 @@ others: #其他列表显示
 #  - 如果有可以继续添加
 
 #footer 脚注，打印版和web版不同不显示    
-footer: #脚注多组
-  print: #打印版markdown或者html
-  screen:
-  - text: "简历脚注"
-  #   href: '/'
-  - text: "Made with &hearts; by NewFuture"
-    href: "https://github.com/NewFuture/CV/"
+# footer: #脚注多组
+#   print: #打印版markdown或者html
+#   screen:
+#   - text: "简历脚注"
+#   #   href: '/'
+#   - text: "Made with &hearts; by NewFuture"
+#     href: "https://github.com/NewFuture/CV/"
 
 #页面额外js脚本，如xx统计
-scripts:
+# scripts:
 #- src: "assets/js/resume.js"
 #  defer: defer #可以设置defer或者sync异步加载
