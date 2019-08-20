@@ -1,6 +1,6 @@
 \documentclass[letterpaper,10pt]{article}
 
-\usepackage{color}
+\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{geometry}
@@ -17,7 +17,7 @@
     \setlength{\labelwidth}{2em}
     \setlength{\labelsep}{1em}
     \setlength{\topsep}{0pt}
-    \setlength{\partopsep}{0.5ex}
+    \setlength{\partopsep}{0.2ex}
     \setlength{\leftmargin}{2em}
 }
 
@@ -27,7 +27,7 @@
     \setlength{\labelwidth}{2em}
     \setlength{\labelsep}{0.5em}
     \setlength{\topsep}{0pt}
-    \setlength{\partopsep}{0.5ex}
+    \setlength{\partopsep}{0.2ex}
     \setlength{\leftmargin}{1em}
 }
 
@@ -36,13 +36,18 @@
 \renewcommand{\section}[1]{\vspace{4pt}{\large\textbf{#1}}\vspace{1pt}\hrule\vspace{2pt}}
 \renewcommand{\subsection}[1]{\vspace{1pt}{#1}}
 
+\definecolor{mygray}{gray}{0.93}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 \begin{document}
 
 \begin{center}
 \textbf{\LARGE{Xuanyi Li}}
 
 {\small
-$\diamond$~614-397-8198~~$\diamond$~\href{mailto:shanelxy@outlook.com}{shanelxy@outlook.com}~~
+$\diamond$~614-397-8198~~$\diamond$~\href{mailto:wirybeaver@outlook.com}{wirybeaver@outlook.com}~~
 $\diamond$~\href{https://www.linkedin.com/in/wirybeaver}{linkedin.com/in/wirybeaver}~~
 $\diamond$~\href{https://shanelxy.top/portfolio}{shanelxy.top/portfolio}
 }
@@ -53,47 +58,57 @@ $\diamond$~\href{https://shanelxy.top/portfolio}{shanelxy.top/portfolio}
 
 \subsection{\textbf{The Ohio State University\hfill{Columbus, United States}}}
 
-Master of Science in Computer Science; GPA (3.97/4.0)\hfill{{08/2017 -- 05/2019}}
+{\small Master of Science in Computer Science; GPA (3.97/4.0)}\hfill{{\small 08/2017 -- 05/2019}}
 
 \subsection{\textbf{Zhejiang University\hfill{Hangzhou, China}}}
 
-Bachelor of Engineering in Automation; GPA (3.97/4.0); Ranking (4/144) \hfill{{09/2013 -- 07/2017}}
+{\small Bachelor of Engineering in Automation; GPA (3.97/4.0); Ranking (4/144)}\hfill{{\small 09/2013 -- 07/2017}}
 
 \section{TECHNICAL SKILLS}
 
-\textbf{Programming Language:} Go, Java, C, Python, SQL, X86 Assembly
+\textbf{Programming Language:} Java, C, GO, Python, SQL, X86 Assembly
 
-\textbf{Framework and Tool:} Spring Boot, Mybatis, Redis, RocketMQ, Git, Keras, Postman, \LaTeX
+\textbf{Framework:} Spring Boot, Apache Druid, gRPC, Apache Kafka, Redis, Keras, Mybatis
 
-\textbf{Distributed System:} Remote Procedure Call, Coordination Service, Cache, Message Queue
+\textbf{Operation:} JUnit, Mockito, Git, Gradle, Jenkins, Docker, Terraform,  AWS(EC2, S3)
 
 \section{WORK EXPERIENCE}
 
-\subsection{\textbf{Mlab: Unified Intelligence Platform}\hfill{\textbf{Alibaba}}}
+\subsection{\textbf{Software Engineer}\hfill{\textbf{Quantcast, Seattle}}}
 
-{\small
-\emph{Back-end Engineer Intern}\hfill{05/10/2018 -- 07/25/2018}
-}
+{\small\textsl{Audience Platform}}\hfill{{\small 07/15/2019 -- Present}}
 
+\colorbox{mygray}{\hspace{0.2em}Ingested advertising streaming data from \textbf{Kafka} into the real-time analytics database \textbf{Druid}.}
 
 \begin{list}{$\bullet$}{\listparam}
-\item Built an internal platform to accelerate AI with \textbf{Spring Boot} and Alibaba distributed middlewares. Empowered the coupon team to reduce 1 week for tweaking recommendation algorithm.
-\item Hooked up sophisticated offline training platform to other streams by exploiting \textbf{Java} annotation, reflection and design patterns (Builder, Factory and Template Method).
-       \begin{list}{$\circ$}{\sublistparam}
-        \item Utilized Apache \textbf{HttpClient}, state machine and optimistic lock to monitor training state.
-        \item Generated dynamic front-end forms of algorithm parameters with Google \textbf{Gson}.
-       \end{list}
-\item  Delivered trained models to corresponding client services with \textbf{Diamond} (durable config manage system) and \textbf{Tair} (distributed cache).
+\item Exploited Druid's Kafka indexing service and implemented customized Druid row parser to convert source data.  Used \textbf{Jenkins} for unit test, package build and delivery onto Druid cluster.
+\item Build an HTTP server in Java to receive metrics emitted by Druid and feed them into \textbf{DataDog}. Utilized Jenkins to create docker image and deployed it on Quantcast \textbf{PAWS} (Kubernates in guise).
+\item Deployed the Druid AWS infrastructure as code with \textbf{Terraform}. Wrote bash script for Druid operation.
 \end{list}
 
-\subsection{\textbf{Deep Learning Internship\hfill{Singapore University of Technology and Design}}}
+\subsection{\textbf{Back-end Engineer Intern}\hfill{\textbf{Alibaba, China}}}
 
-{\small
-\emph{Research Assistant in NLP Lab (published a paper in DSAA)}\hfill{07/03/2016 -- 08/31/2016}
-}
+{\small\textsl{Taobao Transactoin Platform}}\hfill{{\small 05/10/2018 -- 07/27/2018}}
+
+\colorbox{mygray}{\hspace{0.2em}Built an internal \textbf{Spring Boot} application to automate AI development.}
 
 \begin{list}{$\bullet$}{\listparam}
-\item Ameliorated classical multi-task deep learning model with \textbf{Keras} to detect the sentiment polarity, reviewer identification, subjectivity/objectivity of each text simultaneously.
+\item Hooked up offline training platform to other data processing modules.
+   \begin{list}{$\circ$}{\sublistparam}
+    \item Generated dynamic front-end forms of training parameters for variant algorithms with Google \textbf{Gson}.
+    \item Used \textbf{HttpClient} to poll training status, optimistic lock to avoid redundant training trigger.
+   \end{list}
+\item Delivered trained models to designated client servers with \textbf{Diamond} (config management system) and \textbf{Tair} (distributed cache).
+\item Empowered the coupon team to reduce 1 week for tweaking recommendation algorithm.
+\end{list}
+
+\subsection{\textbf{Visiting Student\hfill{Singapore University of Technology and Design}}}
+
+{\small\textsl{Natural Language Processing Group, published a paper in IEEE DSAA}}\hfill{{\small 07/13/2016 -- 08/31/2016}}
+
+\colorbox{mygray}{\hspace{0.2em}Ameliorated multi-task deep learning model with \textbf{Keras} for text classification.} 
+
+\begin{list}{$\bullet$}{\listparam}
 \item Crawled 75,000 rotten tomato reviews with \textbf{Python}. Set aside CNNs to capture exclusive features and appended gated control unit to filter noise, improving accuracy by 0.47\% and 1.10\% respectively.
 \end{list}
 
@@ -106,21 +121,13 @@ Bachelor of Engineering in Automation; GPA (3.97/4.0); Ranking (4/144) \hfill{{0
 \item Built the client to multicast for a new server or connect with the backup server while noting that the original server crashes, seamlessly resume the game from last move.
 \end{list}
 
-\subsection{\textbf{Mini Seckill System} \hfill{02/2018 -- 03/2018}}
+\subsection{\textbf{Selected Side Projects}\hfill{01/2018 -- 06/2019}}
 
 \begin{list}{$\bullet$}{\listparam}
-\item Developed back-end of the seckill system with \textbf{Spring Boot} to implement the transactional task consisting of order generation and inventory subtraction, achieving 6K QPS.
-\item Implemented the CRUD interface at DAO tier with \textbf{Mybatis} and tested with JUnit.
-\item Integrated \textbf{log4j} and Spring \textbf{AOP} to intercept each http request at the controller tier.
-\item Used \textbf{Redis} to reject overselling requests. Combined \textbf{RocketMQ} with local message table to implement the distributed transaction in terms of the choreography-based saga pattern.
-\end{list}
-
-\subsection{\textbf{Selected Infrastructure Projects}\hfill{01/2018 -- 05/2018}}
-
-\begin{list}{$\bullet$}{\listparam}
-\item \textbf{Multi-thread Programming:} Used Lamport Clock and Java \textbf{ReentrantLock} to simulate a restaurant. Regarded diners and cookers as threads, and tables, machines and various food as shared resources.
-\item \textbf{Lisp Interpreter:} Implemented internal function of Lisp by \textbf{Java} to value arguments, bind them to corresponding formal parameters and recursively evaluate function body.
-\item \textbf{Parallel Computing:} Applied tiling strategy, loop unrolling over 2 dimensions and shared memory in GPU for transposed matrix multiplication acceleration, achieving 26.6 GFLOPS.
+\item \textbf{Lisp Interpreter:} Implemented Lisp interpreter in \textbf{Java} to parse the expression into binary tree, evaluate arguments, bind them to associated formal parameters and recursively evaluate function body.
+\item \textbf{Sprint Clone:} Wrote an Sprint clone from scratch in \textbf{Java} and implemented the feature of IoC (Inverse of Control) and AOP (Aspect Oriented Programming).
+\item \textbf{Raft:} Implemented the basic raft protocol in \textbf{Go}, including leader election and log replication.
+\item \textbf{Seckill Shopping:} Used \textbf{Redis} to reject overselling requests. Combined \textbf{RocketMQ} with local message table to implement the distributed transaction per the choreography-based saga pattern.
 \end{list}
 
 \section{PUBLICATION}
@@ -128,4 +135,3 @@ Bachelor of Engineering in Automation; GPA (3.97/4.0); Ranking (4/144) \hfill{{0
 Xuanyi Li, Weimin Wu, Hongye Su. Convolutional Neural Networks Based Multi-Task Deep Learning for
 Movie Review Classification. In proceedings of the 4th IEEE DSAA. Tokyo, Japan, 10/2017.
 \end{document}
-
