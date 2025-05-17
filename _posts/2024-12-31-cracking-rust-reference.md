@@ -186,7 +186,7 @@ RefCell allows you to mutate data even when there are immutable references to th
 ## Pattern
 `ref` and `ref mut` patterns borrow parts of a matched value. `&` and `&mut` patterns match references. When matching a reference, we can't move a value out of a reference, even a mut reference. Note: in the expression `&` is used to create a reference, but in the pattern `& `is used to match a reference.
 
-Iterator Background Knowledge: the for loop applies `into_iterator` to its operand. The iterator type depends on how the operand modifer (`&`, `&mut` or pass by value). 
+Iterator Background Knowledge: the for loop applies `into_iterator` to its operand. The iterator type depends on the type operand modifer (`&`, `&mut` or pass by value). 
 
 | **Syntax**                  | **x Type**                        | **The underlying invoke**         | **Equivalance**                                            |
 |-----------------------------|-----------------------------------|-----------------------------------|------------------------------------------------------------|
@@ -215,13 +215,13 @@ Iterator Background Knowledge: the for loop applies `into_iterator` to its opera
     for &item in &vect {
         println!("Match the type of mutable reference: {}", item);
     }
-    // the enumerate() prouduce the tuple (index, &mut T)
     // when matching a reference, you can't move a value out of a reference, even a mut reference
     // use a ref pattern to borrow a reference to a part. Actually equivalent to for (_, item) in ...
     // item type: &mut i32
     for &mut ref mut item in &mut vect {
         *item = 2 * (*item);
     }
+    // the enumerate() produce the tuple (index, &T|&mut T)
     // item type: &i32
     for (i, item) in vect.iter().enumerate() {
         println!("Change item via mutable refereance; {} {}", i, *item)
