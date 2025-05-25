@@ -195,6 +195,7 @@ Iterator Background Knowledge: the for loop applies `into_iterator` to its opera
 | `for x in collection`       | The item is moved to x            | `collection.into_iterator()`      |                                                            |
 
 ```rust
+    let a = vec![String::from("hello"), String::from("world")];
     // &x won't work because cannot move out of non-copiable element
     // Expression let &e = &String::from("hello") is invalid with the same reason
     // x type: &String;
@@ -226,6 +227,46 @@ Iterator Background Knowledge: the for loop applies `into_iterator` to its opera
     for (i, item) in vect.iter().enumerate() {
         println!("Change item via mutable refereance; {} {}", i, *item)
     }
+```
+Another subtle example of comprehensively using the `ref` pattern and auto deref in patten matching below.
+```rust
+fn modify_leaf(tree: &mut Tree) {
+    match tree {
+        // as the tree type is a mut reference to Tree, the child type is also a mut reference to Box<Tree>
+        Tree::Node(child) => {
+            if let Tree::Leaf(val) = child.as_mut() {
+                *val += 1;
+            }
+            // equivalent to the above
+            // **child type is Tree. We cannot move the ownership. Thus, we used the operator&mut to borrow the Tree as a mutable reference.
+            match &mut**child {
+                Tree::Leaf(val) => {
+                    *val += 1;
+                }
+                _ => {}
+            }
+        }
+        _ => {}
+    }
+    // equivalent to the above, auto deref in pattern matching
+    // *tree type is Tree. Let's denote part as the inside of Tree::Node(part), then the part type is Box<Tree>.
+    // Add ref mut to borrow the part as a mutable reference.
+    match *tree {
+        Tree::Node(ref mut child) => {
+            if let Tree::Leaf(val) = child.as_mut() {
+                *val += 1;
+            }
+        }
+        _ => {}
+    }
+    // experimental feature: box pattern
+    match tree {
+        Tree::Node(box Tree::Leaf(ref mut val)) => {
+            *val += 1;
+        }
+        _ => {}
+    }
+}
 ```
 
 ## Reference
