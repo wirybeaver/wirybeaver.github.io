@@ -186,7 +186,7 @@ RefCell allows you to mutate data even when there are immutable references to th
 ## Pattern
 `ref` and `ref mut` patterns borrow parts of a matched value. `&` and `&mut` patterns match references. When matching a reference, we can't move a value out of a reference, even a mut reference. Note: in the expression `&` is used to create a reference, but in the pattern `& `is used to match a reference.
 
-Iterator Background Knowledge: the for loop applies `into_iterator` to its operand. The iterator type depends on how the operand modifer (`&`, `&mut` or pass by value). 
+Iterator Background Knowledge: the for loop applies `into_iterator` to its operand. The iterator type depends on the type operand modifer (`&`, `&mut` or pass by value). 
 
 | **Syntax**                  | **x Type**                        | **The underlying invoke**         | **Equivalance**                                            |
 |-----------------------------|-----------------------------------|-----------------------------------|------------------------------------------------------------|
@@ -195,6 +195,7 @@ Iterator Background Knowledge: the for loop applies `into_iterator` to its opera
 | `for x in collection`       | The item is moved to x            | `collection.into_iterator()`      |                                                            |
 
 ```rust
+    let a = vec![String::from("hello"), String::from("world")];
     // &x won't work because cannot move out of non-copiable element
     // Expression let &e = &String::from("hello") is invalid with the same reason
     // x type: &String;
@@ -215,17 +216,57 @@ Iterator Background Knowledge: the for loop applies `into_iterator` to its opera
     for &item in &vect {
         println!("Match the type of mutable reference: {}", item);
     }
-    // the enumerate() prouduce the tuple (index, &mut T)
     // when matching a reference, you can't move a value out of a reference, even a mut reference
     // use a ref pattern to borrow a reference to a part. Actually equivalent to for (_, item) in ...
     // item type: &mut i32
     for &mut ref mut item in &mut vect {
         *item = 2 * (*item);
     }
+    // the enumerate() produce the tuple (index, &T|&mut T)
     // item type: &i32
     for (i, item) in vect.iter().enumerate() {
         println!("Change item via mutable refereance; {} {}", i, *item)
     }
+```
+Another subtle example of comprehensively using the `ref` pattern and auto deref in patten matching below.
+```rust
+fn modify_leaf(tree: &mut Tree) {
+    match tree {
+        // as the tree type is a mut reference to Tree, the child type is also a mut reference to Box<Tree>
+        Tree::Node(child) => {
+            if let Tree::Leaf(val) = child.as_mut() {
+                *val += 1;
+            }
+            // equivalent to the above
+            // **child type is Tree. We cannot move the ownership. Thus, we used the operator&mut to borrow the Tree as a mutable reference.
+            match &mut**child {
+                Tree::Leaf(val) => {
+                    *val += 1;
+                }
+                _ => {}
+            }
+        }
+        _ => {}
+    }
+    // equivalent to the above, auto deref in pattern matching
+    // *tree type is Tree. Let's denote part as the inside of Tree::Node(part), then the part type is Box<Tree>.
+    // Add ref mut to borrow the part as a mutable reference.
+    match *tree {
+        Tree::Node(ref mut child) => {
+            if let Tree::Leaf(val) = child.as_mut() {
+                *val += 1;
+            }
+        }
+        _ => {}
+    }
+    // experimental feature: box pattern
+    match tree {
+        Tree::Node(box Tree::Leaf(ref mut val)) => {
+            *val += 1;
+        }
+        _ => {}
+    }
+}
 ```
 
 ## Reference
