@@ -102,3 +102,33 @@ Let's break it down:
 *   `new FlinkWriteResult(checkpointId, result)`: This is the payload. The `result` object (of type `WriteResult`) contains the list of data files and delete files that were just written and closed by the `writer.complete()` call. This payload is what the next operator needs to work with.
 
 So, the `IcebergStreamWriter`'s responsibility ends here. It writes data files and then emits the results of that work downstream for another operator to handle the commit phase.
+
+#### The checkpoint consistency across distributed data flow
+
+The scenario where the `Committer`'s `prepareSnapshotPreBarrier` is called before it has received the `Writer`'s `FlinkWriteResult` for that same checkpoint—is **guaranteed *not* to happen** by the Flink runtime.
+
+Here’s the critical concept that prevents this: **The Checkpoint Barrier.**
+
+Think of the data stream not just as records, but as records with special markers called "checkpoint barriers" flowing along with them. Let's trace the flow for a single checkpoint, let's call it `checkpointId=N`:
+
+1.  **At the `IcebergStreamWriter`:**
+    *   The `Writer` is busy processing normal data records via `processElement`.
+    *   Suddenly, a `CheckpointBarrier(N)` arrives from upstream.
+    *   The Flink runtime for this operator sees the barrier and **stops processing any further data records**.
+    *   It immediately calls `prepareSnapshotPreBarrier(N)` on the `Writer`.
+    *   Inside this method, your highlighted line `output.collect(...)` is executed. This sends the `FlinkWriteResult` record into the network buffer, destined for the `Committer`.
+    *   The `Writer` finishes its checkpointing logic (`snapshotState`).
+
+2.  **In the Network Channel between `Writer` and `Committer`:**
+    *   The stream now looks like this: `..., FlinkWriteResult, CheckpointBarrier(N), ...`
+    *   The `FlinkWriteResult` record is **always ahead of** the `CheckpointBarrier(N)` that triggered its creation.
+
+3.  **At the `IcebergFilesCommitter`:**
+    *   The `Committer`'s thread is processing its input stream.
+    *   It first receives and processes the `FlinkWriteResult` record by calling its own `processElement` method (Line 428 in `IcebergFilesCommitter.java`). This method adds the result to the `writeResultsSinceLastSnapshot` map.
+    *   *Only after* it has finished processing the `FlinkWriteResult` record does it see the `CheckpointBarrier(N)` in its input stream.
+    *   Upon seeing the barrier, the Flink runtime for the `Committer` calls `prepareSnapshotPreBarrier(N)` and then `snapshotState(N)`. By this time, it is **guaranteed** to have already processed all records that came before that barrier.
+
+The Flink runtime guarantees that for any given checkpoint `N`, an operator will have received and processed **all data records** belonging to that checkpoint window *before* its own `prepareSnapshotPreBarrier(N)` method is invoked.
+
+So, there is no race condition. The `output.collect()` in the `Writer` is part of the data stream, not a side channel. The `Committer` will process that collected record just like any other data record, and only then will it handle the checkpoint barrier that follows it. This elegant mechanism, called "checkpoint alignment," is fundamental to how Flink achieves its exactly-once processing guarantees.
