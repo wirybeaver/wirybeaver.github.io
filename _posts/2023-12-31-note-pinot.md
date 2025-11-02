@@ -6,7 +6,7 @@ author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:
-    - Pinot
+    - Data
 ---
 
 # Index
@@ -15,9 +15,13 @@ Pinot Index [UML](https://www.planttext.com/?text=fLTBRzj64BxlhnYa5mcmsCXjBx9X99
 
 <img src="https://i.imgur.com/0doVwZd.png" width="60%" border="5">
 
-Bullet Point of Pinot Index System 
+The key points of Pinot Index System 
 - IndexCreator build the immutable index; IndexReaderFactory create the reader for immutable index
 - MutableXXXIndex inherit MutableIndex (write api) and IndexReader (read api)
 - ForwardIndex: Given a docID (rowID), return the raw value or the dictionaryID of the raw value depending on the encoding method you set up for that column. Each columns must have a ForwardIndex
 - Pinot's InvertedIndex (column value to the bitmap), JsonIndex, TextIndex, GeoIndex are the general concept of index in database world, i.e. given a column value (raw value or dictionaryID of raw value), return the docID.
-- Pinot create a mutable index per column for mutable segments.
+- Pinot create mutable / immutable index per column per segment.
+
+# Pinot Segment Commit Protocol
+This pauseless ingsetion [design](https://docs.google.com/document/d/1d-xttk7sXFIOqfyZvYw5W_KeGS6Ztmi8eYevBcCrT_c/edit?usp=sharing) provides a clear sequence diagram of the interaction among pinot controller / servers, segments' IdeaStatate and segment metadata.
+
