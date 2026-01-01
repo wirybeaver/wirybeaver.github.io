@@ -515,7 +515,7 @@ button.paper-button {
   margin-bottom: 10px;
 }
 .highlighter-rouge .highlight pre {
-  font-size: 0.8rem;
+  font-size: 13px;
   line-height: 1.4;
   color: #333;
   background: transparent;
@@ -686,7 +686,7 @@ samp {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 0.8rem;
+  font-size: 13px;
   line-height: 1.4;
   white-space: pre;
   overflow-x: auto;
