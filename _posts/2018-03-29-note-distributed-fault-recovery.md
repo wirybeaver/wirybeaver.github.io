@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Distributed Fault Recovery
-excerpt:    Prove the consistency of checkpoint algorithm by contradiction.
+excerpt:    ""
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
@@ -21,4 +21,4 @@ Assume an orphan message **M** exit between thread **Y** and **Z**. Without the 
 
 By checkpoint algorithm, we could obtain the conclusion $$t_2 < t_4 < t_5$$. Revisit the relations at the end of above paragragh, the final time chain would be $$t_7 < t_6$$.
 
-Contradiction: The sending time is larger than the receiving time! 
+Contradiction: The sending time is larger than the receiving time!

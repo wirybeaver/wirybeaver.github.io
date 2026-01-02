@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      De-sugaring Rust's Reference
-excerpt:    Consolidate the obscured tricks of Rust's Reference, including but not limited to, fat-pointer, reborrow, deref coercion, interior mutability and pattern
+excerpt:    Consolidate the obscured tricks of Rust's Reference, fat-pointer, reborrow, deref coercion, interior mutability and pattern
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
@@ -46,7 +46,7 @@ As shown below, ss1 is an ordinary pointer, while ss2 is a fat pointer:
     let ss = String::from("hello");
     // ss1 type: &String
     let ss1 =&ss;
-    // deref coercion: conceptually equivalent to ss.deref(); 
+    // deref coercion: conceptually equivalent to ss.deref();
     // the call ss.deref() is effectively treated as (&ss).deref() where ss is implicitly borrowed
     let ss2: &str = &ss;
 ```
@@ -57,7 +57,7 @@ ss2 is a fat pointer allocated on the stack containing: a raw pointer to the hea
 <img src="https://i.imgur.com/8TR2y8X.png" width="60%" border="5">
 
 ## Deref Coercion
-In the code snippet of Memory model, *Deref Coercion* implicitly occurs in the initialization statement of ss2. Deref Coercion converts a reference to a type that implements the Deref trait into a reference to another type. Even though the type of &ss is &String, since the String type implements the Deref trait `(&String → &str)` and ss2 is explicitly declared as `&str`, the compiler automatically invokes the deref call. 
+In the code snippet of Memory model, *Deref Coercion* implicitly occurs in the initialization statement of ss2. Deref Coercion converts a reference to a type that implements the Deref trait into a reference to another type. Even though the type of &ss is &String, since the String type implements the Deref trait `(&String → &str)` and ss2 is explicitly declared as `&str`, the compiler automatically invokes the deref call.
 
 If we don’t want to explicitly declare the type as `&str` or manually call `deref()`, is there another way to convert a `String` into a `&str`? Yes, we can leverage a key property: Deref is an overload of the `*` operator. When an instance `y` of type `T` implements the Deref trait `(&T → &Target)`, `*y` is equivalent to `*(y.deref())`. The type of `*y` is `*(&Target)`, which is effectively `Target`.
 
@@ -94,7 +94,7 @@ fn main() {
 | Shared reference           | Immutable referent     | Valid        | The referent can be read by multiple shared references.                                                                                               |
 | Mutable reference             | Mutable referent       | Valid        | The referent is exclusively accessed: (1) No shared references exist during the mutable reference's lifetime; (2) Can be "stolen" by other mutable references following the re-borrowing rule, the creation and drop of those mutable ref is sort of LIFO |
 
-The shared/mutable reference and the mutability of reference itself are totally orthogonal. 
+The shared/mutable reference and the mutability of reference itself are totally orthogonal.
 ```rust
     // let mut b = 1; let x = &b; x is an immutable reference; x itself is immutable, i.e. x cannot refer to other objects.
     // let mut b = 1; let mut x = &b; x is an immutable reference; x itself is mutable, i.e. x can refer to other objects.
@@ -134,7 +134,7 @@ As the mutable reference doesn’t implement the Copy Trait, does that indicate 
     // y is over. Thus we can use the original borrow x again;
     *x = 4;
     // c type: FnMut
-    // the closure c's x is a reborrow of outer x; 
+    // the closure c's x is a reborrow of outer x;
     // The `mut` is required on `c` because a `&mut` is stored inside.
     let mut c = || {
         *x = 8;
@@ -174,8 +174,8 @@ RefCell allows you to mutate data even when there are immutable references to th
         rf2.push_str(" world2");
         println!("{}", rf)
     }
-    // let rf3 = r.borrow_mut(); rf3.push_str(" world3"); Will panic at runtime as the rf3 is still alive. However, the separated statements of creation and modification work for the normal mutable reference in terms of the reborrowing rule. 
-    // Such nuance is caused by the inherent difference of the rule check mechanism between RefCell and the normal mutable reference. 
+    // let rf3 = r.borrow_mut(); rf3.push_str(" world3"); Will panic at runtime as the rf3 is still alive. However, the separated statements of creation and modification work for the normal mutable reference in terms of the reborrowing rule.
+    // Such nuance is caused by the inherent difference of the rule check mechanism between RefCell and the normal mutable reference.
     // That's the reason why we add curly brackets around the previous block for rf and rf2 manipulation.
     // If we borrow_mut and push_str in the same statement, it's safe because the temporal output of borrow_mut is over after the statement.
     r.borrow_mut().push_str(" world3");
@@ -186,7 +186,7 @@ RefCell allows you to mutate data even when there are immutable references to th
 ## Pattern
 `ref` and `ref mut` patterns borrow parts of a matched value. `&` and `&mut` patterns match references. When matching a reference, we can't move a value out of a reference, even a mut reference. Note: in the expression `&` is used to create a reference, but in the pattern `& `is used to match a reference.
 
-Iterator Background Knowledge: the for loop applies `into_iterator` to its operand. The iterator type depends on the type operand modifer (`&`, `&mut` or pass by value). 
+Iterator Background Knowledge: the for loop applies `into_iterator` to its operand. The iterator type depends on the type operand modifer (`&`, `&mut` or pass by value).
 
 | **Syntax**                  | **x Type**                        | **The underlying invoke**         | **Equivalance**                                            |
 |-----------------------------|-----------------------------------|-----------------------------------|------------------------------------------------------------|

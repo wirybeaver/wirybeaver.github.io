@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Intern Summary
-excerpt:    Intern Project Introduction
+excerpt:    ""
 author:     "Shane"
 header-img: "img/bg-mac.jpg"
 catalog: true
