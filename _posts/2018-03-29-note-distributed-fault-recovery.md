@@ -2,7 +2,7 @@
 layout:     post
 title:      Distributed Fault Recovery
 excerpt:    ""
-author:     "Shane"
+author:     "Xuanyi"
 header-img: "img/bg-mac.jpg"
 catalog: true
 mathjax: true

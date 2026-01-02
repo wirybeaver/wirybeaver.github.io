@@ -2,7 +2,7 @@
 layout:     post
 title:      Distributed Mutual Exclusion
 excerpt:    ""
-author:     "Shane"
+author:     "Xuanyi"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:

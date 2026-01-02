@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Java Abstract Queued Synchronizer
-author:     "Shane"
+author:     "Xuanyi"
 excerpt:    ""
 header-img: "img/bg-mac.jpg"
 catalog: true

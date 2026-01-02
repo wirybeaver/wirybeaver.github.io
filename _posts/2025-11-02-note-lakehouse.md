@@ -2,7 +2,7 @@
 layout:     post
 title:      LakeHouse Note
 excerpt:    Brain Dump when read through the source code of modern data technologies
-author:     "Shane"
+author:     "Xuanyi"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:

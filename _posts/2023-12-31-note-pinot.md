@@ -2,7 +2,7 @@
 layout:     post
 title:      Pinot Note
 excerpt:    Summary of my PR contributions to Pinot and a record of my personal understanding of how Pinot works
-author:     "Shane"
+author:     "Xuanyi"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:

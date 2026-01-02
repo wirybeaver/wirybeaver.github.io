@@ -2,7 +2,7 @@
 layout:     post
 title:      Intern Summary
 excerpt:    ""
-author:     "Shane"
+author:     "Xuanyi"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:

@@ -2,7 +2,7 @@
 layout:     post
 title:      Runtime Dependency Conflict
 excerpt:    Debug Runtime Dependency Conflict in monorepo + microrepo
-author:     "Shane"
+author:     "Xuanyi"
 header-img: "img/bg-mac.jpg"
 catalog: true
 tags:

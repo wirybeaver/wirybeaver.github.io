@@ -1,1 +1,1 @@
-> Enjoy the journey on shane blog!
+> Enjoy the journey on Xuanyi blog!
