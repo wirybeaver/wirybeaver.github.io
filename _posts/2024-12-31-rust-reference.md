@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      De-sugaring Rust's Reference
-excerpt:    Consolidate the obscured tricks of Rust's Reference, fat-pointer, reborrow, deref coercion, interior mutability and pattern
+excerpt:    Consolidate the obscured tricks of Rust's Reference, fat-pointer, reborrow, deref coercion, interior mutability and pattern match
 author:     "Xuanyi"
 header-img: "img/bg-mac.jpg"
 catalog: true
